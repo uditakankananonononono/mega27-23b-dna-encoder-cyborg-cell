@@ -87,6 +87,29 @@ build_paper(
             "window, noise recovery, loud corruption rejection, steady-"
             "state match, bound monotonicity).",
         ]),
+        ("Related work", [
+            "DNA storage passed the practicability threshold with "
+            "Goldman (2013) and Grass (2015); later work raised density "
+            "with fountain codes (Erlich 2017) and added enzymatic "
+            "synthesis. Our angle is different: guarantees by "
+            "construction (homopolymer impossibility) rather than "
+            "post-hoc screening, at a known capacity price (1.585 of "
+            "2.0 bits/nt), plus loud integrity failure - the properties "
+            "a teaching or field kit actually needs. The cyborg-cell "
+            "model sits in the metabolic-burden literature (synthetic "
+            "circuit load on host growth); the reallocation bound is "
+            "the kind of back-of-envelope theorem that literature uses "
+            "but rarely pins with a verified simulation match.",
+        ]),
+        ("Appendix - capacity and overhead accounting", [
+            "Per payload byte: 6 trits data; per message: 12 trits "
+            "length header + 12 trits checksum; x3 replication. Net "
+            "density for the 37-byte demo: 37x8 = 296 bits in 3 x 246 "
+            "nt = 738 nt, 0.40 bits/nt synthesized; per unique strand "
+            "1.20 bits/nt (296/246), vs the 1.585 code maximum - the "
+            "gap is framing overhead, which amortizes for payloads "
+            "longer than ~100 bytes.",
+        ]),
         ("Limitations", [
             "The codec handles substitutions, not indels (stated and "
             "tested as out of scope); the cell model is a two-variable "
