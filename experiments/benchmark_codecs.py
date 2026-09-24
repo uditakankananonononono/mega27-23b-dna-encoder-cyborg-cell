@@ -115,6 +115,7 @@ def windowed_gc_dev(seq: str, w: int = 50) -> float:
 def run():
     rng = np.random.default_rng(7)
     results = {}
+    trials_log = []
     for msg_len in (64, 256):
         msgs = [bytes(rng.integers(256, size=msg_len, dtype=np.uint8)) for _ in range(24)]
         for name, enc in (("ours", lambda m: (encode_message(m), None)),
@@ -145,6 +146,7 @@ def run():
                         ok = False
                     rec[rate] += ok
                     trials += 1 if rate == 0 else 0
+                    trials_log.append(dict(codec=name, size=msg_len, msg=mi, rate=rate, recovered=bool(ok)))
             n_msg = len(msgs)
             results[f"{name}_{msg_len}B"] = dict(
                 density_bits_per_base=float(np.mean(dens)),
@@ -154,6 +156,7 @@ def run():
             print(name, msg_len, results[f"{name}_{msg_len}B"])
     os.makedirs("results", exist_ok=True)
     json.dump(results, open("results/codec_benchmark.json", "w"), indent=1)
+    json.dump(trials_log, open("results/codec_trials.json", "w"))
     print("saved results/codec_benchmark.json")
 
 if __name__ == "__main__":
