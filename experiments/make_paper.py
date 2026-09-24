@@ -15,7 +15,7 @@ re_alloc, base, holds = sensing_gain_bound(0.8, 0.2, 0.5, 0.3, 1.0, 0.5, 3.0)
 
 build_paper(
     os.path.join(os.path.dirname(__file__), "..", "paper",
-                 "MEGA27-23b-dna-encoder-cyborg-cell.docx"),
+                 "MEGA27-23b-dna-encoder-cyborg-cell-v2.docx"),
     "A constraint-guaranteed DNA data-storage codec and a cyborg-cell "
     "metabolic logic loop with a proved sensing-efficiency bound",
     "Udita Phookan - MEGA-PROGRAM-27, item 23b (two computational studies)",
@@ -68,6 +68,24 @@ build_paper(
             f"verified monotone over alpha in (0.01, 4). At alpha=3, r=0.5: "
             f"reallocated signal {re_alloc:.3f} vs baseline {base:.3f} - "
             f"gain holds: {holds}.",
+        ]),
+        ("Extended methods - codec algebra", [
+            "The never-same code is a base-4 lift of base-3 digits: with "
+            "previous base b, digit t in {0,1,2} selects base index "
+            "(b+1+t) mod 4, which is never b, so runs are impossible by "
+            "construction (capacity 1.585 bits/nt vs the 2.0 Shannon "
+            "maximum - the price of the guarantee). The scrambler is a "
+            "SHA-256 counter-mode keystream: payload statistics cannot "
+            "create GC skew because each trit is whitened before coding. "
+            "Integrity: Fletcher-16 over trits catches any residual "
+            "post-vote corruption with probability ~1 - 2^-16 of a silent "
+            "pass; failures are loud by design.",
+        ]),
+        ("Reproducibility", [
+            "pip install -e . && pytest - 10 tests pin every claimed "
+            "property (round-trips, worst-case homopolymer exactly 1, GC "
+            "window, noise recovery, loud corruption rejection, steady-"
+            "state match, bound monotonicity).",
         ]),
         ("Limitations", [
             "The codec handles substitutions, not indels (stated and "
