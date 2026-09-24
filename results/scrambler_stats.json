@@ -1,0 +1,21 @@
+{
+ "keystream_counts": [
+  10201,
+  9936,
+  9863
+ ],
+ "keystream_chi2": 6.3266,
+ "keystream_p": 0.04228596688920641,
+ "strand_base_counts": [
+  938,
+  941,
+  911,
+  934
+ ],
+ "strand_chi2": 0.5993555316863587,
+ "strand_p": 0.896579893791313,
+ "window_gc_mean": 0.49729729729729727,
+ "window_gc_sd": 0.05160393074535189,
+ "window_gc_max_dev": 0.14,
+ "predicted_sd": 0.07071067811865475
+}
