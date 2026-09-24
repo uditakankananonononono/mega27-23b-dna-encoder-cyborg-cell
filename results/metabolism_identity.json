@@ -1,0 +1,36 @@
+{
+ "rows": [
+  {
+   "g": 0.25,
+   "delta_sen": 11.125,
+   "identity": 11.125,
+   "abs_err": 0.0
+  },
+  {
+   "g": 0.5,
+   "delta_sen": 22.25,
+   "identity": 22.25,
+   "abs_err": 0.0
+  },
+  {
+   "g": 1.0,
+   "delta_sen": 44.5,
+   "identity": 44.5,
+   "abs_err": 0.0
+  },
+  {
+   "g": 1.5,
+   "delta_sen": 66.75,
+   "identity": 66.75,
+   "abs_err": 0.0
+  },
+  {
+   "g": 2.0,
+   "delta_sen": 89.0,
+   "identity": 89.0,
+   "abs_err": 0.0
+  }
+ ],
+ "freed_atp_eq": 89.0,
+ "reallocated_pct": 100.0
+}
