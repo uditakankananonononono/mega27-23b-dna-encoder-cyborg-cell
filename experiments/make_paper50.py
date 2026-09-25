@@ -788,6 +788,6 @@ for i, r in enumerate([
 ], 1):
     doc.add_paragraph(f"[{i}] {r}")
 
-doc.save("paper/MEGA27-23b-50p.docx")
+P.save(doc, "paper/MEGA27-23b-50p.docx")
 words = sum(len(p.text.split()) for p in doc.paragraphs)
 print("saved paper/MEGA27-23b-50p.docx, words:", words)
