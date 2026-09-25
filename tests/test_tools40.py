@@ -22,7 +22,7 @@ def test_substitution_channel_rate():
     seq = "ACGT" * 250
     out = CHANNELS["substitution"](seq, 0.5, rng)
     same = sum(1 for a, b in zip(seq, out) if a == b) / len(seq)
-    assert 0.15 < same < 0.45  # 0.25 expected at rate 0.5
+    assert 0.55 < same < 0.70  # 0.625 expected at rate 0.5 (0.5 pass-through + 0.5*0.25 chance match)
 
 def test_seq_tools_basic():
     assert SEQ_TOOLS["gc"]("GGCC") == 1.0
@@ -38,7 +38,8 @@ def test_ecc_tools():
 
 def test_info_tools():
     assert INFO_TOOLS["rate"](100, 200) == 0.5
-    assert abs(INFO_TOOLS["capacity_binary"](0.5) - 1.0) < 1e-9
+    assert abs(INFO_TOOLS["capacity_binary"](0.5)) < 1e-9  # BSC crossover 0.5 -> zero capacity
+    assert abs(INFO_TOOLS["capacity_binary"](0.0) - 1.0) < 1e-9
     assert INFO_TOOLS["mutual_information"]([0, 0, 1, 1], [0, 0, 1, 1]) > 0.9
 
 def test_met_tools_grid_fba():

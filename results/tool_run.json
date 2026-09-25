@@ -5324,16 +5324,16 @@
   },
   "fba": {
    "group": "metabolic",
-   "v_sen_replicating": 100.0,
-   "v_sen_frozen": 100.0
+   "v_sen_replicating_g1": 100.0,
+   "v_sen_frozen_g0": 144.5
   },
   "fva": {
    "group": "metabolic",
    "v_sen_at_biofrac": {
-    "0.0": 100.0,
-    "0.25": 100.0,
-    "0.5": 100.0,
-    "0.75": 100.0,
+    "0.0": 144.5,
+    "0.25": 133.375,
+    "0.5": 122.25,
+    "0.75": 111.125,
     "1.0": 100.0
    }
   },
@@ -5344,45 +5344,44 @@
     "gly": 0.0,
     "tca": 0.0,
     "etc": 0.0,
-    "atm": 100.0,
-    "bio": 100.0,
+    "atm": 100.5,
+    "bio": 144.5,
     "sen": -0.0
    }
   },
   "moma": {
    "group": "metabolic",
-   "sq_flux_shift_repl_to_frozen": 99.918
+   "sq_flux_shift_repl_to_frozen": 2481.25
   },
   "reallocation_identity": {
    "group": "metabolic",
-   "v0_minus_vg_at_g05": 0.0
+   "v0_minus_v05": 22.25,
+   "identity_rhs": "g (a_bio + b_bio e_P + c_bio e_H) / k_sen (exact, see metabolism_identity.json)"
   },
   "shadow_prices": {
    "group": "metabolic",
-   "note": "LP dual extraction",
-   "sens": {
-    "upt": "n/a (LP duals via sensitivity of bounds)",
-    "gly": "n/a (LP duals via sensitivity of bounds)",
-    "tca": "n/a (LP duals via sensitivity of bounds)",
-    "etc": "n/a (LP duals via sensitivity of bounds)",
-    "atm": "n/a (LP duals via sensitivity of bounds)",
-    "bio": "n/a (LP duals via sensitivity of bounds)",
-    "sen": "n/a (LP duals via sensitivity of bounds)"
+   "d_vsen_per_unit_bound_relaxation": {
+    "upt": 14.5,
+    "gly": 0.0,
+    "tca": 0.0,
+    "etc": 0.0,
+    "atm": 0.0,
+    "bio": 0.0,
+    "sen": 0.0
    }
   },
   "uptake_scan": {
    "group": "metabolic",
    "v_sen_by_uptake_bound": {
-    "1": 0.0,
-    "5": 28.0,
-    "10": 100.0,
-    "20": 100.0
+    "1": 14.0,
+    "5": 72.0,
+    "10": 144.5,
+    "20": 289.5
    }
   },
   "yield": {
    "group": "metabolic",
-   "sensor_per_uptake": 5.0,
-   "note": "flux cap 100; uptake bound scan at 1-20"
+   "sensor_per_uptake_g0_uptake10": 14.45
   }
  }
 }

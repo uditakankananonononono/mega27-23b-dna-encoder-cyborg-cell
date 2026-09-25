@@ -90,40 +90,43 @@ y = [ord(c) % 4 for a in accs[:10] for c in payloads[a][1:201]]
 report["tools"]["mutual_information"] = {"group": "info", "lag1_mi_bits": round(INFO_TOOLS["mutual_information"](x, y), 5)}
 report["tools"]["hamming_bound"] = {"group": "info", "checks": {f"n{n}k{k}t{t}": INFO_TOOLS["hamming_bound"](n, k, t) for n, k, t in ((24, 16, 1), (24, 16, 2), (48, 32, 2))}}
 
-# --- 8 metabolic tools on the real LP model ---
-S = stoich_matrix()
-def solve(g_bio=1.0, knockout=None, upt_bound=None):
-    m = lambda n: MET.index(n)
-    A_eq, b_eq = S.copy(), np.zeros(len(MET))
-    for ext in ("X_ext", "S_ext", "Z", "BIO"):
-        A_eq[m(ext)] = 0.0
-    c = np.zeros(len(RXN)); c[RXN.index("sen")] = -1.0
-    bounds = [(0, 100)] * len(RXN)
-    if upt_bound is not None: bounds[RXN.index("upt")] = (0, upt_bound)
-    bounds[RXN.index("bio")] = (g_bio, g_bio) if g_bio else (0, 0)
-    if knockout is not None: bounds[knockout] = (0, 0)
-    r = linprog(c, A_eq=A_eq, b_eq=b_eq, bounds=bounds, method="highs")
-    return (-r.fun if r.success else 0.0), (r.x if r.success else None)
-
-v_full, x_full = solve(1.0); v_frozen, x_frozen = solve(0.0)
-report["tools"]["fba"] = {"group": "metabolic", "v_sen_replicating": round(v_full, 4), "v_sen_frozen": round(v_frozen, 4)}
-report["tools"]["fva"] = {"group": "metabolic", "v_sen_at_biofrac": {str(f): round(solve(f)[0], 4) for f in (0.0, 0.25, 0.5, 0.75, 1.0)}}
-ko = {RXN[j]: round(solve(1.0, knockout=j)[0], 4) for j in range(len(RXN))}
-report["tools"]["knockout_scan"] = {"group": "metabolic", "v_sen_by_knockout": ko}
-v_mom, x_mom = solve(0.0)
-report["tools"]["moma"] = {"group": "metabolic", "sq_flux_shift_repl_to_frozen": round(float(np.sum((np.array(x_full) - np.array(x_mom)) ** 2)), 4)}
-report["tools"]["reallocation_identity"] = {"group": "metabolic", "v0_minus_vg_at_g05": round(solve(0.0)[0] - solve(0.5)[0], 6)}
-shadow = {}
-for j, rxn in enumerate(RXN):
-    lo = [0] * len(RXN); lo[j] = 1
-    c = np.zeros(len(RXN)); c[RXN.index("sen")] = -1.0
-    A_eq2, b_eq2 = S.copy(), np.zeros(len(MET))
-    for ext in ("X_ext", "S_ext", "Z", "BIO"): A_eq2[MET.index(ext)] = 0.0
-    b2 = [(0, 100)] * len(RXN)
-    shadow[rxn] = "n/a (LP duals via sensitivity of bounds)"
-report["tools"]["shadow_prices"] = {"group": "metabolic", "note": "LP dual extraction", "sens": shadow}
-report["tools"]["uptake_scan"] = {"group": "metabolic", "v_sen_by_uptake_bound": {str(u): round(solve(1.0, upt_bound=u)[0], 4) for u in (1, 5, 10, 20)}}
-report["tools"]["yield"] = {"group": "metabolic", "sensor_per_uptake": round(v_frozen / 20, 5), "note": "flux cap 100; uptake bound scan at 1-20"}
+# --- 8 metabolic tools on the real LP model (library solve_fba) ---
+from dnacell.metabolism import solve_fba
+def vsen(g, **kw):
+    x, _ = solve_fba(g, **kw)
+    return float(x[RXN.index("sen")])
+report["tools"]["fba"] = {"group": "metabolic", "v_sen_replicating_g1": round(vsen(1.0), 4), "v_sen_frozen_g0": round(vsen(0.0), 4)}
+report["tools"]["fva"] = {"group": "metabolic", "v_sen_at_biofrac": {str(f): round(vsen(f), 4) for f in (0.0, 0.25, 0.5, 0.75, 1.0)}}
+def vsen_ko(j):
+    import numpy as _np
+    from scipy.optimize import linprog as _lp
+    S = stoich_matrix(); c = _np.zeros(len(RXN)); c[RXN.index("sen")] = -1.0
+    A_eq, b_eq = S.copy(), _np.zeros(len(MET))
+    for ext in ("S_ext", "X_ext", "Z", "BIO"): A_eq[MET.index(ext)] = 0.0
+    bounds = [(0, 10), (0, None), (0, None), (0, None), (1, None), (1, None), (0, 1e6)]
+    bounds[j] = (0, 0)
+    r = _lp(c, A_eq=A_eq, b_eq=b_eq, bounds=bounds, method="highs")
+    return round(-r.fun if r.success else 0.0, 4)
+report["tools"]["knockout_scan"] = {"group": "metabolic", "v_sen_by_knockout": {RXN[j]: vsen_ko(j) for j in range(len(RXN))}}
+x1, _ = solve_fba(1.0); x0, _ = solve_fba(0.0)
+report["tools"]["moma"] = {"group": "metabolic", "sq_flux_shift_repl_to_frozen": round(float(np.sum((x1 - x0) ** 2)), 4)}
+report["tools"]["reallocation_identity"] = {"group": "metabolic",
+    "v0_minus_v05": round(vsen(0.0) - vsen(0.5), 6),
+    "identity_rhs": "g (a_bio + b_bio e_P + c_bio e_H) / k_sen (exact, see metabolism_identity.json)"}
+def shadow(j):
+    base = vsen(1.0)
+    import numpy as _np
+    from scipy.optimize import linprog as _lp
+    S = stoich_matrix(); c = _np.zeros(len(RXN)); c[RXN.index("sen")] = -1.0
+    A_eq, b_eq = S.copy(), _np.zeros(len(MET))
+    for ext in ("S_ext", "X_ext", "Z", "BIO"): A_eq[MET.index(ext)] = 0.0
+    bounds = [(0, 10), (0, None), (0, None), (0, None), (1, None), (1, None), (0, 1e6)]
+    l, u = bounds[j]; bounds[j] = (l, (u + 1) if u is not None else None)
+    r = _lp(c, A_eq=A_eq, b_eq=b_eq, bounds=bounds, method="highs")
+    return round((-r.fun if r.success else 0.0) - base, 4)
+report["tools"]["shadow_prices"] = {"group": "metabolic", "d_vsen_per_unit_bound_relaxation": {RXN[j]: shadow(j) for j in range(len(RXN))}}
+report["tools"]["uptake_scan"] = {"group": "metabolic", "v_sen_by_uptake_bound": {str(u): round(vsen(0.0, uptake_max=u), 4) for u in (1, 5, 10, 20)}}
+report["tools"]["yield"] = {"group": "metabolic", "sensor_per_uptake_g0_uptake10": round(vsen(0.0) / 10, 5)}
 
 json.dump(report, open("results/tool_run.json", "w"), indent=1)
 print("tools run:", len(report["tools"]), "accessions:", report["n_accessions"])
