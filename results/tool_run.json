@@ -5324,17 +5324,17 @@
   },
   "fba": {
    "group": "metabolic",
-   "v_sen_replicating": 16.4,
-   "v_sen_frozen": 20.0
+   "v_sen_replicating": 100.0,
+   "v_sen_frozen": 100.0
   },
   "fva": {
    "group": "metabolic",
    "v_sen_at_biofrac": {
-    "0.0": 20.0,
-    "0.25": 20.0,
-    "0.5": 20.0,
-    "0.75": 19.55,
-    "1.0": 16.4
+    "0.0": 100.0,
+    "0.25": 100.0,
+    "0.5": 100.0,
+    "0.75": 100.0,
+    "1.0": 100.0
    }
   },
   "knockout_scan": {
@@ -5344,14 +5344,14 @@
     "gly": 0.0,
     "tca": 0.0,
     "etc": 0.0,
-    "atm": 16.4,
-    "bio": 20.0,
+    "atm": 100.0,
+    "bio": 100.0,
     "sen": -0.0
    }
   },
   "moma": {
    "group": "metabolic",
-   "sq_flux_shift_repl_to_frozen": 71.0923
+   "sq_flux_shift_repl_to_frozen": 99.918
   },
   "reallocation_identity": {
    "group": "metabolic",
@@ -5374,14 +5374,15 @@
    "group": "metabolic",
    "v_sen_by_uptake_bound": {
     "1": 0.0,
-    "5": 16.4,
-    "10": 16.4,
-    "20": 16.4
+    "5": 28.0,
+    "10": 100.0,
+    "20": 100.0
    }
   },
   "yield": {
    "group": "metabolic",
-   "sensor_per_uptake": 1.0
+   "sensor_per_uptake": 5.0,
+   "note": "flux cap 100; uptake bound scan at 1-20"
   }
  }
 }

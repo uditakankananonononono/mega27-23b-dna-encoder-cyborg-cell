@@ -42,8 +42,11 @@ def test_info_tools():
     assert INFO_TOOLS["mutual_information"]([0, 0, 1, 1], [0, 0, 1, 1]) > 0.9
 
 def test_met_tools_grid_fba():
-    S = [[1, -1]]  # one metabolite: v1 = v2
-    best, v = MET_TOOLS["fba"](S, [0, 1], [0, 0], [3, 3])
-    assert best == 3 and v == (3, 3)
-    ko = MET_TOOLS["knockout_scan"](S, [0, 1], [0, 0], [3, 3])
-    assert ko[0] == 0 and ko[1] == 3
+    # M1: v1 - v2 - v3 = 0 (v1 source, v2/v3 parallel sinks), objective on v2
+    S = [[1, -1, -1]]
+    best, v = MET_TOOLS["fba"](S, [0, 1, 0], [0, 0, 0], [3, 3, 3])
+    assert best == 3 and v[0] == 3 and v[1] == 3 and v[2] == 0
+    ko = MET_TOOLS["knockout_scan"](S, [0, 1, 0], [0, 0, 0], [3, 3, 3])
+    assert ko[0] == 0          # source essential
+    assert ko[1] == 0          # objective flux knocked out
+    assert ko[2] == 3          # bypass sink non-essential

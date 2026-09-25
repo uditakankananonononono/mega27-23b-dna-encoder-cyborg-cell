@@ -98,7 +98,7 @@ def solve(g_bio=1.0, knockout=None, upt_bound=None):
     for ext in ("X_ext", "S_ext", "Z", "BIO"):
         A_eq[m(ext)] = 0.0
     c = np.zeros(len(RXN)); c[RXN.index("sen")] = -1.0
-    bounds = [(0, 20)] * len(RXN)
+    bounds = [(0, 100)] * len(RXN)
     if upt_bound is not None: bounds[RXN.index("upt")] = (0, upt_bound)
     bounds[RXN.index("bio")] = (g_bio, g_bio) if g_bio else (0, 0)
     if knockout is not None: bounds[knockout] = (0, 0)
@@ -119,11 +119,11 @@ for j, rxn in enumerate(RXN):
     c = np.zeros(len(RXN)); c[RXN.index("sen")] = -1.0
     A_eq2, b_eq2 = S.copy(), np.zeros(len(MET))
     for ext in ("X_ext", "S_ext", "Z", "BIO"): A_eq2[MET.index(ext)] = 0.0
-    b2 = [(max(0, l), u) for l, u in [(0, 20)] * len(RXN)]
+    b2 = [(0, 100)] * len(RXN)
     shadow[rxn] = "n/a (LP duals via sensitivity of bounds)"
 report["tools"]["shadow_prices"] = {"group": "metabolic", "note": "LP dual extraction", "sens": shadow}
 report["tools"]["uptake_scan"] = {"group": "metabolic", "v_sen_by_uptake_bound": {str(u): round(solve(1.0, upt_bound=u)[0], 4) for u in (1, 5, 10, 20)}}
-report["tools"]["yield"] = {"group": "metabolic", "sensor_per_uptake": round(v_frozen / 20, 5)}
+report["tools"]["yield"] = {"group": "metabolic", "sensor_per_uptake": round(v_frozen / 20, 5), "note": "flux cap 100; uptake bound scan at 1-20"}
 
 json.dump(report, open("results/tool_run.json", "w"), indent=1)
 print("tools run:", len(report["tools"]), "accessions:", report["n_accessions"])
