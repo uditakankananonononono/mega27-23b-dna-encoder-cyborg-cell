@@ -1,0 +1,652 @@
+[
+ {
+  "accession": "NZ_JAGGIP010000078.1",
+  "desc": "NZ_JAGGIP010000078.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_78_length_401_cov_50",
+  "length": 401
+ },
+ {
+  "accession": "NZ_JAGGIP010000077.1",
+  "desc": "NZ_JAGGIP010000077.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_77_length_423_cov_2.",
+  "length": 423
+ },
+ {
+  "accession": "NZ_JAGGIP010000075.1",
+  "desc": "NZ_JAGGIP010000075.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_75_length_531_cov_20",
+  "length": 531
+ },
+ {
+  "accession": "NZ_JAGGIP010000072.1",
+  "desc": "NZ_JAGGIP010000072.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_72_length_595_cov_23",
+  "length": 595
+ },
+ {
+  "accession": "NZ_JAGGIP010000071.1",
+  "desc": "NZ_JAGGIP010000071.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_71_length_706_cov_11",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JAGGIP010000070.1",
+  "desc": "NZ_JAGGIP010000070.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_70_length_734_cov_29",
+  "length": 734
+ },
+ {
+  "accession": "NZ_JAGGIP010000069.1",
+  "desc": "NZ_JAGGIP010000069.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_69_length_848_cov_31",
+  "length": 848
+ },
+ {
+  "accession": "NZ_JAGGIP010000068.1",
+  "desc": "NZ_JAGGIP010000068.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_68_length_884_cov_23",
+  "length": 884
+ },
+ {
+  "accession": "NZ_JAGGIP010000067.1",
+  "desc": "NZ_JAGGIP010000067.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_67_length_1031_cov_2",
+  "length": 1031
+ },
+ {
+  "accession": "NZ_JAGGIP010000066.1",
+  "desc": "NZ_JAGGIP010000066.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_66_length_1070_cov_1",
+  "length": 1070
+ },
+ {
+  "accession": "NZ_JAGGIP010000065.1",
+  "desc": "NZ_JAGGIP010000065.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_65_length_1133_cov_2",
+  "length": 1133
+ },
+ {
+  "accession": "NZ_JAGGIP010000064.1",
+  "desc": "NZ_JAGGIP010000064.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_64_length_1167_cov_3",
+  "length": 1167
+ },
+ {
+  "accession": "NZ_JAGGIP010000063.1",
+  "desc": "NZ_JAGGIP010000063.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_63_length_1255_cov_6",
+  "length": 1255
+ },
+ {
+  "accession": "NZ_JAGGIP010000062.1",
+  "desc": "NZ_JAGGIP010000062.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_62_length_1345_cov_3",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JACASP010000102.1",
+  "desc": "NZ_JACASP010000102.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:102:ECC3.00102:28.ECC3.1,",
+  "length": 474
+ },
+ {
+  "accession": "NZ_JACASP010000101.1",
+  "desc": "NZ_JACASP010000101.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:101:ECC3.00101:28.ECC3.1,",
+  "length": 484
+ },
+ {
+  "accession": "NZ_JACASP010000099.1",
+  "desc": "NZ_JACASP010000099.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:99:ECC3.00099:28.ECC3.1, ",
+  "length": 645
+ },
+ {
+  "accession": "NZ_JACASP010000098.1",
+  "desc": "NZ_JACASP010000098.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:98:ECC3.00098:28.ECC3.1, ",
+  "length": 672
+ },
+ {
+  "accession": "NZ_JACASP010000097.1",
+  "desc": "NZ_JACASP010000097.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:97:ECC3.00097:28.ECC3.1, ",
+  "length": 679
+ },
+ {
+  "accession": "NZ_JACASP010000096.1",
+  "desc": "NZ_JACASP010000096.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:96:ECC3.00096:28.ECC3.1, ",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JACASP010000095.1",
+  "desc": "NZ_JACASP010000095.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:95:ECC3.00095:28.ECC3.1, ",
+  "length": 733
+ },
+ {
+  "accession": "NZ_JACASP010000094.1",
+  "desc": "NZ_JACASP010000094.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:94:ECC3.00094:28.ECC3.1, ",
+  "length": 772
+ },
+ {
+  "accession": "NZ_JACASP010000093.1",
+  "desc": "NZ_JACASP010000093.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:93:ECC3.00093:28.ECC3.1, ",
+  "length": 991
+ },
+ {
+  "accession": "NZ_JACASP010000092.1",
+  "desc": "NZ_JACASP010000092.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:92:ECC3.00092:28.ECC3.1, ",
+  "length": 1028
+ },
+ {
+  "accession": "NZ_JACASP010000091.1",
+  "desc": "NZ_JACASP010000091.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:91:ECC3.00091:28.ECC3.1, ",
+  "length": 1031
+ },
+ {
+  "accession": "NZ_JACASP010000090.1",
+  "desc": "NZ_JACASP010000090.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:90:ECC3.00090:28.ECC3.1, ",
+  "length": 1095
+ },
+ {
+  "accession": "NZ_JACASP010000089.1",
+  "desc": "NZ_JACASP010000089.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:89:ECC3.00089:28.ECC3.1, ",
+  "length": 1210
+ },
+ {
+  "accession": "NZ_JACASP010000088.1",
+  "desc": "NZ_JACASP010000088.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:88:ECC3.00088:28.ECC3.1, ",
+  "length": 1232
+ },
+ {
+  "accession": "NZ_JACASP010000087.1",
+  "desc": "NZ_JACASP010000087.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:87:ECC3.00087:28.ECC3.1, ",
+  "length": 1247
+ },
+ {
+  "accession": "NZ_JACASP010000086.1",
+  "desc": "NZ_JACASP010000086.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:86:ECC3.00086:28.ECC3.1, ",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JACASP010000085.1",
+  "desc": "NZ_JACASP010000085.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:85:ECC3.00085:28.ECC3.1, ",
+  "length": 1442
+ },
+ {
+  "accession": "NZ_JACASP010000084.1",
+  "desc": "NZ_JACASP010000084.1 Escherichia coli K-12 strain C3 substr. 5.1 28.ECC3.1:84:ECC3.00084:28.ECC3.1, ",
+  "length": 1466
+ },
+ {
+  "accession": "NZ_JACASQ010000105.1",
+  "desc": "NZ_JACASQ010000105.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:105:ECC73.00105:28.ECC7",
+  "length": 458
+ },
+ {
+  "accession": "NZ_JACASQ010000104.1",
+  "desc": "NZ_JACASQ010000104.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:104:ECC73.00104:28.ECC7",
+  "length": 463
+ },
+ {
+  "accession": "NZ_JACASQ010000103.1",
+  "desc": "NZ_JACASQ010000103.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:103:ECC73.00103:28.ECC7",
+  "length": 512
+ },
+ {
+  "accession": "NZ_JACASQ010000101.1",
+  "desc": "NZ_JACASQ010000101.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:101:ECC73.00101:28.ECC7",
+  "length": 636
+ },
+ {
+  "accession": "NZ_JACASQ010000100.1",
+  "desc": "NZ_JACASQ010000100.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:100:ECC73.00100:28.ECC7",
+  "length": 645
+ },
+ {
+  "accession": "NZ_JACASQ010000099.1",
+  "desc": "NZ_JACASQ010000099.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:99:ECC73.00099:28.ECC73",
+  "length": 679
+ },
+ {
+  "accession": "NZ_JACASQ010000098.1",
+  "desc": "NZ_JACASQ010000098.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:98:ECC73.00098:28.ECC73",
+  "length": 693
+ },
+ {
+  "accession": "NZ_JACASQ010000097.1",
+  "desc": "NZ_JACASQ010000097.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:97:ECC73.00097:28.ECC73",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JACASQ010000096.1",
+  "desc": "NZ_JACASQ010000096.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:96:ECC73.00096:28.ECC73",
+  "length": 991
+ },
+ {
+  "accession": "NZ_JACASQ010000095.1",
+  "desc": "NZ_JACASQ010000095.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:95:ECC73.00095:28.ECC73",
+  "length": 1006
+ },
+ {
+  "accession": "NZ_JACASQ010000094.1",
+  "desc": "NZ_JACASQ010000094.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:94:ECC73.00094:28.ECC73",
+  "length": 1031
+ },
+ {
+  "accession": "NZ_JACASQ010000093.1",
+  "desc": "NZ_JACASQ010000093.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:93:ECC73.00093:28.ECC73",
+  "length": 1095
+ },
+ {
+  "accession": "NZ_JACASQ010000092.1",
+  "desc": "NZ_JACASQ010000092.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:92:ECC73.00092:28.ECC73",
+  "length": 1199
+ },
+ {
+  "accession": "NZ_JACASQ010000091.1",
+  "desc": "NZ_JACASQ010000091.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:91:ECC73.00091:28.ECC73",
+  "length": 1206
+ },
+ {
+  "accession": "NZ_JACASQ010000090.1",
+  "desc": "NZ_JACASQ010000090.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:90:ECC73.00090:28.ECC73",
+  "length": 1210
+ },
+ {
+  "accession": "NZ_JACASQ010000089.1",
+  "desc": "NZ_JACASQ010000089.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:89:ECC73.00089:28.ECC73",
+  "length": 1232
+ },
+ {
+  "accession": "NZ_JACASQ010000088.1",
+  "desc": "NZ_JACASQ010000088.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:88:ECC73.00088:28.ECC73",
+  "length": 1235
+ },
+ {
+  "accession": "NZ_JACASQ010000087.1",
+  "desc": "NZ_JACASQ010000087.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:87:ECC73.00087:28.ECC73",
+  "length": 1301
+ },
+ {
+  "accession": "NZ_JACASQ010000086.1",
+  "desc": "NZ_JACASQ010000086.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:86:ECC73.00086:28.ECC73",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JACASQ010000085.1",
+  "desc": "NZ_JACASQ010000085.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:85:ECC73.00085:28.ECC73",
+  "length": 1378
+ },
+ {
+  "accession": "NZ_JACASQ010000084.1",
+  "desc": "NZ_JACASQ010000084.1 Escherichia coli K-12 strain C73 substr. 7.1 28.ECC73.1:84:ECC73.00084:28.ECC73",
+  "length": 1466
+ },
+ {
+  "accession": "NZ_JACEET010000064.1",
+  "desc": "NZ_JACEET010000064.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_65_length_541_cov_75",
+  "length": 541
+ },
+ {
+  "accession": "NZ_JACEET010000063.1",
+  "desc": "NZ_JACEET010000063.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_64_length_563_cov_41",
+  "length": 563
+ },
+ {
+  "accession": "NZ_JACEET010000062.1",
+  "desc": "NZ_JACEET010000062.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_63_length_597_cov_37",
+  "length": 597
+ },
+ {
+  "accession": "NZ_JACEET010000060.1",
+  "desc": "NZ_JACEET010000060.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_61_length_706_cov_27",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JACEET010000059.1",
+  "desc": "NZ_JACEET010000059.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_60_length_754_cov_14",
+  "length": 754
+ },
+ {
+  "accession": "NZ_JACEET010000058.1",
+  "desc": "NZ_JACEET010000058.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_59_length_848_cov_65",
+  "length": 848
+ },
+ {
+  "accession": "NZ_JACEET010000056.1",
+  "desc": "NZ_JACEET010000056.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_57_length_1255_cov_1",
+  "length": 1255
+ },
+ {
+  "accession": "NZ_JACEET010000054.1",
+  "desc": "NZ_JACEET010000054.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 NODE_55_length_1345_cov_1",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_WSNT01000025.1",
+  "desc": "NZ_WSNT01000025.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 14810_14811, whole genome sh",
+  "length": 1045
+ },
+ {
+  "accession": "NZ_WSNT01000021.1",
+  "desc": "NZ_WSNT01000021.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 11412_11413, whole genome sh",
+  "length": 1128
+ },
+ {
+  "accession": "NZ_WSNT01000020.1",
+  "desc": "NZ_WSNT01000020.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 10092_10093, whole genome sh",
+  "length": 1133
+ },
+ {
+  "accession": "NZ_WSNT01000017.1",
+  "desc": "NZ_WSNT01000017.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 9644_9645, whole genome shot",
+  "length": 1031
+ },
+ {
+  "accession": "NZ_WSNT01000013.1",
+  "desc": "NZ_WSNT01000013.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 6928_6929, whole genome shot",
+  "length": 1026
+ },
+ {
+  "accession": "NZ_WSNT01000012.1",
+  "desc": "NZ_WSNT01000012.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 6146_6147, whole genome shot",
+  "length": 1255
+ },
+ {
+  "accession": "NZ_WSNT01000011.1",
+  "desc": "NZ_WSNT01000011.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 5562_5563, whole genome shot",
+  "length": 1263
+ },
+ {
+  "accession": "NZ_WSNT01000002.1",
+  "desc": "NZ_WSNT01000002.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 582_583, whole genome shotgu",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JCBAAR010000066.1",
+  "desc": "NZ_JCBAAR010000066.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig66, whole gen",
+  "length": 513
+ },
+ {
+  "accession": "NZ_JCBAAR010000065.1",
+  "desc": "NZ_JCBAAR010000065.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig65, whole gen",
+  "length": 533
+ },
+ {
+  "accession": "NZ_JCBAAR010000064.1",
+  "desc": "NZ_JCBAAR010000064.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig64, whole gen",
+  "length": 569
+ },
+ {
+  "accession": "NZ_JCBAAR010000062.1",
+  "desc": "NZ_JCBAAR010000062.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig62, whole gen",
+  "length": 601
+ },
+ {
+  "accession": "NZ_JCBAAR010000061.1",
+  "desc": "NZ_JCBAAR010000061.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig61, whole gen",
+  "length": 676
+ },
+ {
+  "accession": "NZ_JCBAAR010000060.1",
+  "desc": "NZ_JCBAAR010000060.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig60, whole gen",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JCBAAR010000059.1",
+  "desc": "NZ_JCBAAR010000059.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig59, whole gen",
+  "length": 734
+ },
+ {
+  "accession": "NZ_JCBAAR010000058.1",
+  "desc": "NZ_JCBAAR010000058.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig58, whole gen",
+  "length": 754
+ },
+ {
+  "accession": "NZ_JCBAAR010000057.1",
+  "desc": "NZ_JCBAAR010000057.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig57, whole gen",
+  "length": 848
+ },
+ {
+  "accession": "NZ_JCBAAR010000055.1",
+  "desc": "NZ_JCBAAR010000055.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig55, whole gen",
+  "length": 1255
+ },
+ {
+  "accession": "NZ_JCBAAR010000054.1",
+  "desc": "NZ_JCBAAR010000054.1 Escherichia coli str. K-12 substr. MG1655 strain K-12 RRT10_contig54, whole gen",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JACASS010000103.1",
+  "desc": "NZ_JACASS010000103.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:103:ECC84.00103:28.ECC8",
+  "length": 587
+ },
+ {
+  "accession": "NZ_JACASS010000102.1",
+  "desc": "NZ_JACASS010000102.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:102:ECC84.00102:28.ECC8",
+  "length": 636
+ },
+ {
+  "accession": "NZ_JACASS010000101.1",
+  "desc": "NZ_JACASS010000101.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:101:ECC84.00101:28.ECC8",
+  "length": 645
+ },
+ {
+  "accession": "NZ_JACASS010000100.1",
+  "desc": "NZ_JACASS010000100.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:100:ECC84.00100:28.ECC8",
+  "length": 679
+ },
+ {
+  "accession": "NZ_JACASS010000099.1",
+  "desc": "NZ_JACASS010000099.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:99:ECC84.00099:28.ECC84",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JACASS010000098.1",
+  "desc": "NZ_JACASS010000098.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:98:ECC84.00098:28.ECC84",
+  "length": 926
+ },
+ {
+  "accession": "NZ_JACASS010000097.1",
+  "desc": "NZ_JACASS010000097.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:97:ECC84.00097:28.ECC84",
+  "length": 991
+ },
+ {
+  "accession": "NZ_JACASS010000096.1",
+  "desc": "NZ_JACASS010000096.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:96:ECC84.00096:28.ECC84",
+  "length": 1031
+ },
+ {
+  "accession": "NZ_JACASS010000095.1",
+  "desc": "NZ_JACASS010000095.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:95:ECC84.00095:28.ECC84",
+  "length": 1054
+ },
+ {
+  "accession": "NZ_JACASS010000094.1",
+  "desc": "NZ_JACASS010000094.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:94:ECC84.00094:28.ECC84",
+  "length": 1095
+ },
+ {
+  "accession": "NZ_JACASS010000093.1",
+  "desc": "NZ_JACASS010000093.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:93:ECC84.00093:28.ECC84",
+  "length": 1206
+ },
+ {
+  "accession": "NZ_JACASS010000092.1",
+  "desc": "NZ_JACASS010000092.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:92:ECC84.00092:28.ECC84",
+  "length": 1210
+ },
+ {
+  "accession": "NZ_JACASS010000091.1",
+  "desc": "NZ_JACASS010000091.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:91:ECC84.00091:28.ECC84",
+  "length": 1232
+ },
+ {
+  "accession": "NZ_JACASS010000090.1",
+  "desc": "NZ_JACASS010000090.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:90:ECC84.00090:28.ECC84",
+  "length": 1301
+ },
+ {
+  "accession": "NZ_JACASS010000089.1",
+  "desc": "NZ_JACASS010000089.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:89:ECC84.00089:28.ECC84",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JACASS010000088.1",
+  "desc": "NZ_JACASS010000088.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:88:ECC84.00088:28.ECC84",
+  "length": 1378
+ },
+ {
+  "accession": "NZ_JACASS010000087.1",
+  "desc": "NZ_JACASS010000087.1 Escherichia coli K-12 strain C84 substr. 7.3 28.ECC84.1:87:ECC84.00087:28.ECC84",
+  "length": 1466
+ },
+ {
+  "accession": "PQ790158.1",
+  "desc": "PQ790158.1 Escherichia coli K-12 fructokinase gene, complete cds",
+  "length": 909
+ },
+ {
+  "accession": "NZ_JACASR010000111.1",
+  "desc": "NZ_JACASR010000111.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:111:ECC76.00111:28.ECC7",
+  "length": 404
+ },
+ {
+  "accession": "NZ_JACASR010000110.1",
+  "desc": "NZ_JACASR010000110.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:110:ECC76.00110:28.ECC7",
+  "length": 412
+ },
+ {
+  "accession": "NZ_JACASR010000109.1",
+  "desc": "NZ_JACASR010000109.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:109:ECC76.00109:28.ECC7",
+  "length": 439
+ },
+ {
+  "accession": "NZ_JACASR010000108.1",
+  "desc": "NZ_JACASR010000108.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:108:ECC76.00108:28.ECC7",
+  "length": 458
+ },
+ {
+  "accession": "NZ_JACASR010000107.1",
+  "desc": "NZ_JACASR010000107.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:107:ECC76.00107:28.ECC7",
+  "length": 474
+ },
+ {
+  "accession": "NZ_JACASR010000105.1",
+  "desc": "NZ_JACASR010000105.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:105:ECC76.00105:28.ECC7",
+  "length": 531
+ },
+ {
+  "accession": "NZ_JACASR010000104.1",
+  "desc": "NZ_JACASR010000104.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:104:ECC76.00104:28.ECC7",
+  "length": 555
+ },
+ {
+  "accession": "NZ_JACASR010000103.1",
+  "desc": "NZ_JACASR010000103.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:103:ECC76.00103:28.ECC7",
+  "length": 657
+ },
+ {
+  "accession": "NZ_JACASR010000100.1",
+  "desc": "NZ_JACASR010000100.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:100:ECC76.00100:28.ECC7",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JACASR010000099.1",
+  "desc": "NZ_JACASR010000099.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:99:ECC76.00099:28.ECC76",
+  "length": 769
+ },
+ {
+  "accession": "NZ_JACASR010000098.1",
+  "desc": "NZ_JACASR010000098.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:98:ECC76.00098:28.ECC76",
+  "length": 926
+ },
+ {
+  "accession": "NZ_JACASR010000097.1",
+  "desc": "NZ_JACASR010000097.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:97:ECC76.00097:28.ECC76",
+  "length": 991
+ },
+ {
+  "accession": "NZ_JACASR010000096.1",
+  "desc": "NZ_JACASR010000096.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:96:ECC76.00096:28.ECC76",
+  "length": 1028
+ },
+ {
+  "accession": "NZ_JACASR010000095.1",
+  "desc": "NZ_JACASR010000095.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:95:ECC76.00095:28.ECC76",
+  "length": 1067
+ },
+ {
+  "accession": "NZ_JACASR010000094.1",
+  "desc": "NZ_JACASR010000094.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:94:ECC76.00094:28.ECC76",
+  "length": 1095
+ },
+ {
+  "accession": "NZ_JACASR010000093.1",
+  "desc": "NZ_JACASR010000093.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:93:ECC76.00093:28.ECC76",
+  "length": 1127
+ },
+ {
+  "accession": "NZ_JACASR010000092.1",
+  "desc": "NZ_JACASR010000092.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:92:ECC76.00092:28.ECC76",
+  "length": 1159
+ },
+ {
+  "accession": "NZ_JACASR010000091.1",
+  "desc": "NZ_JACASR010000091.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:91:ECC76.00091:28.ECC76",
+  "length": 1210
+ },
+ {
+  "accession": "NZ_JACASR010000090.1",
+  "desc": "NZ_JACASR010000090.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:90:ECC76.00090:28.ECC76",
+  "length": 1232
+ },
+ {
+  "accession": "NZ_JACASR010000089.1",
+  "desc": "NZ_JACASR010000089.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:89:ECC76.00089:28.ECC76",
+  "length": 1345
+ },
+ {
+  "accession": "NZ_JACASR010000088.1",
+  "desc": "NZ_JACASR010000088.1 Escherichia coli K-12 strain C76 substr. 7.2 28.ECC76.1:88:ECC76.00088:28.ECC76",
+  "length": 1466
+ },
+ {
+  "accession": "NZ_JAIXNY010000095.1",
+  "desc": "NZ_JAIXNY010000095.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_97_length_405_cov_6",
+  "length": 405
+ },
+ {
+  "accession": "NZ_JAIXNY010000094.1",
+  "desc": "NZ_JAIXNY010000094.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_96_length_429_cov_2",
+  "length": 429
+ },
+ {
+  "accession": "NZ_JAIXNY010000089.1",
+  "desc": "NZ_JAIXNY010000089.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_91_length_511_cov_4",
+  "length": 511
+ },
+ {
+  "accession": "NZ_JAIXNY010000087.1",
+  "desc": "NZ_JAIXNY010000087.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_89_length_551_cov_8",
+  "length": 551
+ },
+ {
+  "accession": "NZ_JAIXNY010000086.1",
+  "desc": "NZ_JAIXNY010000086.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_88_length_569_cov_4",
+  "length": 569
+ },
+ {
+  "accession": "NZ_JAIXNY010000085.1",
+  "desc": "NZ_JAIXNY010000085.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_87_length_570_cov_1",
+  "length": 570
+ },
+ {
+  "accession": "NZ_JAIXNY010000084.1",
+  "desc": "NZ_JAIXNY010000084.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_84_length_706_cov_1",
+  "length": 706
+ },
+ {
+  "accession": "NZ_JAIXNY010000083.1",
+  "desc": "NZ_JAIXNY010000083.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_83_length_718_cov_1",
+  "length": 718
+ },
+ {
+  "accession": "NZ_JAIXNY010000081.1",
+  "desc": "NZ_JAIXNY010000081.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_81_length_823_cov_1",
+  "length": 823
+ },
+ {
+  "accession": "NZ_JAIXNY010000080.1",
+  "desc": "NZ_JAIXNY010000080.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_80_length_848_cov_5",
+  "length": 848
+ },
+ {
+  "accession": "NZ_JAIXNY010000079.1",
+  "desc": "NZ_JAIXNY010000079.1 Escherichia coli str. K-12 substr. MG1655 strain MMHR1 NODE_79_length_1004_cov_",
+  "length": 1004
+ }
+]
