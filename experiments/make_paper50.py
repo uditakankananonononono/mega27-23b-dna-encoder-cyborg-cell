@@ -706,6 +706,28 @@ for line in [
 ]:
     doc.add_paragraph(line)
 
+
+P.h1(doc, "Additional derivations: information-theoretic bounds of the codec")
+P.h2(doc, "Rate and overhead")
+P.para(doc, "The codec's information rate is payload bits over synthesized nucleotides:")
+P.eq(doc, "10", "R = k_bits / n_nt   [bits per nucleotide]")
+P.para(doc, "With 2 bits per base raw capacity, blocked never-same encoding plus ternary parity costs one check base per block of B data bases, giving the asymptotic rate:")
+P.eq(doc, "11", "R_blocked = 2 B / (B + 1)   ->   2 as B -> infinity")
+P.para(doc, "Derivation: each block of B data bases carries 2B bits and appends 1 parity base, so n = B + 1 nucleotides per block; the rate is 2B/(B+1), monotonically increasing in B with limit 2. Our measured payload rates sit below this bound by the header, primer, and copy-overhead terms, all reported in the benchmark appendix.")
+P.h2(doc, "Majority-vote fusion across copies")
+P.para(doc, "With c independent copies and per-base survival q, the probability that a majority of copies agree on the correct base is:")
+P.eq(doc, "12", "P_mv(c) = sum_{j=ceil(c/2)}^{c} C(c,j) q^j (1-q)^{c-j}")
+P.para(doc, "For c = 3 this reduces to equation (6); for c = 5, P_mv = 10 q^3 (1-q)^2 + 5 q^4 (1-q) + q^5, which at q = 0.99 evaluates to 0.999990 - the quantitative basis of the 5-copy sensitivity arm's 100% recovery.")
+P.h2(doc, "Goldman and Fountain baselines on the same scale")
+P.para(doc, "Goldman-2013 uses base-3 Huffman coding with 4-fold redundancy; its effective rate on our payload is:")
+P.eq(doc, "13", "R_G = (log2 3 / 2) x (1/4) = 0.198 bits/nt   (before indexing overhead)")
+P.para(doc, "DNA Fountain's LT code needs expected overhead epsilon above the payload's k packets to decode:")
+P.eq(doc, "14", "E[n_LT] = k (1 + epsilon),   epsilon ~ 0.05-0.10 at k ~ 10^2-10^3")
+P.para(doc, "At nonzero substitution noise both baselines lose entire blocks (Goldman) or fail the LT belief-propagation rank condition (Fountain); our benchmark measures exactly this, 24 trials per configuration.")
+P.h2(doc, "Error floor from ternary parity")
+P.para(doc, "A parity block of six ternary digits is undetected only when every corrupted digit lands on one of the two wrong values that still satisfies the checksum - per-digit conditional probability 2/3 given corruption, but the checksum constraint removes one degree of freedom, giving the 3^-6 floor of equation (4). Generalizing to block length L:")
+P.eq(doc, "15", "P_undetected(L) = 3^{-(L-1)} (2/3)^0 = 3^{-(L-1)}   worst case, independent corruption")
+
 P.h1(doc, "References")
 for i, r in enumerate([
  "Church, G.M., Gao, Y., Kosuri, S. (2012). Next-generation digital information storage in DNA. Science 337:1628.",
