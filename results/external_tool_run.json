@@ -1,0 +1,553 @@
+{
+ "project": "MEGA27-23b DNA payload encoder (cyborg cell)",
+ "standard": "external research/data tools only (self-written code excluded)",
+ "n_tools_ok": 44,
+ "n_tools_attempted": 45,
+ "tools": [
+  {
+   "tool": "numpy",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.0,
+   "result": {
+    "analysis": "Payload length/GC geometry across 130 contigs",
+    "len_median": 917.5,
+    "gc_mean": 0.5329,
+    "gc_std": 0.0713
+   }
+  },
+  {
+   "tool": "scipy",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.5,
+   "result": {
+    "analysis": "GC distribution KS test + base-composition entropy",
+    "gc_ks_p": 0.0236,
+    "base_entropy_bits": 1.9892
+   }
+  },
+  {
+   "tool": "scikit-learn",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.8,
+   "result": {
+    "analysis": "Coding-potential benchmark: real contigs vs shuffled decoys (4-mer logreg)",
+    "cv_acc": 0.9423
+   }
+  },
+  {
+   "tool": "pandas",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.0,
+   "result": {
+    "analysis": "Per-payload length/GC table",
+    "n": 130,
+    "gc_quantiles": [
+     0.44,
+     0.54,
+     0.636
+    ]
+   }
+  },
+  {
+   "tool": "biopython",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "Biopython: Tm_NN, Sharp-Ecoli CAI, EcoRV/BamHI restriction scan",
+    "mean_tm_60mer": 73.65,
+    "mean_cai": 0.0,
+    "restriction_sites_first50": 32
+   }
+  },
+  {
+   "tool": "pyrodigal",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "Pyrodigal gene prediction on 20 payloads",
+    "genes_per_contig": [
+     2,
+     2,
+     1,
+     2,
+     1,
+     2,
+     1,
+     1,
+     2,
+     1
+    ],
+    "total": 28
+   }
+  },
+  {
+   "tool": "pydna",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 1.1,
+   "result": {
+    "analysis": "pydna in-silico PCR + Gibson-style assembly simulation on a payload",
+    "pcr_product_len": 170,
+    "assembly_candidates": 4
+   }
+  },
+  {
+   "tool": "viennarna",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.3,
+   "result": {
+    "analysis": "ViennaRNA MFE folding of 120nt payload windows (RNA stability)",
+    "mean_mfe_kcal": -29.19,
+    "min_mfe": -53.7
+   }
+  },
+  {
+   "tool": "dna-features-viewer",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.9,
+   "result": {
+    "analysis": "Payload feature map (Benchling-style plasmid view)",
+    "figure": "ext_payload_map.png"
+   }
+  },
+  {
+   "tool": "gensim",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.5,
+   "result": {
+    "analysis": "5-mer Word2Vec over payloads (k-mer embedding space)",
+    "vocab": 1020,
+    "neighbors": [
+     "GCGAT",
+     "CGATG",
+     "TGCGA",
+     "GATGC"
+    ]
+   }
+  },
+  {
+   "tool": "umap-learn",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 20.4,
+   "result": {
+    "analysis": "UMAP of 4-mer payload profiles + 3-cluster structure",
+    "silhouette_k3": 0.2078
+   }
+  },
+  {
+   "tool": "shap",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.2,
+   "result": {
+    "analysis": "SHAP on GC-class k-mer classifier",
+    "top_kmers": [
+     "ggtg",
+     "gcag",
+     "taca",
+     "attt",
+     "atat"
+    ]
+   }
+  },
+  {
+   "tool": "xgboost",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.2,
+   "result": {
+    "analysis": "XGBoost GC-class prediction from 4-mers",
+    "cv_acc": 0.9231
+   }
+  },
+  {
+   "tool": "lightgbm",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 1.7,
+   "result": {
+    "analysis": "LightGBM GC-class prediction from 4-mers",
+    "cv_acc": 0.9308
+   }
+  },
+  {
+   "tool": "hmmlearn",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.0,
+   "result": {
+    "analysis": "2-state categorical HMM along a payload (compositional segmentation)",
+    "state_fractions": [
+     0.575,
+     0.425
+    ],
+    "transmat": [
+     [
+      0.482,
+      0.518
+     ],
+     [
+      0.739,
+      0.261
+     ]
+    ]
+   }
+  },
+  {
+   "tool": "networkx",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.0,
+   "result": {
+    "analysis": "de Bruijn graph (k=3) of a payload contig",
+    "n_nodes": 64,
+    "n_edges": 247,
+    "n_wcc": 1,
+    "eulerian_path_exists": false
+   }
+  },
+  {
+   "tool": "igraph",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "igraph de Bruijn graph metrics",
+    "n_nodes": 64,
+    "avg_path_approx": 2.35
+   }
+  },
+  {
+   "tool": "leidenalg",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "Leiden modules of concatenated-payload k-mer graph",
+    "n_modules": 10
+   }
+  },
+  {
+   "tool": "cdlib",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.2,
+   "result": {
+    "analysis": "cdlib Louvain on payload k-mer graph",
+    "n_communities": 7
+   }
+  },
+  {
+   "tool": "scikit-network",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "scikit-network PageRank over k-mer transition graph",
+    "top_kmer": "CTG",
+    "max_pagerank": 0.03131
+   }
+  },
+  {
+   "tool": "networkit",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 1.5,
+   "result": {
+    "analysis": "NetworKit clustering coefficient on k-mer graph",
+    "mean_cc": 0.1214
+   }
+  },
+  {
+   "tool": "statsmodels",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.2,
+   "result": {
+    "analysis": "OLS: GC ~ log length across payloads",
+    "slope": -0.02157,
+    "slope_p": 0.203
+   }
+  },
+  {
+   "tool": "patsy",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.0,
+   "result": {
+    "analysis": "Patsy formula: GC ~ purine content + log length",
+    "r2": 0.0234
+   }
+  },
+  {
+   "tool": "sympy",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.2,
+   "result": {
+    "analysis": "Symbolic k-mer alphabet size and information content",
+    "k4_alphabet": 256,
+    "bits_per_kmer": 8.0
+   }
+  },
+  {
+   "tool": "matplotlib",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "GC vs length scatter",
+    "figure": "ext_gc_len.png"
+   }
+  },
+  {
+   "tool": "seaborn",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "Base-composition violin plot (60 payloads)",
+    "figure": "ext_base_violin.png"
+   }
+  },
+  {
+   "tool": "plotly",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.2,
+   "result": {
+    "analysis": "Interactive k-mer SVD scatter colored by GC",
+    "figure": "ext_kmer_plotly.html"
+   }
+  },
+  {
+   "tool": "imbalanced-learn",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.3,
+   "result": {
+    "analysis": "SMOTE-balanced prediction of top-quartile GC payloads",
+    "f1": 0.9407,
+    "prevalence": 0.254
+   }
+  },
+  {
+   "tool": "scikit-optimize",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 3.8,
+   "result": {
+    "analysis": "Bayesian RF search for GC-class prediction",
+    "best_acc": 0.9232
+   }
+  },
+  {
+   "tool": "kneed",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.1,
+   "result": {
+    "analysis": "Knee of k-mer frequency spectrum (vocabulary saturation)",
+    "knee_rank": 13
+   }
+  },
+  {
+   "tool": "mygene",
+   "kind": "library+API",
+   "status": "ok",
+   "seconds": 1.4,
+   "result": {
+    "analysis": "MyGene.info E. coli (511145) gene annotation",
+    "n_mapped": 5,
+    "sample_names": [
+     "chromosomal replication initiator protein DnaA",
+     "DNA gyrase subunit B",
+     "RNA polymerase sigma factor RpoD"
+    ]
+   }
+  },
+  {
+   "tool": "gseapy",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.4,
+   "result": {
+    "analysis": "gseapy enrichment-library listing (KEGG sets for payload gene context)",
+    "n_libraries": 228,
+    "kegg_libs": [
+     "KEGG_2013",
+     "KEGG_2015",
+     "KEGG_2016"
+    ]
+   }
+  },
+  {
+   "tool": "gprofiler",
+   "kind": "library+API",
+   "status": "failed",
+   "seconds": 0.9,
+   "error": "Invalid organism: escherichia_coli"
+  },
+  {
+   "tool": "Boruta",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 4.6,
+   "result": {
+    "analysis": "Boruta all-relevant k-mers for GC class",
+    "confirmed": [
+     "aaaa",
+     "aaag",
+     "aaat",
+     "aaca",
+     "aagg",
+     "aagt",
+     "aata",
+     "aatc"
+    ]
+   }
+  },
+  {
+   "tool": "mrmr",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 1.2,
+   "result": {
+    "analysis": "mRMR k-mer selection for GC class",
+    "selected": [
+     "aatc",
+     "ccgc",
+     "agga",
+     "acaa",
+     "ggtg"
+    ]
+   }
+  },
+  {
+   "tool": "yellowbrick",
+   "kind": "library",
+   "status": "ok",
+   "seconds": 0.4,
+   "result": {
+    "analysis": "Yellowbrick k-elbow over payload k-mer clusters",
+    "figure": "ext_kelbow.png"
+   }
+  },
+  {
+   "tool": "NCBI eutils",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.3,
+   "result": {
+    "analysis": "NCBI nuccore query reproducing the 130-payload fetch",
+    "total_available": "9883"
+   }
+  },
+  {
+   "tool": "UniProt",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.8,
+   "result": {
+    "analysis": "UniProt: E. coli DnaA (replication initiator)",
+    "accession": "P03004",
+    "length": 467
+   }
+  },
+  {
+   "tool": "KEGG",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.5,
+   "result": {
+    "analysis": "KEGG pathways for eco:b0001 (dnaA)",
+    "n_pathways": 0,
+    "sample": []
+   }
+  },
+  {
+   "tool": "Ensembl Bacteria",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 1.2,
+   "result": {
+    "analysis": "Ensembl Bacteria lookup for dnaA",
+    "id": "b3702",
+    "desc": "chromosomal replication initiator protein DnaA"
+   }
+  },
+  {
+   "tool": "QuickGO",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.6,
+   "result": {
+    "analysis": "QuickGO annotations for DnaA (P03004)",
+    "n_results": 54,
+    "sample_terms": [
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  },
+  {
+   "tool": "Europe PMC",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.9,
+   "result": {
+    "analysis": "Europe PMC: DNA-data-storage literature (encoder context)",
+    "hitCount": 97404,
+    "sample": [
+     "Polus: a context-aware enhancement framework for DNA storage",
+     "Time Resolved DNA Barcodes for Information Encoding and Dyna",
+     "DNA-GUARD: molecular access control as a physical security l"
+    ]
+   }
+  },
+  {
+   "tool": "Reactome",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.9,
+   "result": {
+    "analysis": "Reactome search for E. coli dnaA",
+    "http": 200,
+    "bytes": 399
+   }
+  },
+  {
+   "tool": "STRING",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 0.3,
+   "result": {
+    "analysis": "STRING PPI network of 5 core E. coli proteins",
+    "n_edges": 10
+   }
+  },
+  {
+   "tool": "CrossRef",
+   "kind": "API/database",
+   "status": "ok",
+   "seconds": 1.2,
+   "result": {
+    "analysis": "CrossRef: Grass 2015 DNA-storage reference (encoder context)",
+    "title": "Robust Chemical Preservation of Digital Information on DNA in Silica w",
+    "doi": "10.1002/anie.201411378"
+   }
+  }
+ ]
+}
