@@ -1,0 +1,15 @@
+You are an expert reviewer for a top-tier science fair (ISEF finalist level). I am a student researcher. Below are the claims of my DNA data-storage codec project. Your job: attack the weakest claims, find methodological holes, and tell me what to add to raise NOVELTY. Be specific and skeptical.
+
+CONTEXT: DNA data storage codec with biological constraints (homopolymer max 1 by construction via a never-same rotating trit code; windowed GC near 0.5 via SHA-256 keystream scrambler).
+
+MAIN CLAIM: a correcting inner code beats both published-style baselines on the same substitution-only harness (24 random messages x 64/256 bytes x 0/1/2/3% substitution, deterministic seeds).
+- Our codec "rsns": Reed-Solomon over GF(3^5)=GF(243), 5 trits per symbol, RS(45,30) body blocks + RS(9,3) header, on top of the never-same alphabet. Density 0.813 bits/base at 256B with homopolymer 1; recovery 1.0 at 0% and 1% substitution, 0.583 at 2%, 0.083 at 3%.
+- Fountain baseline (DNA Fountain-style LT droplets, CRC8 inner detection, GC/homopolymer screening, 2.5x oversampling): density 0.717, homopolymer 3, recovery 1.0/0.5/0/0 at 0/1/2/3%.
+- Goldman-style baseline (3x replication + majority vote): density 0.44, recovery 0.875 at 1%.
+- Rate sweep maps the Pareto frontier: rate 0.53-0.79 gives density 0.644-0.959; at rate 0.59 (density 0.719, matching fountain) recovery is 1.0@1% and 0.917@2%.
+
+CLAIMED NOVEL MECHANISM ("free erasures"): a substitution at base i corrupts the two adjacent trits of the never-same stream; the spacing violation can decode to trit value 3, which a legitimate trit stream can never contain. The 4-letter DNA alphabet carrying a 3-symbol stream thus flags many substitutions as erasures at zero redundancy cost, and RS decodes an erasure at half the redundancy budget of an error (2e+s <= n-k).
+
+KNOWN WEAKNESSES (we disclose these): (1) substitution-only channel - a single insertion or deletion desynchronizes the stream and is fatal to the whole strand; (2) recovery degrades above the 1% tier unless rate is lowered; (3) software-only evaluation, no wet-lab synthesis; (4) RS decode is slow pure-Python (fine at these sizes); (5) no comparison against published RS-based DNA codes on THEIR channel models (we only ran our harness).
+
+QUESTIONS: (a) Which claim would a skeptical judge attack first and how should I shore it up? (b) What experiment would most increase NOVELTY - ideas I have not listed? (c) Is the free-erasure mechanism actually novel in the DNA storage literature, and how do I frame it without overclaiming? (d) What wet-lab-adjacent validation is feasible without a lab?

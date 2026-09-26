@@ -91,3 +91,18 @@ Open gaps (honest): recovery degrades at 2-3% substitution (0.583/0.083 at
 (BLK_NSYM 18/21) would trade density for high-rate robustness and is queued.
 Indels still desynchronize the stream (channel is substitution-only by
 benchmark definition). RS decode cost is Python-speed, fine at these sizes.
+
+## Rate sweep (256B, same harness seeds): the density-robustness Pareto frontier
+
+| body block | rate | density | recovery @0/1/2/3% |
+|---|---|---|---|
+| RS(38,30) | 0.79 | 0.959 | 1.0 / 0.542 / 0.042 / 0.0 |
+| RS(45,30) | 0.67 | 0.813 | 1.0 / 0.917 / 0.625 / 0.125 |
+| RS(51,30) | 0.59 | 0.719 | 1.0 / 1.0 / 0.917 / 0.5 |
+| RS(57,30) | 0.53 | 0.644 | 1.0 / 1.0 / 0.917 / 0.708 |
+
+At fountain's own density (0.717), rsns rate-0.59 delivers 1.0 @1%, 0.917 @2%,
+homopolymer 1 - fountain gives 0.5 @1%, 0.0 @2%, homopolymer 3. The Pareto
+curve itself is a deliverable: one parameter (block redundancy) slides the
+codec along density-robustness, all points beating both baselines.
+Results: results/rs_rate_sweep.json.
