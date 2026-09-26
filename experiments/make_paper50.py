@@ -235,14 +235,20 @@ P.para(doc,
  "replication redundancy (three copies): ours v1 (unblocked never-same), "
  "ours v2 (blocked + parity), a faithful Goldman-2013 (unscrambled "
  "never-same, same replication), and DNA Fountain (Luby droplets, 2 "
- "bits/base direct map, GC/homopolymer screening, no inner ECC, as "
- "published). Messages are random bytes at 64 and 256; substitution rates "
+ "bits/base direct map, GC/homopolymer screening). Fairness fix "
+ "(2026-09-26): the Fountain baseline now carries per-droplet CRC8 inner "
+ "error-detection, standing in for the RS inner code of the published "
+ "design; the earlier no-inner-ECC harness let any substitution cascade "
+ "through XOR, and its 0%%-recovery numbers are preserved in git history "
+ "as a documented harness artifact, never cited as a Fountain weakness. "
+ "Messages are random bytes at 64 and 256; substitution rates "
  "0%, 1%, 2%, 3%; 24 independent messages per configuration. Density is "
  "message bits divided by total synthesized bases including all copies.")
 
 rows = []
 for size in ("64B", "256B"):
     for name, label in (("ours", "ours v1"), ("ours_v2", "ours v2 (blocked+parity)"),
+                        ("ours_2x", "ours v1 (2 copies)"), ("ours_v2_2x", "ours v2 (2 copies)"),
                         ("goldman", "Goldman 2013"), ("fountain", "DNA Fountain")):
         r = R[f"{name}_{size}"]
         rows.append([label, size, round(r["density_bits_per_base"], 3),
@@ -253,16 +259,17 @@ P.table(doc, "Table 1. Head-to-head codec benchmark, 24 trials per configuration
         ["codec", "msg", "bits/base", "max homo", "GC dev", "rec@0%", "rec@1%", "rec@2%", "rec@3%"], rows)
 P.para(doc,
  "Ours v2 achieves the highest recovery at every nonzero noise level in "
- "both message sizes. At 2% substitution it recovers 83.3% of 64-byte "
- "messages where Goldman recovers 70.8% and Fountain 0%; at 3%, 70.8% "
- "against 50% and 0%. The Fountain column quantifies the cost of its "
- "no-inner-ECC design: any droplet with a substitution is unusable, and "
- "peeling decoders stall. The honest tradeoff is density: Fountain "
- "carries 1.9-2.1x more bits per base. For archival storage at high "
- "synthesis error rates, recovery dominates; for low-error pipelines, "
- "density does. The v2 design also outperforms our own v1 at 2-3%, "
- "demonstrating that the gain comes from blocking plus parity rather than "
- "from the rotating code itself.")
+ "both message sizes under the fairness-fixed harness. At 2%% substitution it "
+ "recovers 79.2%% of 64-byte messages where Goldman recovers 66.7%% and "
+ "Fountain 4.2%%; at 3%%, 79.2%% against 54.2%% and 0.0%%. With inner "
+ "detection, Fountain no longer collapses to zero at 1%% (20.8%% at 64 B, "
+ "50.0%% at 256 B) but still degrades fastest, because CRC rejection shrinks "
+ "the effective droplet pool below the peeling decoder's rank threshold. The "
+ "honest tradeoff is density: Fountain carries 1.5-1.6x more bits "
+ "per base. For archival storage at high synthesis error rates, recovery "
+ "dominates; for low-error pipelines, density does. The v2 design also "
+ "outperforms our own v1 at 2-3%%, demonstrating that the gain comes from "
+ "blocking plus parity rather than from the rotating code itself.")
 P.para(doc,
  "Benchmark methodology note: an early run of this benchmark applied "
  "identical noise to all three replicate strands (a seeding bug), which "
@@ -271,6 +278,19 @@ P.para(doc,
  "inconsistent with the Tier-1 theory of Section 7; theory-driven sanity "
  "checks are a standard part of our pipeline. All numbers in Table 1 are "
  "from the corrected benchmark.")
+P.para(doc,
+ "Density-improvement arm (2026-09-26): we tested two-copy variants of both "
+ "our codecs to close the density gap to Fountain. Both collapse at 1% "
+ "substitution (recovery 0.0-0.25 at 64 B, 0.0 at 256 B): with two copies the "
+ "vote cannot disambiguate disagreements, the per-block checksum needs a fully "
+ "clean single copy (p = 0.68 per 38-trit block at 1%), and the parity block "
+ "repairs only one bad block while a 256-byte message has ~47. Triple "
+ "redundancy is therefore not overhead slack - it is the error-correction "
+ "mechanism of the no-homopolymer design. The quantified frontier: at "
+ "homopolymer max <= 2, roughly 0.42 bits per base buys robust recovery at "
+ "1-2% substitution; Fountain reaches 0.63-0.72 bits per base at homopolymer "
+ "3 with worse recovery at the same rates. Full analysis: "
+ "results/CODEC_FRONTIER.md.")
 
 # ---------------- Part II ----------------
 P.page_break(doc)
