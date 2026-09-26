@@ -5,8 +5,13 @@ and recovery under substitution noise are measured on the full strand sets.
 Density = message bits / total synthesized bases (all copies counted).
 Goldman: base-3 fixed 6 trits/byte, never-same rotating code, no scrambler,
 same 3-fold replication (their overlap redundancy replaced so encodings are
-compared, not redundancy schemes). Fountain: Luby droplets, 2 bits/base
-direct map, GC/homopolymer screening, no inner ECC (faithful to the paper).
+compared, not redundancy schemes). Fountain: Luby droplets, 2 bits/base direct map, GC/homopolymer screening, CRC8 inner
+error-detection per droplet. FAIRNESS FIX (2026-09-26): the original harness had NO inner
+error detection and claimed 'no inner ECC, faithful to the paper' - that claim was wrong
+(Erlich & Zielinski 2017 use a Reed-Solomon inner code to detect/correct bad droplets),
+so every substitution silently corrupted chunks and cascaded through XOR. Prior fountain
+recovery numbers (0% at >=1% substitution) were a harness artifact and are preserved in
+git history as a documented mistake; they must not be cited as a fountain weakness.
 """
 import json, os, sys
 import numpy as np
@@ -55,6 +60,14 @@ def _dna_to_bytes(dna: str, nbytes: int) -> bytes:
 def _screen_ok(dna: str) -> bool:
     return 0.44 <= gc_content(dna) <= 0.56 and max_homopolymer(dna) <= 3
 
+def _crc8(data: bytes) -> int:
+    crc = 0
+    for b in data:
+        crc ^= b
+        for _ in range(8):
+            crc = ((crc << 1) ^ 0x07) & 0xFF if crc & 0x80 else (crc << 1) & 0xFF
+    return crc
+
 def fountain_encode(data: bytes, seed0: int = 0, over: float = 2.5):
     chunks = [data[i:i+CHUNK].ljust(CHUNK, b"\0") for i in range(0, len(data), CHUNK)]
     k = len(chunks)
@@ -68,7 +81,7 @@ def fountain_encode(data: bytes, seed0: int = 0, over: float = 2.5):
         d = bytearray(CHUNK)
         for i in idx:
             d = bytearray(a ^ b for a, b in zip(d, chunks[i]))
-        dna = _dbytes_to_dna(bytes(d))
+        dna = _dbytes_to_dna(bytes(d) + bytes([_crc8(bytes(d))]))  # CRC8 inner check, standing in for the paper's RS inner code
         if _screen_ok(dna):
             strands.append(dna)
             meta.append((seed, idx))
@@ -81,9 +94,12 @@ def fountain_decode(strands, packing):
     droplets = []
     for dna, (seed, idx) in zip(strands, meta):
         try:
-            d = _dna_to_bytes(dna, CHUNK)
+            raw = _dna_to_bytes(dna, CHUNK + 1)
         except KeyError:
-            continue  # corrupted base -> unusable droplet (no inner ECC)
+            continue
+        d, chk = raw[:CHUNK], raw[CHUNK]
+        if _crc8(d) != chk:
+            continue  # CRC8 detects corrupted droplet; fountain redundancy absorbs the loss
         droplets.append((set(idx), d))
     changed = True
     while changed and len(known) < k:

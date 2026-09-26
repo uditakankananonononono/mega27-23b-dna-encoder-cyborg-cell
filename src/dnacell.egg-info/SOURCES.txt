@@ -1,7 +1,11 @@
+README.md
 setup.py
 src/dnacell/__init__.py
 src/dnacell/cyborg.py
 src/dnacell/encoder.py
+src/dnacell/external_tools.py
+src/dnacell/metabolism.py
+src/dnacell/tools40.py
 src/dnacell.egg-info/PKG-INFO
 src/dnacell.egg-info/SOURCES.txt
 src/dnacell.egg-info/dependency_links.txt
