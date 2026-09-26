@@ -30,3 +30,24 @@ pays homopolymer 3 and still loses recovery at 1-2% under the fairness-fixed
 harness. Next candidates (queued for ChatGPT redirection consult): fountain-style
 droplet structure ON the never-same alphabet (1 trit/base droplets + RS-style
 outer code), or inner LDPC over trits.
+
+## v3 candidate measured and rejected: never-same fountain droplets (2026-09-26)
+
+nsfountain_encode/decode in experiments/benchmark_codecs.py: LT droplets whose DNA
+is the never-same trit code (homopolymer 1 by construction, no screening) + CRC8
+per droplet. Measured on the same harness:
+
+| codec | density (256B) | recovery @0/1% (256B) | homopolymer |
+|---|---|---|---|
+| fountain (CRC8) | 0.717 | 1.0 / 0.5 | 3 |
+| nsfountain | 0.478 | 1.0 / 0.125 | 1 |
+
+NEGATIVE, with mechanism quantified: the never-same droplet is 3x longer for the
+same payload (102 vs 34 bases for 16 B), and CRC-detection turns any substitution
+into a whole-droplet erasure, so droplet survival at 1% is 0.99^102 = 0.36 vs
+0.99^34 = 0.71 for the direct-map droplet. The density gain over 3x replication
+(0.478 vs 0.437) does not compensate the erasure rate; at 64B both LT variants
+are peeling-fragile at tiny k (fountain 0.42, nsfountain 0.0 at 0% noise - small-k
+LT rank failures, not a code defect). Conclusion: closing the density gap needs an
+inner code that CORRECTS (RS-style over trits), not detects; detection-only
+droplets lose to triple majority at every error rate tested. Candidate retired.

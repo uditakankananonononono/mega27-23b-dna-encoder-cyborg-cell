@@ -123,6 +123,67 @@ def fountain_decode(strands, packing):
         raise ValueError(f"fountain decode failed: {len(known)}/{k} chunks")
     return b"".join(known[i] for i in range(k))
 
+# ---------- never-same fountain (v3 candidate, 2026-09-26) ----------
+# LT droplet structure as in fountain_encode, but each droplet's DNA is the
+# never-same rotating trit code (homopolymer 1 by construction, no screening)
+# with per-droplet CRC8. Substitutions desynchronize the trit stream, so the
+# CRC turns them into droplet ERASURES absorbed by the oversampling.
+NSF_TRITS = None  # trit count comes from bytes_to_trits directly
+
+def nsfountain_encode(data: bytes, seed0: int = 0, over: float = 2.5):
+    chunks = [data[i:i+CHUNK].ljust(CHUNK, b"\0") for i in range(0, len(data), CHUNK)]
+    k = len(chunks)
+    n = int(np.ceil(k * over)) + 2
+    strands, meta = [], []
+    seed = seed0
+    while len(strands) < n:
+        rng = np.random.default_rng(seed)
+        deg = int(rng.integers(1, min(4, k) + 1))
+        idx = sorted(rng.choice(k, size=deg, replace=False).tolist())
+        d = bytearray(CHUNK)
+        for i in idx:
+            d = bytearray(a ^ b for a, b in zip(d, chunks[i]))
+        payload = bytes(d) + bytes([_crc8(bytes(d))])
+        strands.append(encode_trits_never_same(bytes_to_trits(payload)))
+        meta.append((seed, idx))
+        seed += 1
+    return strands, (k, meta)
+
+def nsfountain_decode(strands, packing):
+    k, meta = packing
+    known, droplets = {}, []
+    for dna, (seed, idx) in zip(strands, meta):
+        try:
+            raw = trits_to_bytes(decode_never_same(dna))
+        except (ValueError, AssertionError):
+            continue
+        d, chk = raw[:CHUNK], raw[CHUNK]
+        if _crc8(d) != chk:
+            continue  # corrupted droplet -> erasure
+        droplets.append((set(idx), d))
+    changed = True
+    while changed and len(known) < k:
+        changed = False
+        nxt = []
+        for idx, d in droplets:
+            idx = set(idx)
+            for i in list(idx):
+                if i in known:
+                    d = bytes(a ^ b for a, b in zip(d, known[i]))
+                    idx.discard(i)
+            if len(idx) == 1:
+                i = idx.pop()
+                if i not in known:
+                    known[i] = d
+                    changed = True
+            else:
+                nxt.append((idx, d))
+        droplets = nxt
+    if len(known) < k:
+        raise ValueError(f"nsfountain decode failed: {len(known)}/{k} chunks")
+    return b"".join(known[i] for i in range(k))
+
+
 # ---------- evaluation ----------
 def windowed_gc_dev(seq: str, w: int = 50) -> float:
     devs = [abs(gc_content(seq[i:i+w]) - 0.5) for i in range(0, len(seq) - w + 1, w)]
@@ -139,7 +200,8 @@ def run():
                           ("ours_2x", lambda m: (encode_message(m, copies=2), None)),
                           ("ours_v2_2x", lambda m: (encode_message_v2(m, copies=2), None)),
                           ("goldman", lambda m: (goldman_encode(m), None)),
-                          ("fountain", fountain_encode)):
+                          ("fountain", fountain_encode),
+                          ("nsfountain", nsfountain_encode)):
             dens, hp, gcdev, rec = [], [], [], {0.0: 0, 0.01: 0, 0.02: 0, 0.03: 0}
             trials = 0
             for mi, m in enumerate(msgs):
@@ -152,6 +214,10 @@ def run():
                     noisy = [introduce_errors(s, sub_rate=rate, seed=1000 + 97 * mi + ci) for ci, s in enumerate(strands)]
                     try:
                         if name == "fountain":
+                            pass
+                        if name == "nsfountain":
+                            dec = nsfountain_decode(noisy, packing)[:len(m)]
+                        elif name == "fountain":
                             dec = fountain_decode(noisy, packing)[:len(m)]
                         elif name == "goldman":
                             dec = goldman_decode(noisy)
