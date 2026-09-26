@@ -51,3 +51,43 @@ are peeling-fragile at tiny k (fountain 0.42, nsfountain 0.0 at 0% noise - small
 LT rank failures, not a code defect). Conclusion: closing the density gap needs an
 inner code that CORRECTS (RS-style over trits), not detects; detection-only
 droplets lose to triple majority at every error rate tested. Candidate retired.
+
+## v4 LANDED: RS-over-GF(3^5) correcting inner code ("rsns") - frontier leader (2026-09-26)
+
+The frontier conclusion above said density closure needs a CORRECTING inner code
+over trits. Implemented in experiments/rs_inner.py: Reed-Solomon over GF(3^5) =
+GF(243), 5 trits per symbol, primitive polynomial found and verified
+programmatically (x has order 242), systematic encoder, Berlekamp-Massey +
+Chien + Gaussian-elimination magnitudes with errors-and-erasures support.
+Blocks RS(45,30) (rate 2/3) + RS(9,3) header. Strand = RS symbols -> scramble
+-> never-same DNA. Homopolymer 1 by construction.
+
+Discovery (the free-erasure mechanism): a substitution at base i corrupts the
+two adjacent trits, and a spacing violation can decode to trit value 3 - a
+value the 3-symbol alphabet can never legitimately carry. The 4-letter DNA
+alphabet encoding a 3-symbol stream therefore turns a large share of
+substitutions into flagged ERASURES at zero redundancy cost, and RS decodes an
+erasure at half the budget of an error (2e + s <= n - k). This is why the
+correcting inner code wins where detection-only (CRC8) designs collapsed.
+
+Unit verification: 3421/3421 random errors+erasures at capacity (2e+s <= 15)
+decode exactly; encoder syndromes zero on 300 random codewords.
+
+Official harness (experiments/benchmark_codecs.py, same 24 msgs x 64/256B x
+0/1/2/3% substitution):
+
+| codec | density 64/256B (bits/base) | recovery 64B @0/1/2/3% | recovery 256B @0/1/2/3% | homopolymer |
+|---|---|---|---|---|
+| rsns | 0.711 / 0.813 | 1.0 / 0.958 / 0.875 / 0.417 | 1.0 / 1.0 / 0.583 / 0.083 | 1 |
+| fountain (CRC8) | 0.627 / 0.717 | 0.417 / 0.208 / 0.042 / 0.0 | 1.0 / 0.5 / 0.0 / 0.0 | 3 |
+| ours (3x) | 0.42-0.44 | 1.0 / 0.833 / 0.292 / 0.125 | 1.0 / 0.875 / - / - | 1 |
+
+rsns STRICTLY DOMINATES the previous density leader: higher density, lower
+homopolymer, better recovery at every error rate and both message sizes. At the
+benchmark's 1% substitution tier it is perfect at 256B (fountain: 0.5).
+
+Open gaps (honest): recovery degrades at 2-3% substitution (0.583/0.083 at
+256B) - the rate-2/3 budget is sized for the 1% tier; a rate sweep
+(BLK_NSYM 18/21) would trade density for high-rate robustness and is queued.
+Indels still desynchronize the stream (channel is substitution-only by
+benchmark definition). RS decode cost is Python-speed, fine at these sizes.

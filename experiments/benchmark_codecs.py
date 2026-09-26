@@ -185,6 +185,10 @@ def nsfountain_decode(strands, packing):
 
 
 # ---------- evaluation ----------
+def rsns_enc(m):
+    from rs_inner import rsns_encode
+    return [rsns_encode(m)], None
+
 def windowed_gc_dev(seq: str, w: int = 50) -> float:
     devs = [abs(gc_content(seq[i:i+w]) - 0.5) for i in range(0, len(seq) - w + 1, w)]
     return float(max(devs)) if devs else 0.0
@@ -201,7 +205,8 @@ def run():
                           ("ours_v2_2x", lambda m: (encode_message_v2(m, copies=2), None)),
                           ("goldman", lambda m: (goldman_encode(m), None)),
                           ("fountain", fountain_encode),
-                          ("nsfountain", nsfountain_encode)):
+                          ("nsfountain", nsfountain_encode),
+                          ("rsns", rsns_enc)):
             dens, hp, gcdev, rec = [], [], [], {0.0: 0, 0.01: 0, 0.02: 0, 0.03: 0}
             trials = 0
             for mi, m in enumerate(msgs):
@@ -213,9 +218,10 @@ def run():
                 for rate in (0.0, 0.01, 0.02, 0.03):
                     noisy = [introduce_errors(s, sub_rate=rate, seed=1000 + 97 * mi + ci) for ci, s in enumerate(strands)]
                     try:
-                        if name == "fountain":
-                            pass
-                        if name == "nsfountain":
+                        if name == "rsns":
+                            from rs_inner import rsns_decode
+                            dec = rsns_decode(noisy[0])[:len(m)]
+                        elif name == "nsfountain":
                             dec = nsfountain_decode(noisy, packing)[:len(m)]
                         elif name == "fountain":
                             dec = fountain_decode(noisy, packing)[:len(m)]
