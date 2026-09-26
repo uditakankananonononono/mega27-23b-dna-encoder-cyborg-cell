@@ -136,6 +136,8 @@ def run():
         msgs = [bytes(rng.integers(256, size=msg_len, dtype=np.uint8)) for _ in range(24)]
         for name, enc in (("ours", lambda m: (encode_message(m), None)),
                           ("ours_v2", lambda m: (encode_message_v2(m), None)),
+                          ("ours_2x", lambda m: (encode_message(m, copies=2), None)),
+                          ("ours_v2_2x", lambda m: (encode_message_v2(m, copies=2), None)),
                           ("goldman", lambda m: (goldman_encode(m), None)),
                           ("fountain", fountain_encode)):
             dens, hp, gcdev, rec = [], [], [], {0.0: 0, 0.01: 0, 0.02: 0, 0.03: 0}
@@ -153,7 +155,7 @@ def run():
                             dec = fountain_decode(noisy, packing)[:len(m)]
                         elif name == "goldman":
                             dec = goldman_decode(noisy)
-                        elif name == "ours_v2":
+                        elif name in ("ours_v2", "ours_v2_2x"):
                             dec = decode_message_v2(noisy)
                         else:
                             dec = decode_message(noisy)
