@@ -1,0 +1,101 @@
+{
+ "trials_per_cell": 16,
+ "cells": [
+  {
+   "bytes": 256,
+   "subst_rate": 0.0,
+   "recovery": 1.0,
+   "density_bits_per_base": 0.8127
+  },
+  {
+   "bytes": 256,
+   "subst_rate": 0.01,
+   "recovery": 0.8125,
+   "density_bits_per_base": 0.8127
+  },
+  {
+   "bytes": 256,
+   "subst_rate": 0.02,
+   "recovery": 0.25,
+   "density_bits_per_base": 0.8127
+  },
+  {
+   "bytes": 256,
+   "subst_rate": 0.03,
+   "recovery": 0.0,
+   "density_bits_per_base": 0.8127
+  },
+  {
+   "bytes": 512,
+   "subst_rate": 0.0,
+   "recovery": 1.0,
+   "density_bits_per_base": 0.8587
+  },
+  {
+   "bytes": 512,
+   "subst_rate": 0.01,
+   "recovery": 0.875,
+   "density_bits_per_base": 0.8587
+  },
+  {
+   "bytes": 512,
+   "subst_rate": 0.02,
+   "recovery": 0.125,
+   "density_bits_per_base": 0.8587
+  },
+  {
+   "bytes": 512,
+   "subst_rate": 0.03,
+   "recovery": 0.0,
+   "density_bits_per_base": 0.8587
+  },
+  {
+   "bytes": 1024,
+   "subst_rate": 0.0,
+   "recovery": 1.0,
+   "density_bits_per_base": 0.8837
+  },
+  {
+   "bytes": 1024,
+   "subst_rate": 0.01,
+   "recovery": 0.75,
+   "density_bits_per_base": 0.8837
+  },
+  {
+   "bytes": 1024,
+   "subst_rate": 0.02,
+   "recovery": 0.0,
+   "density_bits_per_base": 0.8837
+  },
+  {
+   "bytes": 1024,
+   "subst_rate": 0.03,
+   "recovery": 0.0,
+   "density_bits_per_base": 0.8837
+  },
+  {
+   "bytes": 2048,
+   "subst_rate": 0.0,
+   "recovery": 1.0,
+   "density_bits_per_base": 0.8859
+  },
+  {
+   "bytes": 2048,
+   "subst_rate": 0.01,
+   "recovery": 0.5,
+   "density_bits_per_base": 0.8859
+  },
+  {
+   "bytes": 2048,
+   "subst_rate": 0.02,
+   "recovery": 0.0,
+   "density_bits_per_base": 0.8859
+  },
+  {
+   "bytes": 2048,
+   "subst_rate": 0.03,
+   "recovery": 0.0,
+   "density_bits_per_base": 0.8859
+  }
+ ]
+}

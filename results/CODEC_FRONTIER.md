@@ -106,3 +106,11 @@ homopolymer 1 - fountain gives 0.5 @1%, 0.0 @2%, homopolymer 3. The Pareto
 curve itself is a deliverable: one parameter (block redundancy) slides the
 codec along density-robustness, all points beating both baselines.
 Results: results/rs_rate_sweep.json.
+
+Capacity scaling (2026-09-27, experiments/rsns_capacity_sweep.py, results/rsns_capacity_sweep.json):
+message size 256->2048 B raises density 0.813->0.886 bits/base (header amortizes
+toward the asymptotic block rate) while per-message recovery at fixed substitution
+rate degrades with block count as expected for fixed-length blocks: 1% substitution
+gives 0.81/0.88/0.75/0.50 recovery at 256/512/1024/2048 B; 2% gives 0.25/0.125/0/0.
+Message failure tracks 1-(1-p_block)^nblocks; the next frontier lever is longer RS
+blocks or interleaving, not a different inner code family.
