@@ -27,6 +27,7 @@ Headline principle to land (#18): "Optimal information density is limited by cel
 
 
 ## LANDED 2026-09-27 (foldback 1)
+- #4: modern-baselines table LANDED - constrained coding (RLL), fountain, RS-archival (Grass), neural DNA storage, HEDGES compared on guarantees; measured rows verified vs codec_benchmark.json (rsns 0.813/100%@1%, fountain 0.717/50%@1%, goldman 0.438/83%@1%). Section 9n; 10,034 words.
 - #13: scaling law LANDED - analytic block-count compounding fitted to measured 256-2048B sweep: 1% subst -> 0.76 @1KB, 1e-12 @100KB; honest limit stated (fixed blocks cannot scale without interleaving/rate-adaptive redundancy; ~8.3KB per decade of log-recovery at 1%). Section 9m; results/scaling_law.json; 9,776 words.
 - #6: formal Pareto frontier LANDED over the RS rate sweep: all 4 rate points mutually non-dominated; design oracle per recovery target (>=90% at 2% subst -> RS(30+21) at 0.719 bits/base densest; no design reaches 90% at 3%). ~0.08-0.14 bits/base per doubling of worst-case recovery. Section 9l; results/pareto_frontier.json; 9,604 words.
 - #9/#17: natural-genome realism LANDED. 131 synthetic payloads vs 131 real E. coli K-12 WGS records: GC within natural band (0.501 vs 0.533, z=-0.44) but synthetic max homopolymer exactly 1 (never-same guarantee) vs natural 4-9 (mean 5.3); entropy z=+1.0; 3-mer L1=0.89. Finding inverts expectation: storage-DNA constraints come from the synthesis/readout channel, not base composition; biology tolerates what machines cannot. Section 9k; 9,454 words.
