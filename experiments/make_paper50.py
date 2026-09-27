@@ -14,7 +14,7 @@ P.title_block(doc,
     "A Constraint-Guaranteed DNA Data Storage Codec with Block-Bounded Error "
     "Propagation, and a Flux-Balance Theory of Energy Reallocation in a "
     "Replication-Frozen Cyborg Cell",
-    "MEGA-PROGRAM-27, Item 23b - computational biology research lane")
+    "")
 
 P.h1(doc, "Abstract")
 P.para(doc,
