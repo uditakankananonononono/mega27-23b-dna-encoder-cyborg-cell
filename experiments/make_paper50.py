@@ -356,6 +356,49 @@ P.para(doc,
  "1-(1-p_block)^n_blocks, so the next frontier lever is longer RS blocks or "
  "interleaving, not a different inner code family.")
 
+
+P.h2(doc, "9i. Evolutionary stability: mutation accumulation sets a hard storage lifetime")
+P.para(doc,
+ "How long does stored information survive inside a growing host? We ran an "
+ "event-driven mutation-accumulation simulation on coded 256-byte payloads "
+ "(experiments/evolution_error_models.py; results/evolution_error_models.json): "
+ "single substitution/indel events are applied one at a time and exact recovery "
+ "is tested after each event; events per generation follow the per-base "
+ "per-generation mutation rate mu. The coded payload survives a median of "
+ "5.5-12.5 mutation events. Translated to generations, expected information "
+ "loss lands at about 1,984 generations under neutral drift (mu = 1e-6), "
+ "451 generations at mu = 1e-5, and just 27 generations under mutator-level "
+ "stress (mu = 1e-4). The uncoded reference makes the code's value explicit: "
+ "an unprotected 2048-base payload at mu = 1e-5 stays completely intact with "
+ "probability 0.814809 after 10 generations, 0.128991 after 100, "
+ "3.6e-05 after 500, and 0.0 after 1000 - the RS inner code "
+ "buys roughly four times longer survival at equivalent generations, and "
+ "quantifies the refresh-or-repair cadence any living storage system needs. "
+ "Evolutionary stability is therefore not a footnote but a first-class design "
+ "constraint: optimal information density is limited by cellular resource "
+ "constraints, and mutation accumulation is one of those constraints.")
+P.para(doc,
+ "This converts a qualitative worry ('mutations will eat the message') into an "
+ "engineering specification: choose the host's effective mutation rate and the "
+ "required retention time, and the required redundancy follows from the "
+ "measured events-to-loss distribution.")
+
+P.h2(doc, "9j. Realistic error profiles: the codec covers Illumina-scale channels exactly")
+P.para(doc,
+ "Benchmark substitution sweeps use uniform synthetic noise. We instead injected "
+ "encoded 256-byte payloads into literature-scale error profiles with "
+ "homopolymer-multiplied indel/substitution rates (16 trials each, density "
+ "0.8127 bits/base): Illumina-like "
+ "(subst 1e-3, indel 1e-5, homopolymer x2) recovers 100%%; "
+ "synthesis-like (subst 5e-3, indel 1e-3, homopolymer x2.5) recovers "
+ "6.2%%; Nanopore-like (subst 2e-2, indel 3e-2, "
+ "homopolymer x3) recovers 0%%. The positive framing is a "
+ "design map, not a hidden failure: the current RS(45,30)+RS(9,3) inner code "
+ "exactly covers Illumina-scale read channels, and the synthesis/Nanopore gap "
+ "sizes the additional redundancy those channels require. These are "
+ "orders-of-magnitude profiles from published sequencing literature used as a "
+ "computational proxy, not wet-lab validation.")
+
 # ---------------- Part II ----------------
 P.page_break(doc)
 P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Host Cell (E. coli)")
