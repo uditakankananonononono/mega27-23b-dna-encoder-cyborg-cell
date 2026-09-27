@@ -1,0 +1,271 @@
+{
+ "parameters": {
+  "c_nt": 40.0,
+  "c_GC": 6.0,
+  "c_tx": 2.0,
+  "c_tl": 4.0,
+  "genome_bp": 4600000.0,
+  "B_genome_atp_eq": 197800000.0
+ },
+ "oracle_2pct": "RS(30+21) rate 0.59",
+ "oracle_3pct": null,
+ "bits_1pct_budget_silent_2pct": 19513.66,
+ "bits_1pct_budget_transcribed_2pct": 18646.38622222222,
+ "bits_1pct_budget_expressed_2pct": 14720.831228070174,
+ "cost_per_bit_silent": 101.36489003088094,
+ "cost_per_bit_expressed": 134.3674123665166,
+ "rows": [
+  {
+   "target": "90%@2%subst",
+   "phi": 0.0001,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 271.4,
+   "bits": 195.1366,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.0001,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 259.3377777777778,
+   "bits": 186.46386222222222,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.0001,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 204.74035087719298,
+   "bits": 147.20831228070176,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.0003,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 814.1999999999999,
+   "bits": 585.4097999999999,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.0003,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 778.0133333333332,
+   "bits": 559.3915866666665,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.0003,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 614.2210526315789,
+   "bits": 441.6249368421052,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.001,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 2714.0,
+   "bits": 1951.366,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.001,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 2593.3777777777777,
+   "bits": 1864.638622222222,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.001,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 2047.4035087719299,
+   "bits": 1472.0831228070176,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.003,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 8142.0,
+   "bits": 5854.098,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.003,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 7780.133333333333,
+   "bits": 5593.915866666666,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.003,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 6142.210526315789,
+   "bits": 4416.249368421052,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.01,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 27140.0,
+   "bits": 19513.66,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.01,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 25933.777777777777,
+   "bits": 18646.38622222222,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.01,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 20474.035087719298,
+   "bits": 14720.831228070174,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.03,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 81420.0,
+   "bits": 58540.979999999996,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.03,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 77801.33333333333,
+   "bits": 55939.15866666666,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.03,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 61422.10526315789,
+   "bits": 44162.49368421052,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.1,
+   "scenario": "silent",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 271400.0,
+   "bits": 195136.6,
+   "cost_per_bit": 101.36489003088094
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.1,
+   "scenario": "transcribed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 259337.77777777778,
+   "bits": 186463.8622222222,
+   "cost_per_bit": 106.07953607882888
+  },
+  {
+   "target": "90%@2%subst",
+   "phi": 0.1,
+   "scenario": "expressed",
+   "design": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "payload_bases": 204740.35087719298,
+   "bits": 147208.31228070174,
+   "cost_per_bit": 134.3674123665166
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.0001,
+   "bits": 0.0,
+   "design": null
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.0003,
+   "bits": 0.0,
+   "design": null
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.001,
+   "bits": 0.0,
+   "design": null
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.003,
+   "bits": 0.0,
+   "design": null
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.01,
+   "bits": 0.0,
+   "design": null
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.03,
+   "bits": 0.0,
+   "design": null
+  },
+  {
+   "target": "90%@3%subst",
+   "phi": 0.1,
+   "bits": 0.0,
+   "design": null
+  }
+ ]
+}

@@ -73,4 +73,16 @@ def page_break(doc):
     doc.add_page_break()
 
 def save(doc, path):
+    # normalize legacy %% literals (strings written for %-formatting but emitted raw)
+    for _p in doc.paragraphs:
+        for _r in _p.runs:
+            if "%%" in _r.text:
+                _r.text = _r.text.replace("%%", "%")
+    for _t in doc.tables:
+        for _row in _t.rows:
+            for _c in _row.cells:
+                for _p in _c.paragraphs:
+                    for _r in _p.runs:
+                        if "%%" in _r.text:
+                            _r.text = _r.text.replace("%%", "%")
     doc.save(path)

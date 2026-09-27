@@ -37,4 +37,8 @@ Headline principle to land (#18): "Optimal information density is limited by cel
 - #1/#11/#12: literature-scale error-profile injection-recovery proxy (256B, 16 trials, density 0.813 bits/base): Illumina-like 1.0 recovery; synthesis-like (5e-3 subst + 1e-3 indel, homopolymer x2.5) 0.0625; Nanopore-like (2e-2 subst + 3e-2 indel, homo x3) 0.0. Positive framing: the RS(45,30)+RS(9,3) inner code exactly covers Illumina-scale channels; the synthesis/Nanopore gap sizes the redundancy still needed (a design spec, not a hidden failure).
 - Files: experiments/evolution_error_models.py, results/evolution_error_models.json.
 
+- #3/#10: metabolic-coupling tradeoff formalized + constraint chain LANDED. Storage->expression->metabolic-cost chain as constrained optimization over the measured rate sweep: at phi=1% of the host replication budget and the 90%-at-2% target (RS(30+21)): silent locus 19,514 bits, transcribed 18,646, expressed 14,721 (-25%); cost/bit 101.4 -> 134.4 ATP-eq; no design reaches 90% at 3% at any budget (code-limited, not cell-limited); design recommendation = transcriptionally silent loci. experiments/metabolic_tradeoff.py, results/metabolic_tradeoff.json, section 9p.
+- #5: unique contribution statement LANDED in Introduction ("optimized code design under simultaneous biological and information constraints" - joint ledger framing).
+- Build fix: generator's sys.path order let /home/sandbox/mega27/paperlib/paper50.py shadow the repo-local copy (legacy %% literals rendered raw); order fixed + save() now normalizes %% in paragraphs and tables. Docx 10,686 words, zero %% artifacts, author metadata clean.
+
 ## First deliverables (cheap, existing data + public references)
