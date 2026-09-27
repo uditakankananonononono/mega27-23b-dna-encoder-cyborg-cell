@@ -1,0 +1,74 @@
+{
+ "basis": "measured 256-2048B recovery sweep (results/rsns_capacity_sweep.json); per-block failure inferred from size scaling, extrapolated analytically",
+ "extrapolation": {
+  "subst_0.0": {
+   "asymptotic_density_bits_per_base": 0.8859,
+   "1KB": {
+    "log10_recovery": 0.0,
+    "recovery": 1.0
+   },
+   "10KB": {
+    "log10_recovery": 0.0,
+    "recovery": 1.0
+   },
+   "100KB": {
+    "log10_recovery": 0.0,
+    "recovery": 1.0
+   },
+   "1MB": {
+    "log10_recovery": 0.0,
+    "recovery": 1.0
+   },
+   "1GB": {
+    "log10_recovery": 0.0,
+    "recovery": 1.0
+   }
+  },
+  "subst_0.01": {
+   "asymptotic_density_bits_per_base": 0.8859,
+   "1KB": {
+    "log10_recovery": -0.12,
+    "recovery": 0.7577263020838574
+   },
+   "10KB": {
+    "log10_recovery": -1.2,
+    "recovery": 0.06239124138393439
+   },
+   "100KB": {
+    "log10_recovery": -12.05,
+    "recovery": 8.93791597834165e-13
+   },
+   "1MB": {
+    "log10_recovery": -123.38,
+    "recovery": 4.1750278943809166e-124
+   },
+   "1GB": {
+    "log10_recovery": -126340.44,
+    "recovery": 1e-300
+   }
+  },
+  "subst_0.02": {
+   "asymptotic_density_bits_per_base": 0.8859,
+   "1KB": {
+    "log10_recovery": -1.2,
+    "recovery": 0.06250000000000006
+   },
+   "10KB": {
+    "log10_recovery": -12.04,
+    "recovery": 9.094947017729345e-13
+   },
+   "100KB": {
+    "log10_recovery": -120.41,
+    "recovery": 3.8725919148496175e-121
+   },
+   "1MB": {
+    "log10_recovery": -1233.02,
+    "recovery": 1e-300
+   },
+   "1GB": {
+    "log10_recovery": -1262611.31,
+    "recovery": 1e-300
+   }
+  }
+ }
+}

@@ -440,6 +440,25 @@ P.para(doc,
  "resource constraints - here the redundancy budget the host's synthesis "
  "channel and the error environment jointly impose.")
 
+
+P.h2(doc, "9m. Scaling law: block-count compounding sets the honest large-message limit")
+P.para(doc,
+ "Scaling from kilobytes to gigabytes (verdict #13) is computed analytically "
+ "from the measured per-block failure law rather than simulated "
+ "(results/scaling_law.json, fitted to the 256-2048 byte recovery sweep). "
+ "Per-message recovery compounds as (1 - p_block)^n_blocks. At 1%% substitution "
+ "the fitted law gives recovery 0.76 at 1 KB, 10^-12 at 100 KB and 10^-123 at "
+ "1 MB at the asymptotic density 0.886 bits/base; at 2%% substitution even 1 KB "
+ "recovers only 6%%. The honest conclusion: fixed-length inner blocks cannot "
+ "scale to large messages at these error rates without interleaving or "
+ "rate-adaptive redundancy - this is the cellular-resource constraint "
+ "operating at the information-theoretic level, and it converts the scaling "
+ "question into a precise requirement: log-recovery degrades linearly with "
+ "message bytes, so every 8.3 KB at 1%% substitution costs one order of "
+ "magnitude of recovery at the current block law. The levers that change the "
+ "law (longer RS blocks, interleaving, fountain-style outer codes) are named "
+ "in the future-work section with the measured law as their baseline.")
+
 # ---------------- Part II ----------------
 P.page_break(doc)
 P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Host Cell (E. coli)")
