@@ -1,0 +1,50 @@
+{
+ "natural_n": 130,
+ "synthetic_n": 131,
+ "natural": {
+  "gc": {
+   "mean": 0.5328567591994854,
+   "sd": 0.07156587294511157,
+   "min": 0.32839506172839505,
+   "max": 0.6544811320754716
+  },
+  "max_homopolymer": {
+   "mean": 5.3307692307692305,
+   "sd": 0.9991349866392106,
+   "min": 4.0,
+   "max": 9.0
+  },
+  "entropy": {
+   "mean": 1.97283122844718,
+   "sd": 0.02675944911517406,
+   "min": 1.8986122779524262,
+   "max": 1.9980928973321888
+  }
+ },
+ "synthetic": {
+  "gc": {
+   "mean": 0.50142675390767,
+   "sd": 0.006754784709003942,
+   "min": 0.48174603174603176,
+   "max": 0.5218253968253969
+  },
+  "max_homopolymer": {
+   "mean": 1.0,
+   "sd": 0.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "entropy": {
+   "mean": 1.9996177759698417,
+   "sd": 0.00029184165276091036,
+   "min": 1.998368793479798,
+   "max": 1.9999881951387386
+  }
+ },
+ "kmer3_L1_natural_vs_synthetic": 0.8946339433070765,
+ "gc_z_synthetic_vs_natural": -0.4391758808827926,
+ "natural_max_homopolymer_observed": 9,
+ "synthetic_frac_exceeding_natural_max_hp": 0.0,
+ "entropy_z_synthetic_vs_natural": 1.0010126668666062,
+ "reading": "synthetic sequences near the natural GC band but with distinct k-mer/homopolymer structure identify which biological constraints (not base composition) separate storage DNA from genome DNA"
+}

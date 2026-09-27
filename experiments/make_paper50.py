@@ -399,6 +399,30 @@ P.para(doc,
  "orders-of-magnitude profiles from published sequencing literature used as a "
  "computational proxy, not wet-lab validation.")
 
+
+P.h2(doc, "9k. Natural-genome realism: our storage DNA is MORE constrained than genome DNA")
+P.para(doc,
+ "How does synthetic storage DNA compare to what evolution writes? We computed "
+ "GC content, maximum homopolymer run, base entropy and 3-mer spectra for 131 "
+ "of our encoded 256-byte payloads against 131 real E. coli K-12 whole-genome "
+ "shotgun records (data/payloads/, NCBI nuccore accessions; "
+ "experiments/natural_genome_realism.py; results/natural_genome_realism.json). "
+ "The answer inverts the naive expectation. On base composition our sequences "
+ "sit inside the natural band: GC 0.501 +/- 0.007 versus natural 0.533 +/- "
+ "0.072 (z = -0.44). But on local structure they are far MORE constrained than "
+ "genome DNA: every synthetic sequence has maximum homopolymer run exactly 1 "
+ "(the codec's never-same guarantee), while natural E. coli sequence tolerates "
+ "runs of 4-9 (mean 5.3); synthetic entropy 1.9996 sits one natural standard "
+ "deviation above the natural mean 1.973 (z = +1.0); the mean 3-mer spectra "
+ "differ by L1 = 0.89. The evolutionary reading (#17): natural genomes "
+ "TOLERATE homopolymers that DNA synthesis and sequencing machines cannot "
+ "handle - polymerase slippage is a managed error in vivo, not a forbidden one. "
+ "The constraints that define storage DNA therefore come from the synthesis/"
+ "readout channel, not from base composition, and biology's own solution - "
+ "error management through repair and redundancy rather than sequence "
+ "avoidance - is exactly the RS inner code's strategy. This is why the "
+ "redundancy budget, not the alphabet, is the scarce cellular resource.")
+
 # ---------------- Part II ----------------
 P.page_break(doc)
 P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Host Cell (E. coli)")
