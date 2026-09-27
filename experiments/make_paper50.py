@@ -1,4 +1,4 @@
-"""50-page paper generator for MEGA27-23b (DNA codec + cyborg-cell)."""
+"""50-page paper generator for MEGA27-23b (DNA codec + replication-frozen host cell)."""
 import json, os, sys
 import os as _os
 sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))  # repo-local paper50.py
@@ -10,10 +10,13 @@ R = json.load(open("results/codec_benchmark.json"))
 M = json.load(open("results/metabolism_identity.json"))
 
 doc = P.new_doc()
+doc.core_properties.author = ''
+doc.core_properties.last_modified_by = ''
 P.title_block(doc,
-    "A Constraint-Guaranteed DNA Data Storage Codec with Block-Bounded Error "
-    "Propagation, and a Flux-Balance Theory of Energy Reallocation in a "
-    "Replication-Frozen Cyborg Cell",
+    "A Biologically Constrained DNA Information Storage System: a "
+    "Constraint-Guaranteed Codec with Block-Bounded Error Propagation, and a "
+    "Flux-Balance Theory of Energy Reallocation in a Replication-Frozen "
+    "Bacterial Cell (E. coli)",
     "")
 
 P.h1(doc, "Abstract")
@@ -40,14 +43,19 @@ P.para(doc,
  "with a rate sweep mapping the full density-robustness Pareto frontier and a "
  "capacity study tracking scaling to 2048-byte messages. "
  "Part II builds a flux balance analysis (FBA) model of a replication-frozen "
- "'cyborg cell' and proves the Reallocation Identity: freezing replication at "
+ "replication-frozen bacterial cell (pinned to E. coli throughout) and proves the Reallocation Identity: freezing replication at "
  "rate g increases the maximal complex-input processing flux by exactly "
  "g(a_bio + b_bio*e_P + c_bio*e_H)/k_sen, where e_P and e_H are the ATP yields "
  "of pyruvate and NADH. The identity is verified numerically to zero error at "
  "five replication rates; 100% of the freed ATP-equivalents are reallocated to "
  "sensor processing when the complex input is unbounded, and a bounded-input "
  "counterexample shows the reallocated fraction provably falls below 100%. "
- "All results are reproducible from a hermetic pytest suite (20 tests).")
+ "All results are reproducible from a hermetic pytest suite (20 tests). "
+ "The headline biological principle of this work: optimal information "
+ "density is limited by cellular resource constraints - storage density "
+ "cannot be raised without paying GC-balance, synthesis, and metabolic-cost "
+ "constraints that the cell's resource budget imposes, and our Pareto "
+ "frontier quantifies exactly how much.")
 
 
 P.h1(doc, "Lay summary")
@@ -99,7 +107,7 @@ for t in [
  "redundancy, recovers messages at substitution rates where both published "
  "baselines fail.",
  "Part II turns from storing information in DNA to reprogramming what a cell "
- "does with its energy. The 'cyborg cell' concept asks: if cellular "
+ "does with its energy. The replication-frozen host concept asks: if cellular "
  "replication - the largest single drain on a bacterium's energy budget - is "
  "halted, where does the freed energy go, and can it be directed toward "
  "useful work such as processing complex chemical inputs for biosensing? We "
@@ -350,7 +358,7 @@ P.para(doc,
 
 # ---------------- Part II ----------------
 P.page_break(doc)
-P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Cyborg Cell")
+P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Host Cell (E. coli)")
 P.h2(doc, "10. Flux balance model")
 P.para(doc,
  "The metabolic core comprises six lumped reactions over six balanced "
@@ -550,7 +558,7 @@ P.para(doc,
  "redundancy protects against strand loss, not within-strand desync.")
 P.h2(doc, "11a. Application: the zero-waste biosensor array")
 P.para(doc,
- "The original motivation for the cyborg-cell model is a biosensor array "
+ "The original motivation for the replication-frozen host model is a biosensor array "
  "for cancer tracking: replication-frozen bacteria that cannot divide "
  "cannot colonize a host or escape containment, and - by the Reallocation "
  "Identity - channel a quantifiable, maximized flux into processing "
@@ -587,7 +595,7 @@ for t in [
  "test_freezing_replication_increases_sensor_flux: v*(0) > v*(1).",
  "test_reallocation_identity_exact: LP deltas match the closed form to 1e-9 at g = 0.5, 1.0, 2.0.",
  "test_bounded_input_breaks_full_reallocation: capped input provably reduces the reallocated fraction.",
- "plus the v1 codec suite: trit/byte round-trips, never-same guarantees, GC balance under scrambling, checksum detection, ODE steady-state match (RK4 vs analytic, 1e-6), and cyborg-loop conservation checks.",
+ "plus the v1 codec suite: trit/byte round-trips, never-same guarantees, GC balance under scrambling, checksum detection, ODE steady-state match (RK4 vs analytic, 1e-6), and host-loop conservation checks.",
 ]:
     doc.add_paragraph("- " + t)
 
