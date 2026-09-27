@@ -1,6 +1,8 @@
 """50-page paper generator for MEGA27-23b (DNA codec + cyborg-cell)."""
 import json, os, sys
-sys.path.insert(0, "/home/sandbox/mega27/paperlib")
+import os as _os
+sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))  # repo-local paper50.py
+sys.path.insert(0, "/home/sandbox/mega27/paperlib")  # legacy shared location (fallback)
 sys.path.insert(0, "src")
 import paper50 as P
 
