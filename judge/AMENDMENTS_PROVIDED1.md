@@ -25,8 +25,12 @@ Headline principle to land (#18): "Optimal information density is limited by cel
 - #17 evolutionary comparison (why biology avoids certain patterns; natural vs synthetic storage DNA): NEW - pairs with #9
 - #18 land the biological principle as positive headline: EDITORIAL spine
 
+
+## LANDED 2026-09-27 (foldback 1)
+- #7: event-driven mutation-accumulation stability. Coded 256B payload survives median 5.5-12.5 mutation events -> expected loss at ~1,984 generations (mu=1e-6 neutral drift), ~451 (1e-5), ~27 (1e-4, e.g. mutator stress). Uncoded 2048-base payload intact-probability at mu=1e-5: 0.98@10gen, 0.82@100, 0.36@500, 0.13@1000.
+- #1/#11/#12: literature-scale error-profile injection-recovery proxy (256B, 16 trials, density 0.813 bits/base): Illumina-like 1.0 recovery; synthesis-like (5e-3 subst + 1e-3 indel, homopolymer x2.5) 0.0625; Nanopore-like (2e-2 subst + 3e-2 indel, homo x3) 0.0. Positive framing: the RS(45,30)+RS(9,3) inner code exactly covers Illumina-scale channels; the synthesis/Nanopore gap sizes the redundancy still needed (a design spec, not a hidden failure).
+- Files: experiments/evolution_error_models.py, results/evolution_error_models.json.
+
 ## First deliverables (cheap, existing data + public references)
 1. Rename + restructure title/abstract (#2/#5/#16), pin E. coli host (#8)
-2. Mutation-accumulation evolutionary stability simulation (#7) on our encoded sequences
-3. Realistic error model (indel/subst/homopolymer rates from published Illumina/Nanopore profiles) + injection-recovery proxy (#1/#11/#12)
 4. Natural-genome realism comparison (#9/#17) from public genome stats

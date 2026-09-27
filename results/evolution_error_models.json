@@ -1,0 +1,58 @@
+{
+ "mutation_accumulation": [
+  {
+   "mu_per_base_gen": 1e-06,
+   "trials": 8,
+   "median_events_to_loss": 5.5,
+   "median_expected_generations_to_loss": 1984.126984126984,
+   "censored_trials": 0
+  },
+  {
+   "mu_per_base_gen": 1e-05,
+   "trials": 8,
+   "median_events_to_loss": 12.5,
+   "median_expected_generations_to_loss": 450.93795093795086,
+   "censored_trials": 0
+  },
+  {
+   "mu_per_base_gen": 0.0001,
+   "trials": 8,
+   "median_events_to_loss": 7.5,
+   "median_expected_generations_to_loss": 27.056277056277054,
+   "censored_trials": 0
+  }
+ ],
+ "uncoded_intact_probability_mu1e-5_L2048": {
+  "10": 0.814809,
+  "100": 0.128991,
+  "500": 3.6e-05,
+  "1000": 0.0
+ },
+ "injection_recovery": [
+  {
+   "profile": "illumina_like",
+   "sub_p": 0.001,
+   "indel_p": 1e-05,
+   "homo_mult": 2.0,
+   "recovery_256B": 1.0,
+   "density_bits_per_base": 0.8127
+  },
+  {
+   "profile": "nanopore_like",
+   "sub_p": 0.02,
+   "indel_p": 0.03,
+   "homo_mult": 3.0,
+   "recovery_256B": 0.0,
+   "density_bits_per_base": 0.8127
+  },
+  {
+   "profile": "synthesis_like",
+   "sub_p": 0.005,
+   "indel_p": 0.001,
+   "homo_mult": 2.5,
+   "recovery_256B": 0.0625,
+   "density_bits_per_base": 0.8127
+  }
+ ],
+ "note": "orders-of-magnitude error profiles from published Illumina/Nanopore/synthesis literature; computational proxy, not wet-lab validation"
+}
