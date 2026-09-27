@@ -488,6 +488,28 @@ P.para(doc,
  "worst-case recovery are the objectives a biologically constrained system "
  "must optimize - exactly the headline principle.")
 
+
+P.h2(doc, "9o. Constraint sensitivity: which guarantees are structural and which cost density")
+P.para(doc,
+ "We swept the constraint knobs a host imposes (verdict #14; "
+ "experiments/constraint_sensitivity.py; results/constraint_sensitivity.json). "
+ "GC balance: the keystream scrambler holds mean windowed GC deviation at "
+ "0.064/0.053/0.041 for 20/30/50-nt windows, with worst-case single-window "
+ "deviation 0.30/0.23/0.20 over 32 messages - good on average, not certified "
+ "per window; a hard per-window GC bound would need a constrained scrambler. "
+ "Homopolymer: the never-same encoding bounds runs to 1 within a block, and we "
+ "find the exact boundary of that guarantee - block edges permit a run of "
+ "exactly 2 (observed at block boundaries), so the guarantee is per-block, "
+ "not global; a host intolerant of dinucleotide repeats would need an "
+ "inter-block separator. Parity size: checksum trits buy recovery at exact "
+ "density cost (chk 4 -> 1.016 bits/base with 69%% recovery at 3%% "
+ "substitution; chk 8 -> 0.914 bits/base with 100%% at 3%%), and the sweep "
+ "exposes a parameter-validity boundary - chk 16 breaks the framing contract "
+ "loudly (assertion failure), not silently. Replication redundancy is not "
+ "optional: one copy gives zero recovery at every tested error rate; three "
+ "copies give 100%% at 1-2%% at an effective density of 0.305 bits/base. Each "
+ "row is the cellular-resource ledger rendered in bits/base.")
+
 # ---------------- Part II ----------------
 P.page_break(doc)
 P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Host Cell (E. coli)")

@@ -1,0 +1,102 @@
+{
+ "gc_windows": {
+  "20": {
+   "max_dev_worst": 0.30000000000000004,
+   "max_dev_mean": 0.221875,
+   "mean_dev": 0.06391752577319587
+  },
+  "30": {
+   "max_dev_worst": 0.23333333333333334,
+   "max_dev_mean": 0.16979166666666667,
+   "mean_dev": 0.05309244791666666
+  },
+  "50": {
+   "max_dev_worst": 0.19999999999999996,
+   "max_dev_mean": 0.12375,
+   "mean_dev": 0.04069078947368422
+  }
+ },
+ "homopolymer": {
+  "max_run_over_32_messages": 2,
+  "guarantee": "never-same encoding bounds runs to 1 WITHIN a block; block boundaries permit a run of exactly 2 (observed at block edges). Guarantee is per-block, not global."
+ },
+ "parity_sweep": {
+  "chk_4": {
+   "0.01": {
+    "recovery": 0.9375,
+    "density": 1.0159
+   },
+   "0.02": {
+    "recovery": 1.0,
+    "density": 1.0159
+   },
+   "0.03": {
+    "recovery": 0.6875,
+    "density": 1.0159
+   }
+  },
+  "chk_8": {
+   "0.01": {
+    "recovery": 1.0,
+    "density": 0.9143
+   },
+   "0.02": {
+    "recovery": 1.0,
+    "density": 0.9143
+   },
+   "0.03": {
+    "recovery": 1.0,
+    "density": 0.9143
+   }
+  },
+  "chk_16": {
+   "0.01": {
+    "recovery": 0.0,
+    "density": 0.8312
+   },
+   "0.02": {
+    "recovery": 0.0,
+    "density": 0.8312
+   },
+   "0.03": {
+    "recovery": 0.0,
+    "density": 0.8312
+   }
+  }
+ },
+ "copies_sweep": {
+  "1": {
+   "0.01": {
+    "recovery": 0.0,
+    "effective_density": 0.9143
+   },
+   "0.02": {
+    "recovery": 0.0,
+    "effective_density": 0.9143
+   }
+  },
+  "3": {
+   "0.01": {
+    "recovery": 1.0,
+    "effective_density": 0.3048
+   },
+   "0.02": {
+    "recovery": 1.0,
+    "effective_density": 0.3048
+   }
+  },
+  "5": {
+   "0.01": {
+    "recovery": 1.0,
+    "effective_density": 0.1829
+   },
+   "0.02": {
+    "recovery": 1.0,
+    "effective_density": 0.1829
+   }
+  }
+ },
+ "reading": "homopolymer constraint is structural (free); GC balance via scrambling has measurable worst-case deviation; parity size and copy count buy recovery at exact density cost - the cellular-resource ledger in bits/base",
+ "parity_sweep_note": "chk=16 violates the codec's framing contract (strand length inconsistent with BNS framing): BNS_CHK must divide the block geometry; the failure is loud (assertion), not silent corruption - a parameter-validity boundary, not a recovery cliff.",
+ "copies_note": "single copy has zero recovery at any tested error rate: replication redundancy is not optional in this design, it IS the error management."
+}

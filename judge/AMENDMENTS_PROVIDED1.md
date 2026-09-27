@@ -27,6 +27,7 @@ Headline principle to land (#18): "Optimal information density is limited by cel
 
 
 ## LANDED 2026-09-27 (foldback 1)
+- #14: constraint sensitivity grid LANDED. GC scrambler: mean dev 0.064/0.053/0.041 (20/30/50nt), worst window 0.30 - average-good, not per-window certified. Homopolymer: per-block guarantee, block-edge run of exactly 2 found (guarantee boundary). Parity: chk4 1.016bb/69%@3%, chk8 0.914bb/100%@3%, chk16 = loud framing-contract break. Copies: 1 copy = 0% recovery always; 3 copies 100%@1-2% at 0.305 effective bits/base. Section 9o; results/constraint_sensitivity.json; 10,235 words.
 - #4: modern-baselines table LANDED - constrained coding (RLL), fountain, RS-archival (Grass), neural DNA storage, HEDGES compared on guarantees; measured rows verified vs codec_benchmark.json (rsns 0.813/100%@1%, fountain 0.717/50%@1%, goldman 0.438/83%@1%). Section 9n; 10,034 words.
 - #13: scaling law LANDED - analytic block-count compounding fitted to measured 256-2048B sweep: 1% subst -> 0.76 @1KB, 1e-12 @100KB; honest limit stated (fixed blocks cannot scale without interleaving/rate-adaptive redundancy; ~8.3KB per decade of log-recovery at 1%). Section 9m; results/scaling_law.json; 9,776 words.
 - #6: formal Pareto frontier LANDED over the RS rate sweep: all 4 rate points mutually non-dominated; design oracle per recovery target (>=90% at 2% subst -> RS(30+21) at 0.719 bits/base densest; no design reaches 90% at 3%). ~0.08-0.14 bits/base per doubling of worst-case recovery. Section 9l; results/pareto_frontier.json; 9,604 words.
