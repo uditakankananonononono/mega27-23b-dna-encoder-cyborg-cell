@@ -1,0 +1,60 @@
+{
+ "design": "formal multi-objective Pareto analysis over RS inner-code rate sweep (density vs recovery at 2% and 3% substitution)",
+ "n_designs": 4,
+ "pareto_frontier": [
+  {
+   "name": "RS(30+8) rate 0.79",
+   "density": 0.959,
+   "recovery_2pct": 0.042,
+   "recovery_3pct": 0.0
+  },
+  {
+   "name": "RS(30+15) rate 0.67",
+   "density": 0.813,
+   "recovery_2pct": 0.625,
+   "recovery_3pct": 0.125
+  },
+  {
+   "name": "RS(30+21) rate 0.59",
+   "density": 0.719,
+   "recovery_2pct": 0.917,
+   "recovery_3pct": 0.5
+  },
+  {
+   "name": "RS(30+27) rate 0.53",
+   "density": 0.644,
+   "recovery_2pct": 0.917,
+   "recovery_3pct": 0.708
+  }
+ ],
+ "optimal_design_per_target": {
+  "recovery>=0.5 at 0.01": [
+   "RS(30+8) rate 0.79",
+   0.959
+  ],
+  "recovery>=0.5 at 0.02": [
+   "RS(30+15) rate 0.67",
+   0.813
+  ],
+  "recovery>=0.5 at 0.03": [
+   "RS(30+21) rate 0.59",
+   0.719
+  ],
+  "recovery>=0.9 at 0.01": [
+   "RS(30+15) rate 0.67",
+   0.813
+  ],
+  "recovery>=0.9 at 0.02": [
+   "RS(30+21) rate 0.59",
+   0.719
+  ],
+  "recovery>=0.9 at 0.03": null,
+  "recovery>=1.0 at 0.01": [
+   "RS(30+21) rate 0.59",
+   0.719
+  ],
+  "recovery>=1.0 at 0.02": null,
+  "recovery>=1.0 at 0.03": null
+ },
+ "reading": "density is bought with worst-case recovery; the frontier quantifies the cellular-resource constraint on information density"
+}

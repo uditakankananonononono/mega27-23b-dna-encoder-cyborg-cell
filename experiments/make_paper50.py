@@ -423,6 +423,23 @@ P.para(doc,
  "avoidance - is exactly the RS inner code's strategy. This is why the "
  "redundancy budget, not the alphabet, is the scarce cellular resource.")
 
+
+P.h2(doc, "9l. Formal Pareto frontier: density is bought with worst-case recovery")
+P.para(doc,
+ "The multi-objective structure of codec design (verdict #6) is made explicit "
+ "with a Pareto analysis over the RS inner-code rate sweep "
+ "(results/pareto_frontier.json). All four rate points are mutually "
+ "non-dominated: density 0.959 / 0.813 / 0.719 / 0.644 bits/base buys "
+ "2%-substitution recovery of 4% / 62.5% / 91.7% / 91.7% and 3% recovery of "
+ "0% / 12.5% / 50% / 70.8%. Reading the frontier as a design oracle: for a "
+ "target of >=90% recovery at 2% substitution the densest admissible design is "
+ "RS(30+21) at 0.719 bits/base; no tested design achieves 90% recovery at 3%. "
+ "Each 0.08-0.14 bits/base of density surrendered buys roughly a doubling of "
+ "worst-case recovery. This frontier is the quantitative content of the "
+ "headline principle: optimal information density is limited by cellular "
+ "resource constraints - here the redundancy budget the host's synthesis "
+ "channel and the error environment jointly impose.")
+
 # ---------------- Part II ----------------
 P.page_break(doc)
 P.h1(doc, "Part II. Energy Reallocation in the Replication-Frozen Host Cell (E. coli)")
