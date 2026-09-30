@@ -24,3 +24,16 @@ strict-majority events do not equal four-letter plurality failure events.
 This is a targeted consistency pass, not proof that all manuscript claims have
 been audited. Biological calibration and a fully matched codec frontier remain
 open. Test suite: 33 passed; rendered changed pages inspected.
+
+## Reachable DNA block-check misses (2026-09-30)
+Eight fixed 38nt blocks, all strictly changed one/two-substitution events:
+912 single events: 490 invalid spacing, 137 checksum rejects, 285 accepted wrong.
+50616 double events: 39407 invalid spacing, 6060 checksum rejects, 5149 accepted wrong.
+A single T-to-G change yields a compensating [2,1] to [1,2] trit change,
+passes low s1, and fails full Fletcher. This invalidates guaranteed-erasure
+interpretation. Counts concern isolated blocks in a fixed finite library;
+whole-file recovery, consensus and physical probabilities are not inferred.
+Full 51528-row event trail and position/region summaries retained. New
+regressions verify implementation agreement and exact event/hash integrity.
+35 tests pass. PDF new section pages74-76 visually inspected; total76 is not
+proof of50audited text-body pages. No production behavior changed.
