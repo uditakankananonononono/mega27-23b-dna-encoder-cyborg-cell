@@ -1,0 +1,414 @@
+{
+  "message_seed": 930481,
+  "message_sizes": [
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    128,
+    2048,
+    2048,
+    2048,
+    2048
+  ],
+  "rows": [
+    {
+      "detector": "low",
+      "copies": 1,
+      "p": 0,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 223440
+    },
+    {
+      "detector": "low",
+      "copies": 1,
+      "p": 0.005,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 59,
+        "exact_success": 1
+      },
+      "changed_fraction": 0.005021482277121375,
+      "total_exposed_nt": 223440
+    },
+    {
+      "detector": "low",
+      "copies": 1,
+      "p": 0.01,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.010360723236663085,
+      "total_exposed_nt": 223440
+    },
+    {
+      "detector": "low",
+      "copies": 1,
+      "p": 0.02,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.020184389545291802,
+      "total_exposed_nt": 223440
+    },
+    {
+      "detector": "low",
+      "copies": 1,
+      "p": 0.03,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.03050483351235231,
+      "total_exposed_nt": 223440
+    },
+    {
+      "detector": "low",
+      "copies": 3,
+      "p": 0,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 670320
+    },
+    {
+      "detector": "low",
+      "copies": 3,
+      "p": 0.005,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 59,
+        "loud_failure": 1
+      },
+      "changed_fraction": 0.005018498627521184,
+      "total_exposed_nt": 670320
+    },
+    {
+      "detector": "low",
+      "copies": 3,
+      "p": 0.01,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 45,
+        "loud_failure": 15
+      },
+      "changed_fraction": 0.010096670247046188,
+      "total_exposed_nt": 670320
+    },
+    {
+      "detector": "low",
+      "copies": 3,
+      "p": 0.02,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 34,
+        "loud_failure": 26
+      },
+      "changed_fraction": 0.019978517722878626,
+      "total_exposed_nt": 670320
+    },
+    {
+      "detector": "low",
+      "copies": 3,
+      "p": 0.03,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 17,
+        "loud_failure": 41,
+        "silent_wrong": 2
+      },
+      "changed_fraction": 0.030105024465926722,
+      "total_exposed_nt": 670320
+    },
+    {
+      "detector": "full",
+      "copies": 1,
+      "p": 0,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 258720
+    },
+    {
+      "detector": "full",
+      "copies": 1,
+      "p": 0.005,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.0050208719851577,
+      "total_exposed_nt": 258720
+    },
+    {
+      "detector": "full",
+      "copies": 1,
+      "p": 0.01,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.010381880024737167,
+      "total_exposed_nt": 258720
+    },
+    {
+      "detector": "full",
+      "copies": 1,
+      "p": 0.02,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.02024969078540507,
+      "total_exposed_nt": 258720
+    },
+    {
+      "detector": "full",
+      "copies": 1,
+      "p": 0.03,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.030693413729128014,
+      "total_exposed_nt": 258720
+    },
+    {
+      "detector": "full",
+      "copies": 3,
+      "p": 0,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 776160
+    },
+    {
+      "detector": "full",
+      "copies": 3,
+      "p": 0.005,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 59,
+        "loud_failure": 1
+      },
+      "changed_fraction": 0.0050389095031952175,
+      "total_exposed_nt": 776160
+    },
+    {
+      "detector": "full",
+      "copies": 3,
+      "p": 0.01,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 54,
+        "loud_failure": 6
+      },
+      "changed_fraction": 0.010140950319521749,
+      "total_exposed_nt": 776160
+    },
+    {
+      "detector": "full",
+      "copies": 3,
+      "p": 0.02,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 40,
+        "loud_failure": 20
+      },
+      "changed_fraction": 0.0200731807874665,
+      "total_exposed_nt": 776160
+    },
+    {
+      "detector": "full",
+      "copies": 3,
+      "p": 0.03,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 24,
+        "loud_failure": 36
+      },
+      "changed_fraction": 0.030207689136260565,
+      "total_exposed_nt": 776160
+    },
+    {
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 282240
+    },
+    {
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.005,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.005009920634920635,
+      "total_exposed_nt": 282240
+    },
+    {
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.01,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.010253684807256237,
+      "total_exposed_nt": 282240
+    },
+    {
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.02,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.020163690476190477,
+      "total_exposed_nt": 282240
+    },
+    {
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.03,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "loud_failure": 60
+      },
+      "changed_fraction": 0.030534297052154196,
+      "total_exposed_nt": 282240
+    },
+    {
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 846720
+    },
+    {
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.005,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 60
+      },
+      "changed_fraction": 0.0050170068027210885,
+      "total_exposed_nt": 846720
+    },
+    {
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.01,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 54,
+        "loud_failure": 6
+      },
+      "changed_fraction": 0.01009778911564626,
+      "total_exposed_nt": 846720
+    },
+    {
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.02,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 41,
+        "loud_failure": 19
+      },
+      "changed_fraction": 0.02005621693121693,
+      "total_exposed_nt": 846720
+    },
+    {
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.03,
+      "n_trials": 60,
+      "n_distinct_messages": 20,
+      "counts": {
+        "exact_success": 23,
+        "loud_failure": 37
+      },
+      "changed_fraction": 0.030188255857898715,
+      "total_exposed_nt": 846720
+    }
+  ],
+  "ledger_sha256": "5e39d10e9f65108dffcd88bc4e2802a12c11ab31837a85fb63d778afb109c24d",
+  "detector_block_nt": {
+    "low": 38,
+    "full": 44,
+    "distance5": 48
+  },
+  "limits": [
+    "Audit-local whole-file candidates use same one-block outer parity, deterministic plurality and copy fallback",
+    "Low/full candidate decoder adds explicit length/header/byte validation; not an unchanged production benchmark",
+    "Unequal detector lengths and copy counts mean unequal budgets and channel exposure; not a matched frontier",
+    "Twenty message identities; three noise realizations per condition are repeated measures",
+    "No oligo segmentation, primers, indexing, molecular copy model, indels, dropout or physical data",
+    "Whole-file seed resets can allow seam homopolymers; GC and homopolymer recorded, not screened"
+  ]
+}
