@@ -37,3 +37,14 @@ Full 51528-row event trail and position/region summaries retained. New
 regressions verify implementation agreement and exact event/hash integrity.
 35 tests pass. PDF new section pages74-76 visually inspected; total76 is not
 proof of50audited text-body pages. No production behavior changed.
+
+## Paired full-Fletcher detector pilot (2026-09-30)
+Same eight payload prefixes and exact mutation choices: 768 single payload-region
+and35712 double events per candidate. Full checksum accepts no wrong single
+payloads here, but1653 wrong doubles remain (4.63%). A tested two-DNA collision
+preserves both Fletcher bytes. Length rises38to44bases (+15.79%); three-copy
+limiting payload rate falls.374269to.323232. Fixed library, unmutated check
+regions, no complete-file inference, no installed production change. The
+36480paired-event trail is retained. 37tests passed; actual new section pages
+76-78 visually checked, readable compact table and split hash. PDF78total,
+not proof of50audited full text-body pages.

@@ -1,0 +1,273 @@
+{
+  "payload_source": "results/block_checksum_dna_audit.json",
+  "total_paired_events": 36480,
+  "same_payload_prefix": true,
+  "per_block_nt": {
+    "low_byte": 38,
+    "full_fletcher": 44
+  },
+  "length_increase_fraction": 0.15789473684210525,
+  "asymptotic_three_copy_rate": {
+    "low_byte": 0.3742690058479532,
+    "full_fletcher": 0.32323232323232326
+  },
+  "counts": {
+    "1:invalid_spacing|invalid_spacing": 416,
+    "1:accepted_wrong|checksum_reject": 285,
+    "1:checksum_reject|checksum_reject": 65,
+    "2:invalid_spacing|invalid_spacing": 27911,
+    "2:accepted_wrong|checksum_reject": 3489,
+    "2:accepted_wrong|accepted_wrong": 1653,
+    "2:checksum_reject|checksum_reject": 2570,
+    "1:invalid_spacing|checksum_reject": 1,
+    "1:checksum_reject|invalid_spacing": 1,
+    "2:invalid_spacing|checksum_reject": 44,
+    "2:checksum_reject|invalid_spacing": 45
+  },
+  "rows": [
+    {
+      "block": 0,
+      "order": 1,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 47,
+        "accepted_wrong|checksum_reject": 46,
+        "checksum_reject|checksum_reject": 3
+      }
+    },
+    {
+      "block": 0,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3291,
+        "accepted_wrong|checksum_reject": 650,
+        "accepted_wrong|accepted_wrong": 369,
+        "checksum_reject|checksum_reject": 154
+      }
+    },
+    {
+      "block": 1,
+      "order": 1,
+      "counts": {
+        "accepted_wrong|checksum_reject": 33,
+        "invalid_spacing|invalid_spacing": 49,
+        "checksum_reject|checksum_reject": 14
+      }
+    },
+    {
+      "block": 1,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3373,
+        "accepted_wrong|checksum_reject": 406,
+        "accepted_wrong|accepted_wrong": 138,
+        "checksum_reject|checksum_reject": 547
+      }
+    },
+    {
+      "block": 2,
+      "order": 1,
+      "counts": {
+        "accepted_wrong|checksum_reject": 40,
+        "invalid_spacing|invalid_spacing": 50,
+        "checksum_reject|checksum_reject": 6
+      }
+    },
+    {
+      "block": 2,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3417,
+        "accepted_wrong|accepted_wrong": 258,
+        "accepted_wrong|checksum_reject": 520,
+        "checksum_reject|checksum_reject": 269
+      }
+    },
+    {
+      "block": 3,
+      "order": 1,
+      "counts": {
+        "accepted_wrong|checksum_reject": 36,
+        "invalid_spacing|invalid_spacing": 50,
+        "checksum_reject|checksum_reject": 8,
+        "invalid_spacing|checksum_reject": 1,
+        "checksum_reject|invalid_spacing": 1
+      }
+    },
+    {
+      "block": 3,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3406,
+        "accepted_wrong|accepted_wrong": 175,
+        "checksum_reject|checksum_reject": 321,
+        "accepted_wrong|checksum_reject": 473,
+        "invalid_spacing|checksum_reject": 44,
+        "checksum_reject|invalid_spacing": 45
+      }
+    },
+    {
+      "block": 4,
+      "order": 1,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 56,
+        "accepted_wrong|checksum_reject": 31,
+        "checksum_reject|checksum_reject": 9
+      }
+    },
+    {
+      "block": 4,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3644,
+        "checksum_reject|checksum_reject": 334,
+        "accepted_wrong|checksum_reject": 308,
+        "accepted_wrong|accepted_wrong": 178
+      }
+    },
+    {
+      "block": 5,
+      "order": 1,
+      "counts": {
+        "accepted_wrong|checksum_reject": 29,
+        "invalid_spacing|invalid_spacing": 56,
+        "checksum_reject|checksum_reject": 11
+      }
+    },
+    {
+      "block": 5,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3645,
+        "accepted_wrong|checksum_reject": 287,
+        "accepted_wrong|accepted_wrong": 140,
+        "checksum_reject|checksum_reject": 392
+      }
+    },
+    {
+      "block": 6,
+      "order": 1,
+      "counts": {
+        "accepted_wrong|checksum_reject": 35,
+        "invalid_spacing|invalid_spacing": 53,
+        "checksum_reject|checksum_reject": 8
+      }
+    },
+    {
+      "block": 6,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3532,
+        "accepted_wrong|checksum_reject": 416,
+        "accepted_wrong|accepted_wrong": 202,
+        "checksum_reject|checksum_reject": 314
+      }
+    },
+    {
+      "block": 7,
+      "order": 1,
+      "counts": {
+        "accepted_wrong|checksum_reject": 35,
+        "invalid_spacing|invalid_spacing": 55,
+        "checksum_reject|checksum_reject": 6
+      }
+    },
+    {
+      "block": 7,
+      "order": 2,
+      "counts": {
+        "invalid_spacing|invalid_spacing": 3603,
+        "accepted_wrong|accepted_wrong": 193,
+        "accepted_wrong|checksum_reject": 429,
+        "checksum_reject|checksum_reject": 239
+      }
+    }
+  ],
+  "full_fletcher_misses": {
+    "2": {
+      "block": 0,
+      "positions": [
+        0,
+        2
+      ],
+      "replacements": "GT",
+      "original_dna": "TCGATGCGAGAGAGCTCTCACTGTGTCTCTGTAGACATACAGAG",
+      "changed_dna": "GCTATGCGAGAGAGCTCTCACTGTGTCTCTGTAGACATACAGAG",
+      "original_payload": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "changed_payload": [
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  "trial_sha256": "d3a7d6063e72780d77f4b83bddb7247550b21582730eeb91438246d235cb1759",
+  "limits": [
+    "Same exact payload position/letter mutation pairs for each candidate",
+    "Only payload positions mutate; check-region mutations and full-message effects not tested",
+    "Full Fletcher adds six check bases per block; not matched total budget or optimized density frontier",
+    "No consensus or physical read model; eight fixed block library",
+    "Candidate is audit-local, not a production encoder change"
+  ]
+}
