@@ -1,0 +1,3514 @@
+{
+  "payload_bytes": 128,
+  "message_seed": 30930,
+  "rows": [
+    {
+      "codec": "v1",
+      "requested_realized_substitution_p": 0,
+      "observed_changed_base_fraction": 0.0,
+      "recovered": 32,
+      "n": 32,
+      "recovery": 1.0,
+      "wilson95": [
+        0.8928172849426366,
+        1.0
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "v1",
+      "requested_realized_substitution_p": 0.01,
+      "observed_changed_base_fraction": 0.009719591750841751,
+      "recovered": 26,
+      "n": 32,
+      "recovery": 0.8125,
+      "wilson95": [
+        0.6469050424507756,
+        0.9111057606383721
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "v1",
+      "requested_realized_substitution_p": 0.02,
+      "observed_changed_base_fraction": 0.019373421717171716,
+      "recovered": 19,
+      "n": 32,
+      "recovery": 0.59375,
+      "wilson95": [
+        0.4225972657298823,
+        0.744805975196862
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        }
+      ]
+    },
+    {
+      "codec": "v1",
+      "requested_realized_substitution_p": 0.03,
+      "observed_changed_base_fraction": 0.029158775252525252,
+      "recovered": 11,
+      "n": 32,
+      "recovery": 0.34375,
+      "wilson95": [
+        0.20410233354328552,
+        0.5168922649121406
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 4,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 25,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch - corruption beyond repair"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "v2",
+      "requested_realized_substitution_p": 0,
+      "observed_changed_base_fraction": 0.0,
+      "recovered": 32,
+      "n": 32,
+      "recovery": 1.0,
+      "wilson95": [
+        0.8928172849426366,
+        1.0
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.34547908232118757,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "v2",
+      "requested_realized_substitution_p": 0.01,
+      "observed_changed_base_fraction": 0.009668100539811066,
+      "recovered": 28,
+      "n": 32,
+      "recovery": 0.875,
+      "wilson95": [
+        0.7193135021517204,
+        0.950299461555257
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.34547908232118757,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "v2",
+      "requested_realized_substitution_p": 0.02,
+      "observed_changed_base_fraction": 0.019114794197031038,
+      "recovered": 22,
+      "n": 32,
+      "recovery": 0.6875,
+      "wilson95": [
+        0.514330003019676,
+        0.8204764788338126
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.34547908232118757,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "v2",
+      "requested_realized_substitution_p": 0.03,
+      "observed_changed_base_fraction": 0.0291097334682861,
+      "recovered": 17,
+      "n": 32,
+      "recovery": 0.53125,
+      "wilson95": [
+        0.3644923793257382,
+        0.6913087009831766
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.34547908232118757,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": false,
+          "error": "ValueError: unrecoverable blocks: [17, 23]"
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: unrecoverable blocks: [3, 7]"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: unrecoverable blocks: [10, 19]"
+        },
+        {
+          "message": 12,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: unrecoverable blocks: [7, 19]"
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: unrecoverable blocks: [0, 22]"
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: global checksum mismatch"
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "goldman_style",
+      "requested_realized_substitution_p": 0,
+      "observed_changed_base_fraction": 0.0,
+      "recovered": 32,
+      "n": 32,
+      "recovery": 1.0,
+      "wilson95": [
+        0.8928172849426366,
+        1.0
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "goldman_style",
+      "requested_realized_substitution_p": 0.01,
+      "observed_changed_base_fraction": 0.009719591750841751,
+      "recovered": 29,
+      "n": 32,
+      "recovery": 0.90625,
+      "wilson95": [
+        0.7578150066422116,
+        0.9675990373736805
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "goldman_style",
+      "requested_realized_substitution_p": 0.02,
+      "observed_changed_base_fraction": 0.019373421717171716,
+      "recovered": 17,
+      "n": 32,
+      "recovery": 0.53125,
+      "wilson95": [
+        0.3644923793257382,
+        0.6913087009831766
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        }
+      ]
+    },
+    {
+      "codec": "goldman_style",
+      "requested_realized_substitution_p": 0.03,
+      "observed_changed_base_fraction": 0.029158775252525252,
+      "recovered": 6,
+      "n": 32,
+      "recovery": 0.1875,
+      "wilson95": [
+        0.08889423936162782,
+        0.3530949575492244
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.43097643097643096,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 4,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 5,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 6,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 9,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 17,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 18,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 25,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: corrupt base spacing - unrepairable strand"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: checksum mismatch"
+        }
+      ]
+    },
+    {
+      "codec": "fountain_crc8",
+      "requested_realized_substitution_p": 0,
+      "observed_changed_base_fraction": 0.0,
+      "recovered": 24,
+      "n": 32,
+      "recovery": 0.75,
+      "wilson95": [
+        0.5789310822975338,
+        0.8674775601737845
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.6844919786096256,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 3/8 chunks"
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 4/8 chunks"
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 4/8 chunks"
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "fountain_crc8",
+      "requested_realized_substitution_p": 0.01,
+      "observed_changed_base_fraction": 0.010214739304812833,
+      "recovered": 8,
+      "n": 32,
+      "recovery": 0.25,
+      "wilson95": [
+        0.1325224398262155,
+        0.42106891770246624
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.6844919786096256,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 5,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 5/8 chunks"
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 7/8 chunks"
+        },
+        {
+          "message": 12,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 4/8 chunks"
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 20,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 3/8 chunks"
+        },
+        {
+          "message": 21,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 5/8 chunks"
+        },
+        {
+          "message": 22,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 7/8 chunks"
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        }
+      ]
+    },
+    {
+      "codec": "fountain_crc8",
+      "requested_realized_substitution_p": 0.02,
+      "observed_changed_base_fraction": 0.019719251336898395,
+      "recovered": 0,
+      "n": 32,
+      "recovery": 0.0,
+      "wilson95": [
+        0.0,
+        0.1071827150573635
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.6844919786096256,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 3/8 chunks"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 4/8 chunks"
+        },
+        {
+          "message": 4,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 5,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 5/8 chunks"
+        },
+        {
+          "message": 6,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 9,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 12,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 14,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 6/8 chunks"
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 4/8 chunks"
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 17,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 5/8 chunks"
+        },
+        {
+          "message": 18,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 20,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 3/8 chunks"
+        },
+        {
+          "message": 21,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 22,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 7/8 chunks"
+        },
+        {
+          "message": 25,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        }
+      ]
+    },
+    {
+      "codec": "fountain_crc8",
+      "requested_realized_substitution_p": 0.03,
+      "observed_changed_base_fraction": 0.030853108288770054,
+      "recovered": 0,
+      "n": 32,
+      "recovery": 0.0,
+      "wilson95": [
+        0.0,
+        0.1071827150573635
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.6844919786096256,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 2,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 4,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 5,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 4/8 chunks"
+        },
+        {
+          "message": 6,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 9,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 10,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 12,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 13,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 14,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 15,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 17,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 2/8 chunks"
+        },
+        {
+          "message": 18,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 19,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 20,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 21,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 22,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 25,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 1/8 chunks"
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 29,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: fountain decode failed: 0/8 chunks"
+        }
+      ]
+    },
+    {
+      "codec": "rsns",
+      "requested_realized_substitution_p": 0,
+      "observed_changed_base_fraction": 0.0,
+      "recovered": 32,
+      "n": 32,
+      "recovery": 1.0,
+      "wilson95": [
+        0.8928172849426366,
+        1.0
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.7340501792114695,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "rsns",
+      "requested_realized_substitution_p": 0.01,
+      "observed_changed_base_fraction": 0.009722222222222222,
+      "recovered": 32,
+      "n": 32,
+      "recovery": 1.0,
+      "wilson95": [
+        0.8928172849426366,
+        1.0
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.7340501792114695,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 26,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 31,
+          "recovered": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "codec": "rsns",
+      "requested_realized_substitution_p": 0.02,
+      "observed_changed_base_fraction": 0.019422043010752687,
+      "recovered": 25,
+      "n": 32,
+      "recovery": 0.78125,
+      "wilson95": [
+        0.6124466920955516,
+        0.8897630306846815
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.7340501792114695,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 1,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": false,
+          "error": "ValueError: header RS decode failed"
+        },
+        {
+          "message": 6,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 7,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: body block 0 RS decode failed"
+        },
+        {
+          "message": 9,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 12,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 17,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": false,
+          "error": "ValueError: body block 1 RS decode failed"
+        },
+        {
+          "message": 22,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 23,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 24,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 25,
+          "recovered": false,
+          "error": "ValueError: body block 3 RS decode failed"
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: body block 4 RS decode failed"
+        },
+        {
+          "message": 27,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 28,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: body block 5 RS decode failed"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: body block 0 RS decode failed"
+        }
+      ]
+    },
+    {
+      "codec": "rsns",
+      "requested_realized_substitution_p": 0.03,
+      "observed_changed_base_fraction": 0.028942652329749102,
+      "recovered": 9,
+      "n": 32,
+      "recovery": 0.28125,
+      "wilson95": [
+        0.15564406845647866,
+        0.4537483693811179
+      ],
+      "mean_payload_bits_per_synthesized_base": 0.7340501792114695,
+      "trials": [
+        {
+          "message": 0,
+          "recovered": false,
+          "error": "ValueError: body block 4 RS decode failed"
+        },
+        {
+          "message": 1,
+          "recovered": false,
+          "error": "ValueError: body block 3 RS decode failed"
+        },
+        {
+          "message": 2,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 3,
+          "recovered": false,
+          "error": "ValueError: body block 1 RS decode failed"
+        },
+        {
+          "message": 4,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 5,
+          "recovered": false,
+          "error": "ValueError: header RS decode failed"
+        },
+        {
+          "message": 6,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 7,
+          "recovered": false,
+          "error": "ValueError: body block 5 RS decode failed"
+        },
+        {
+          "message": 8,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 9,
+          "recovered": false,
+          "error": "ValueError: body block 3 RS decode failed"
+        },
+        {
+          "message": 10,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 11,
+          "recovered": false,
+          "error": "ValueError: body block 4 RS decode failed"
+        },
+        {
+          "message": 12,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 13,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 14,
+          "recovered": false,
+          "error": "ValueError: body block 3 RS decode failed"
+        },
+        {
+          "message": 15,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 16,
+          "recovered": false,
+          "error": "ValueError: body block 1 RS decode failed"
+        },
+        {
+          "message": 17,
+          "recovered": false,
+          "error": "ValueError: body block 1 RS decode failed"
+        },
+        {
+          "message": 18,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 19,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 20,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 21,
+          "recovered": false,
+          "error": "ValueError: body block 1 RS decode failed"
+        },
+        {
+          "message": 22,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 23,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 24,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 25,
+          "recovered": false,
+          "error": "ValueError: body block 3 RS decode failed"
+        },
+        {
+          "message": 26,
+          "recovered": false,
+          "error": "ValueError: body block 5 RS decode failed"
+        },
+        {
+          "message": 27,
+          "recovered": false,
+          "error": "ValueError: body block 3 RS decode failed"
+        },
+        {
+          "message": 28,
+          "recovered": false,
+          "error": "ValueError: body block 0 RS decode failed"
+        },
+        {
+          "message": 29,
+          "recovered": true,
+          "error": null
+        },
+        {
+          "message": 30,
+          "recovered": false,
+          "error": "ValueError: body block 2 RS decode failed"
+        },
+        {
+          "message": 31,
+          "recovered": false,
+          "error": "ValueError: body block 0 RS decode failed"
+        }
+      ]
+    }
+  ],
+  "channel": "independent Bernoulli attempt and uniform alternative among exactly three different bases",
+  "limits": [
+    "Only 32 messages per condition at one payload size",
+    "Same message identities, but unequal strand lengths consume RNG differently, not paired identical corrupted bases",
+    "Fountain uses CRC8 detection, uniform low-degree sampling and side metadata, NOT the published implementation or equivalent RS inner correction",
+    "No synthesis/sequencing measurements"
+  ],
+  "implementation_change": "Invalid trit-3 erasure flags survive descrambling; historical pre-fix result retained separately"
+}

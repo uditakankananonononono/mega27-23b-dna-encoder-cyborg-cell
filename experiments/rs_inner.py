@@ -11,7 +11,7 @@ No external deps beyond numpy (already required by the repo).
 """
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-from dnacell.encoder import (bytes_to_trits, trits_to_bytes, scramble, descramble,
+from dnacell.encoder import (bytes_to_trits, trits_to_bytes, scramble, descramble, keystream,
                              encode_trits_never_same, TRITS_PER_BYTE)
 
 # ---------------- GF(243) = GF(3^5) ----------------
@@ -284,8 +284,12 @@ def rsns_encode(data: bytes):
     allsyms = hcw + bsyms
     return encode_trits_never_same(scramble(syms_to_trits(allsyms)))
 
+def descramble_soft(raw):
+    """Preserve invalid trit 3 as an erasure instead of reducing modulo three."""
+    return [3 if t == 3 else (t-k) % 3 for t,k in zip(raw,keystream(len(raw)))]
+
 def rsns_decode(dna: str, nsyms_hint=None):
-    trits = descramble(decode_never_same_soft(dna))
+    trits = descramble_soft(decode_never_same_soft(dna))
     n_hdr_trits = (HDR_K + HDR_NSYM) * 5
     hsyms, her = trits_to_syms(trits[:n_hdr_trits])
     hdec = rs_decode(hsyms, HDR_NSYM, erasures=[i for i, e in enumerate(her) if e])
