@@ -1,0 +1,144 @@
+{
+  "rows": [
+    {
+      "payload_bytes": 1,
+      "v1_total_nt_3copies": 90,
+      "v2_total_nt_3copies": 228,
+      "v1_rate": 0.08888888888888889,
+      "v2_rate": 0.03508771929824561
+    },
+    {
+      "payload_bytes": 8,
+      "v1_total_nt_3copies": 216,
+      "v2_total_nt_3copies": 456,
+      "v1_rate": 0.2962962962962963,
+      "v2_rate": 0.14035087719298245
+    },
+    {
+      "payload_bytes": 32,
+      "v1_total_nt_3copies": 648,
+      "v2_total_nt_3copies": 912,
+      "v1_rate": 0.3950617283950617,
+      "v2_rate": 0.2807017543859649
+    },
+    {
+      "payload_bytes": 128,
+      "v1_total_nt_3copies": 2376,
+      "v2_total_nt_3copies": 2964,
+      "v1_rate": 0.43097643097643096,
+      "v2_rate": 0.34547908232118757
+    },
+    {
+      "payload_bytes": 256,
+      "v1_total_nt_3copies": 4680,
+      "v2_total_nt_3copies": 5700,
+      "v1_rate": 0.4376068376068376,
+      "v2_rate": 0.35929824561403506
+    },
+    {
+      "payload_bytes": 2048,
+      "v1_total_nt_3copies": 36936,
+      "v2_total_nt_3copies": 44004,
+      "v1_rate": 0.4435780810049816,
+      "v2_rate": 0.37232978820107265
+    },
+    {
+      "payload_bytes": 16384,
+      "v1_total_nt_3copies": 294984,
+      "v2_total_nt_3copies": 350436,
+      "v1_rate": 0.44433596398448727,
+      "v2_rate": 0.3740254996632766
+    }
+  ],
+  "capacity_no_adjacent_repeat_bits_per_nt": 1.584962500721156,
+  "byte_mapping_bits_per_payload_trit": 1.3333333333333333,
+  "v1_asymptotic_three_copy_payload_rate": 0.4444444444444444,
+  "v2_asymptotic_three_copy_payload_rate": 0.3742690058479532,
+  "v2_block_checksum": "last six trits of two-byte checksum encode only low byte s1, not full Fletcher16",
+  "checksum_possible_values_upper_bound": 255,
+  "length8_checksum_observed_distinct_values": 17,
+  "explicit_undetected_two_trit_error": {
+    "before": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "after": [
+      0,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "checksum": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      1
+    ]
+  },
+  "proof": "checksum_trits writes (s2<<8)|s1 as two bytes, six trits per byte. Suffix six trits discard s2 and preserve only s1 modulo255. Two equal-and-opposite trit changes preserve s1. Collision probability depends on error distribution; no universal1/729 or worst-case exponential bound.",
+  "limits": [
+    "No noisy DNA probability law inferred from a trit counterexample",
+    "Three-copy rates exclude primers and index metadata",
+    "Historical false formulas preserved in repository history, withdrawn in current paper"
+  ]
+}
