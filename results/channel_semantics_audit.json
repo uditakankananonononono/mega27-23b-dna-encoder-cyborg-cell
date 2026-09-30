@@ -1,0 +1,176 @@
+{
+  "single_base_events": 2880,
+  "changed_trit_min": 1,
+  "changed_trit_max": 2,
+  "events_changing_trits_outside_i_i_plus_1": 0,
+  "events_with_invalid_trit_3": 1607,
+  "examples": [
+    {
+      "position": 0,
+      "changed_trits": [
+        0,
+        1
+      ],
+      "out_of_alphabet_trits": [
+        0
+      ]
+    },
+    {
+      "position": 0,
+      "changed_trits": [
+        0,
+        1
+      ],
+      "out_of_alphabet_trits": []
+    },
+    {
+      "position": 0,
+      "changed_trits": [
+        0,
+        1
+      ],
+      "out_of_alphabet_trits": [
+        1
+      ]
+    },
+    {
+      "position": 1,
+      "changed_trits": [
+        1,
+        2
+      ],
+      "out_of_alphabet_trits": [
+        2
+      ]
+    },
+    {
+      "position": 1,
+      "changed_trits": [
+        1,
+        2
+      ],
+      "out_of_alphabet_trits": [
+        1
+      ]
+    },
+    {
+      "position": 1,
+      "changed_trits": [
+        1,
+        2
+      ],
+      "out_of_alphabet_trits": []
+    },
+    {
+      "position": 2,
+      "changed_trits": [
+        2,
+        3
+      ],
+      "out_of_alphabet_trits": []
+    },
+    {
+      "position": 2,
+      "changed_trits": [
+        2,
+        3
+      ],
+      "out_of_alphabet_trits": []
+    },
+    {
+      "position": 2,
+      "changed_trits": [
+        2,
+        3
+      ],
+      "out_of_alphabet_trits": [
+        2,
+        3
+      ]
+    },
+    {
+      "position": 3,
+      "changed_trits": [
+        3,
+        4
+      ],
+      "out_of_alphabet_trits": [
+        3
+      ]
+    },
+    {
+      "position": 3,
+      "changed_trits": [
+        3,
+        4
+      ],
+      "out_of_alphabet_trits": [
+        4
+      ]
+    },
+    {
+      "position": 3,
+      "changed_trits": [
+        3,
+        4
+      ],
+      "out_of_alphabet_trits": []
+    }
+  ],
+  "noise_generator": [
+    {
+      "attempt_probability": 0.01,
+      "expected_realized_substitution_probability": 0.0075,
+      "realized_rates": [
+        0.00739,
+        0.0078,
+        0.00714,
+        0.00741,
+        0.00722
+      ],
+      "mean": 0.007392
+    },
+    {
+      "attempt_probability": 0.02,
+      "expected_realized_substitution_probability": 0.015,
+      "realized_rates": [
+        0.01443,
+        0.01532,
+        0.01444,
+        0.01519,
+        0.01471
+      ],
+      "mean": 0.014818000000000001
+    },
+    {
+      "attempt_probability": 0.03,
+      "expected_realized_substitution_probability": 0.0225,
+      "realized_rates": [
+        0.02195,
+        0.02204,
+        0.02269,
+        0.02252,
+        0.02248
+      ],
+      "mean": 0.022336
+    },
+    {
+      "attempt_probability": 0.1,
+      "expected_realized_substitution_probability": 0.07500000000000001,
+      "realized_rates": [
+        0.07521,
+        0.07478,
+        0.07455,
+        0.07571,
+        0.07522
+      ],
+      "mean": 0.07509400000000001
+    }
+  ],
+  "proof": "Each decoded trit uses only current and previous DNA base. Changing base i changes decoded trit i and (if present) i+1. Full-strand decode can reject on invalid spacing/checksum, but this is detection, not downstream symbol desynchronization. Insertions/deletions are different.",
+  "source_code_sha256": "d10257a9d28d3c6c01383cf50db58e1e709ebb30380a434294e265d5ba0c0ad4",
+  "limits": [
+    "Audit applies to implemented differential mapping, not every published rotating code",
+    "Historical nominal-rate benchmark outputs are unchanged; a strict-different-base rerun is required for realized-rate comparisons"
+  ]
+}
