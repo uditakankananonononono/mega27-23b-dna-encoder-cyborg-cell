@@ -1,0 +1,1181 @@
+{
+  "preregistered_plan_sha256": "a539ff5be6798c6e705f87e3ac1fbd9fab59b3f9e24608c05a5ad58afa69e840",
+  "ledger_sha256": "5ce19a130ce6a12a1e9a703667ffd6f58e759d1253bbc5592bbfe0849ed4f723",
+  "geometry": [
+    {
+      "message": 0,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.4855769230769231,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.49038461538461536,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.48878205128205127,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "3f0ff0ab49a512064eb6b41b305d2d13c8245b47eb79718a92119986048800f5"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5040064102564102,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.4983974358974359,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.4895833333333333,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "dc3886b1d7078c6a00606835bbf52cf5d1de51dcc00c4a866a6810fd87489546"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.4807692307692308,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.4863782051282051,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.4823717948717949,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "3bde279bf6c6fb825adeb15a7667c457c21d4df3bbd553bd57753f516afcde7d"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5040064102564102,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.4895833333333333,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "48a8efb9545e1d92bb6b89df2f92ca1edb22ae3856ae94d237a40f9433401dbc"
+    },
+    {
+      "message": 4,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5080128205128205,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5064102564102564,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.5176282051282052,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "9470e755f15490d257c4af71a40ee084a5bad06e2ed142315ab600da570bdddd"
+    },
+    {
+      "message": 5,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5016025641025641,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.5032051282051282,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "178ae4f3aab6fba1fd3f1dd77079a8cc85ac798ba0e7ab331833096454797d63"
+    },
+    {
+      "message": 6,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5056089743589743,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5152243589743589,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.49919871794871795,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "bfe248c46f1eefce992083874dd8e7a29598ddab38418ed8200239b349e71f0c"
+    },
+    {
+      "message": 7,
+      "bytes": 128,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5016025641025641,
+          "strand_nt": 1248
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.4983974358974359,
+          "strand_nt": 1248
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.5096153846153846,
+          "strand_nt": 1248
+        }
+      },
+      "input_sha256": "e4210ab76cc0446f0284e1be903c02921afdf022c0162d6b6b227fb88b9cd06e"
+    },
+    {
+      "message": 8,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.4996761658031088,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.49773316062176165,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.49784110535405873,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "8059a5f3b9b21943625740441200fa56680857ef29a7d6467ed11d0873855440"
+    },
+    {
+      "message": 9,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5005936960276338,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5006476683937824,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.5012953367875648,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "f0afc775709091031d15e5a823483e617a2be7f4f469d0707117ae11a2147f00"
+    },
+    {
+      "message": 10,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.49940630397236613,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.4996761658031088,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.49811096718480136,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "708911a8deaf4f33dddef24d91190600a65908658c7402828cd0b9f1035c10b9"
+    },
+    {
+      "message": 11,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.502536701208981,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.4994602763385147,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.502536701208981,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "a6fed1a35a9ef756750a85ccd591e29f1f1e4ee91549d07e3b4b3826b62f406d"
+    },
+    {
+      "message": 12,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5011334196891192,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5003778065630398,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.4994602763385147,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "777772fa36658cc37f27c68b50bf2ad550027726d50008e6c76ef58974291d02"
+    },
+    {
+      "message": 13,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.49859671848013815,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.49773316062176165,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.49692357512953367,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "be74e39a1c0b078d7818498d9c2a1d48c5a4dd38a83814768729722c059f507b"
+    },
+    {
+      "message": 14,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.5059369602763385,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5060449050086355,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.5062068221070811,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "ecd48c59b57d55b7b26fdce42ed3c3cd73add59912f55560aadeababd4177bc3"
+    },
+    {
+      "message": 15,
+      "bytes": 2048,
+      "included": true,
+      "metrics": {
+        "low": {
+          "max_homopolymer": 2,
+          "gc": 0.49767918825561314,
+          "strand_nt": 18528
+        },
+        "full": {
+          "max_homopolymer": 2,
+          "gc": 0.5022668393782384,
+          "strand_nt": 18528
+        },
+        "distance5": {
+          "max_homopolymer": 2,
+          "gc": 0.5007556131260794,
+          "strand_nt": 18528
+        }
+      },
+      "input_sha256": "b261f12f73ceb9bf0993e3d7a187a904125780c006702aaaa5ec8330bf3c3b09"
+    }
+  ],
+  "excluded_message_ids": [],
+  "summaries": [
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 1,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 1,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 23,
+        "exact_success": 1
+      },
+      "changed_fraction": 0.004607371794871795,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.004607371794871795,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.004607371794871795,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.009314903846153846,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.009314903846153846,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.009314903846153846,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.01969818376068376,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.01969818376068376,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.01969818376068376,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.02981436965811966,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.02981436965811966,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.02981436965811966,
+      "total_exposed_nt": 29952
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 3,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 3,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.004974626068376068,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.004974626068376068,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.004974626068376068,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 21,
+        "loud_failure": 3
+      },
+      "changed_fraction": 0.00977118945868946,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 23,
+        "loud_failure": 1
+      },
+      "changed_fraction": 0.00977118945868946,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.00977118945868946,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 15,
+        "loud_failure": 8,
+        "silent_wrong": 1
+      },
+      "changed_fraction": 0.01987624643874644,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 22,
+        "loud_failure": 2
+      },
+      "changed_fraction": 0.01987624643874644,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 22,
+        "loud_failure": 2
+      },
+      "changed_fraction": 0.01987624643874644,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 9,
+        "loud_failure": 15
+      },
+      "changed_fraction": 0.029569533475783477,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 15,
+        "loud_failure": 9
+      },
+      "changed_fraction": 0.029569533475783477,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 128,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 13,
+        "exact_success": 11
+      },
+      "changed_fraction": 0.029569533475783477,
+      "total_exposed_nt": 89856
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 1,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 1,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.005075651266551525,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.005075651266551525,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.005075651266551525,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.01009733016695452,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.01009733016695452,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.01009733016695452,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.019931545048934945,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.019931545048934945,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.019931545048934945,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 1,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.02977475532527346,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 1,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.02977475532527346,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 1,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.02977475532527346,
+      "total_exposed_nt": 444672
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 3,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 3,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 24
+      },
+      "changed_fraction": 0.0,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 14,
+        "loud_failure": 10
+      },
+      "changed_fraction": 0.004969205766647476,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 20,
+        "loud_failure": 4
+      },
+      "changed_fraction": 0.004969205766647476,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.005,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 20,
+        "loud_failure": 4
+      },
+      "changed_fraction": 0.004969205766647476,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 17,
+        "exact_success": 7
+      },
+      "changed_fraction": 0.00997664195931683,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 13,
+        "loud_failure": 11
+      },
+      "changed_fraction": 0.00997664195931683,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.01,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "exact_success": 12,
+        "loud_failure": 12
+      },
+      "changed_fraction": 0.00997664195931683,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.020126445260026868,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.020126445260026868,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.02,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.020126445260026868,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "low",
+      "copies": 3,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.0299816493955095,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "full",
+      "copies": 3,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.0299816493955095,
+      "total_exposed_nt": 1334016
+    },
+    {
+      "bytes": 2048,
+      "detector": "distance5",
+      "copies": 3,
+      "p": 0.03,
+      "n_messages": 8,
+      "n_trials": 24,
+      "counts": {
+        "loud_failure": 24
+      },
+      "changed_fraction": 0.0299816493955095,
+      "total_exposed_nt": 1334016
+    }
+  ],
+  "limits": [
+    "Exact same payload identities, 48nt block geometry, copy count, constraints and total nt per detector condition",
+    "Noise masks and alternative-letter indices paired by equal length/seed, but different sequences yield different changed letters",
+    "Padding is charged but ignored; this isolates detector allocation, not optimized baseline performance",
+    "Whole-strand GC only, no sliding-window gate, motif gate or physical oligo geometry",
+    "New sixteen identities; three repeats are not independent messages",
+    "Local software comparison, no external codec and no optimized frontier claim"
+  ]
+}

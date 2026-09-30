@@ -1,0 +1,17 @@
+{
+  "status": "frozen before outcomes",
+  "message_seed": 930492,
+  "sizes": [128, 2048],
+  "identities_per_size": 8,
+  "replicates_per_identity": 3,
+  "strict_p": [0, 0.005, 0.01, 0.02, 0.03],
+  "detectors": ["low", "full", "distance5"],
+  "copies": [1, 3],
+  "block_nt": 48,
+  "padding": "Append fixed zero trits to low/full local codewords until length 48, then differential-map all trits from seed. Padding is known, ignored on decode, exposed to noise and fully charged. No parity correction is added.",
+  "constraint_gate": "max whole-strand homopolymer <=2 and whole-strand GC in [0.45,0.55] for all three detectors on each source identity. A failed identity excludes all three detector versions, not one. No replacement search.",
+  "clean_gate": "All matched candidates must exactly recover every included clean source before noisy interpretation; stop on failure.",
+  "outcomes": ["exact_success", "loud_failure", "silent_wrong"],
+  "analysis": "Keep all tested copy budgets and failure counts, stratify by size, record excluded identities and mutation fractions; fixed-geometry detector-allocation comparison, not optimized cross-codec frontier or physical validation.",
+  "approval_scope": "Private scientific preparation only; production code and user verdict gate unchanged."
+}
