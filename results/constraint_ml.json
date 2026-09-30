@@ -1,0 +1,802 @@
+{
+  "task": "natural-accession vs RSNS storage-sequence origin discrimination",
+  "n_per_class": 130,
+  "window_nt": 300,
+  "seed": 20260930,
+  "views": {
+    "full": {
+      "folds": [
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        }
+      ],
+      "pooled_oof_auc": 1.0,
+      "bootstrap95_oof_auc": [
+        0.9999999999999999,
+        1.0
+      ]
+    },
+    "no_homopolymer": {
+      "folds": [
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        }
+      ],
+      "pooled_oof_auc": 1.0,
+      "bootstrap95_oof_auc": [
+        0.9999999999999999,
+        1.0
+      ]
+    },
+    "composition_only": {
+      "folds": [
+        {
+          "auc": 0.9482248520710058,
+          "balanced_accuracy": 0.8653846153846154,
+          "test_n": 52
+        },
+        {
+          "auc": 0.9822485207100592,
+          "balanced_accuracy": 0.9230769230769231,
+          "test_n": 52
+        },
+        {
+          "auc": 0.9497041420118344,
+          "balanced_accuracy": 0.8846153846153846,
+          "test_n": 52
+        },
+        {
+          "auc": 0.992603550295858,
+          "balanced_accuracy": 0.9807692307692308,
+          "test_n": 52
+        },
+        {
+          "auc": 0.9792899408284024,
+          "balanced_accuracy": 0.9615384615384616,
+          "test_n": 52
+        }
+      ],
+      "pooled_oof_auc": 0.9642011834319527,
+      "bootstrap95_oof_auc": [
+        0.9415325443786982,
+        0.98526775147929
+      ]
+    },
+    "kmer_only": {
+      "folds": [
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        },
+        {
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "test_n": 52
+        }
+      ],
+      "pooled_oof_auc": 1.0,
+      "bootstrap95_oof_auc": [
+        0.9999999999999999,
+        1.0
+      ]
+    }
+  },
+  "natural_manifest": [
+    {
+      "file": "NZ_JACASP010000084.1.fasta",
+      "sha256": "6f817a5d4fe0f8c7d2af46fb83cdb0f43ffb0196ef2e3ae06d7a14af13df9565",
+      "window_start": 681
+    },
+    {
+      "file": "NZ_JACASP010000085.1.fasta",
+      "sha256": "b9f82195f265862152ea648444f7ecd7d85584ca8bcce4e56922ddaed5588408",
+      "window_start": 477
+    },
+    {
+      "file": "NZ_JACASP010000086.1.fasta",
+      "sha256": "d206917ead533d1749d8d861b134ce42c15d7cd4128c022243b60b03e559e2a6",
+      "window_start": 487
+    },
+    {
+      "file": "NZ_JACASP010000087.1.fasta",
+      "sha256": "84373cd1035fdd838f466c64cbd08a0fac3a025fd2ad43b318c2330399acb162",
+      "window_start": 347
+    },
+    {
+      "file": "NZ_JACASP010000088.1.fasta",
+      "sha256": "10f477dc9abe4179714d04bfd22d399da87c2d46f9768b9ad57a612602d90537",
+      "window_start": 706
+    },
+    {
+      "file": "NZ_JACASP010000089.1.fasta",
+      "sha256": "e300ce84318c1e4f7f3451ed1ef2a1c600163c4add3a308bbf8d6c43b1a35dea",
+      "window_start": 276
+    },
+    {
+      "file": "NZ_JACASP010000090.1.fasta",
+      "sha256": "0a6f5601b3bca20dfdee92b71ee0f671e279b2c10ecd71c9cb727cc0c8913b56",
+      "window_start": 631
+    },
+    {
+      "file": "NZ_JACASP010000091.1.fasta",
+      "sha256": "fa89fd4cd667ea9c79c531baadd4abefbaed62cf533e757552e6cddb54ebfacd",
+      "window_start": 241
+    },
+    {
+      "file": "NZ_JACASP010000092.1.fasta",
+      "sha256": "8ebb41db07ad6961d60612a633a19e9f1db87a4888bf74e44f24c5707a5003e8",
+      "window_start": 270
+    },
+    {
+      "file": "NZ_JACASP010000093.1.fasta",
+      "sha256": "87308316a607668fdcac9daf1931c1dceeb5af31c13d53d740600a553a96b0b7",
+      "window_start": 108
+    },
+    {
+      "file": "NZ_JACASP010000094.1.fasta",
+      "sha256": "65f9948145342edafb4b8fc0d90529229af470d78d22f7f10a3535e65cc43d85",
+      "window_start": 223
+    },
+    {
+      "file": "NZ_JACASP010000095.1.fasta",
+      "sha256": "782307caa3bc7c7d5d04febdbf9ca5d8dc30f92564cf5fb266d1a30e6fdb0dee",
+      "window_start": 168
+    },
+    {
+      "file": "NZ_JACASP010000096.1.fasta",
+      "sha256": "934fc15fbcfa522cc5cd663ae2d41ee8bf37a9ccf02de3d9ce33c89bd6efb590",
+      "window_start": 222
+    },
+    {
+      "file": "NZ_JACASP010000097.1.fasta",
+      "sha256": "a057d2f5028145b157f92eaebf8e07224f340cb0107d8549a32928d6f8209de8",
+      "window_start": 262
+    },
+    {
+      "file": "NZ_JACASP010000098.1.fasta",
+      "sha256": "5c9d33e2359961030be5e5bcab9647a32b53a9ce54a3cc5e192373fec151d085",
+      "window_start": 260
+    },
+    {
+      "file": "NZ_JACASP010000099.1.fasta",
+      "sha256": "9ca801aafd757e5717e97a00dd7417adf294f05c85fa7f0ad1fe1bd0293025c9",
+      "window_start": 258
+    },
+    {
+      "file": "NZ_JACASP010000101.1.fasta",
+      "sha256": "52fd190be31429746d41a047c0e7b0cd0b9ba000ab3581606dffe942ecbb95c2",
+      "window_start": 137
+    },
+    {
+      "file": "NZ_JACASP010000102.1.fasta",
+      "sha256": "3e785235675f3da1b8add788c7a1ae3c19a6f378885bf3a7c321ad1eff65d7a9",
+      "window_start": 142
+    },
+    {
+      "file": "NZ_JACASQ010000084.1.fasta",
+      "sha256": "72860ca56e49ba88063569fae65a9458f9e52c884b547f770010d23cd3b13830",
+      "window_start": 778
+    },
+    {
+      "file": "NZ_JACASQ010000085.1.fasta",
+      "sha256": "54aaa798263a204628ded4425459a65e06315d7738d9154c2ed0de9d51e16e6b",
+      "window_start": 639
+    },
+    {
+      "file": "NZ_JACASQ010000086.1.fasta",
+      "sha256": "33d7f9c6d484265343c90268e9c22a322c3c173187989140fc4481667b0cfea7",
+      "window_start": 717
+    },
+    {
+      "file": "NZ_JACASQ010000087.1.fasta",
+      "sha256": "e9feffba42bdc5154c5bcf3f0b5be4881670a19fe18c1ee08b3662f59aef2f45",
+      "window_start": 251
+    },
+    {
+      "file": "NZ_JACASQ010000088.1.fasta",
+      "sha256": "b6fb1689411c020792530c3329440ec8e02b4487753e1a013360fdefe5d6972d",
+      "window_start": 24
+    },
+    {
+      "file": "NZ_JACASQ010000089.1.fasta",
+      "sha256": "3558c8b8481080b3c75d12e183c5a697526fb232ffb88e2b6c4830d4844725f9",
+      "window_start": 896
+    },
+    {
+      "file": "NZ_JACASQ010000090.1.fasta",
+      "sha256": "630eba182b0711a53489d83a7d092c80a8d67c4820d7fd859a451ae14bc14689",
+      "window_start": 524
+    },
+    {
+      "file": "NZ_JACASQ010000091.1.fasta",
+      "sha256": "d34fccf0c629d55d5daf5a3329a166399a0d08a5c92823a201f5f2b47936942e",
+      "window_start": 815
+    },
+    {
+      "file": "NZ_JACASQ010000092.1.fasta",
+      "sha256": "8e060d1b98cb94106ff34354d6d95738831af1402d2b9f9d86ea2c0164d7048c",
+      "window_start": 477
+    },
+    {
+      "file": "NZ_JACASQ010000093.1.fasta",
+      "sha256": "19b6a06e7626d44ba28c18c04435e6f40329d243c3808f9e3a36291a85afc47b",
+      "window_start": 159
+    },
+    {
+      "file": "NZ_JACASQ010000094.1.fasta",
+      "sha256": "83f11ea48ad67ec3d2483501e51d837174e3bae596948dadf22ff55ea7cb3e36",
+      "window_start": 434
+    },
+    {
+      "file": "NZ_JACASQ010000095.1.fasta",
+      "sha256": "2b4263f7d2f54e7fbf97800779555445a23d234c9b9ea83d714e086ccda95249",
+      "window_start": 496
+    },
+    {
+      "file": "NZ_JACASQ010000096.1.fasta",
+      "sha256": "4e1b71faa7ff3d77e5207b493df1c40ed663ac87fdd4f528ddca76d0ec37f46e",
+      "window_start": 530
+    },
+    {
+      "file": "NZ_JACASQ010000097.1.fasta",
+      "sha256": "e8f189f30b3ac024b1bcb2ccca1132362bc94ebddf9f5a9391b25342d7ab5b90",
+      "window_start": 59
+    },
+    {
+      "file": "NZ_JACASQ010000098.1.fasta",
+      "sha256": "2770c2fd6c28fcfd7ef02ddd13b0bb6638e04f0450b45175b00f272485e0b7cd",
+      "window_start": 77
+    },
+    {
+      "file": "NZ_JACASQ010000099.1.fasta",
+      "sha256": "10bdb6b281bab698a9286e79d144ec6b595529767384db59c3f080efb94224e1",
+      "window_start": 73
+    },
+    {
+      "file": "NZ_JACASQ010000100.1.fasta",
+      "sha256": "3e217cbe08ab707439ca004dc4d9cc46d48071cb96c43c17555e4252c87d0878",
+      "window_start": 288
+    },
+    {
+      "file": "NZ_JACASQ010000101.1.fasta",
+      "sha256": "0c4bf06ef683426db0d93a241bdba659ad220d557a3f3b71ed640bbd1c7c3508",
+      "window_start": 162
+    },
+    {
+      "file": "NZ_JACASQ010000103.1.fasta",
+      "sha256": "1e0bb5731b0cf9b87dbdf86cf4ca5bcbbc4863bb2646aba85116e6cb9e3f205d",
+      "window_start": 50
+    },
+    {
+      "file": "NZ_JACASQ010000104.1.fasta",
+      "sha256": "edaa726af1658a98599da745ce3c4ab8e7dd32549bfe3b503cac5ec4e98d16cf",
+      "window_start": 1
+    },
+    {
+      "file": "NZ_JACASQ010000105.1.fasta",
+      "sha256": "cad7293e8fce99a1cf66326c638d1bb9cb4bc9a58a9f90c47932846a7caf25df",
+      "window_start": 24
+    },
+    {
+      "file": "NZ_JACASR010000088.1.fasta",
+      "sha256": "8bb3fd6845dcd35350fad157869b51a25ecf3fe282866dfb8d0ec205266dbe29",
+      "window_start": 204
+    },
+    {
+      "file": "NZ_JACASR010000089.1.fasta",
+      "sha256": "21f67606b031c2d2199e071edcea64a88651863acd140fcae2d0a2bf01601582",
+      "window_start": 758
+    },
+    {
+      "file": "NZ_JACASR010000090.1.fasta",
+      "sha256": "78fcbbc9f7b3cf751dcc719fcb5e63f189941c308f5e2c90a0beb9643125f3a2",
+      "window_start": 724
+    },
+    {
+      "file": "NZ_JACASR010000091.1.fasta",
+      "sha256": "05136b9e6d65f89f0bab33edd07ba75c562f277463c36beb5bb6104179cf2cac",
+      "window_start": 68
+    },
+    {
+      "file": "NZ_JACASR010000092.1.fasta",
+      "sha256": "1278a3eb1207fee112b47ab897ca9dd361e6e1e9f1afa1e4585430afff4eaff8",
+      "window_start": 363
+    },
+    {
+      "file": "NZ_JACASR010000093.1.fasta",
+      "sha256": "57a3dd496ccd1fcd13c2a60aee13e6676785047fc08a3c9b1d51f60630b4ed48",
+      "window_start": 416
+    },
+    {
+      "file": "NZ_JACASR010000094.1.fasta",
+      "sha256": "0e0ec3502cfb7592b626ec0741198ccba8606a260837a5e33bfe6be847e1db01",
+      "window_start": 429
+    },
+    {
+      "file": "NZ_JACASR010000095.1.fasta",
+      "sha256": "3ec5d1cb0938f86b1a4a682e94e35b981e62f18d5ae43eb23068027beef818cb",
+      "window_start": 496
+    },
+    {
+      "file": "NZ_JACASR010000096.1.fasta",
+      "sha256": "64286e1cf6c8f7a6953755bf55e13796efbbd985058fb2be82c8fb2837e38b09",
+      "window_start": 350
+    },
+    {
+      "file": "NZ_JACASR010000097.1.fasta",
+      "sha256": "0754f1b61cedd789b97d79f5617adc9c6be7e0cc7962828a3baa00a3055faa72",
+      "window_start": 112
+    },
+    {
+      "file": "NZ_JACASR010000098.1.fasta",
+      "sha256": "1fc6f3dae0690b60075eeeb48be02e86f256a6283eb3f3e6752d2e368c2c6e61",
+      "window_start": 525
+    },
+    {
+      "file": "NZ_JACASR010000099.1.fasta",
+      "sha256": "58247a8eb45c2a76cc3df0af8069d39798aed88fc6fd87c42381973462b7c0ea",
+      "window_start": 392
+    },
+    {
+      "file": "NZ_JACASR010000100.1.fasta",
+      "sha256": "ce34847f60c96e4cb3a85fc299cb42048e637e362e2c2370c4bca6dc403a87e8",
+      "window_start": 81
+    },
+    {
+      "file": "NZ_JACASR010000103.1.fasta",
+      "sha256": "63baf11ca4a10ad9c64e852c4d6ac282f87a05de99527d7a1176c1a2ff4c962b",
+      "window_start": 280
+    },
+    {
+      "file": "NZ_JACASR010000104.1.fasta",
+      "sha256": "e6e31e8325582c5f0be9f5a420214abe0f6b9e0104cc11f96149a78ec9d439c7",
+      "window_start": 116
+    },
+    {
+      "file": "NZ_JACASR010000105.1.fasta",
+      "sha256": "1e97c2961cb9fbac7ae09eabab0a7abd5f9f6859ff636e1254f02c16adeafdc1",
+      "window_start": 30
+    },
+    {
+      "file": "NZ_JACASR010000107.1.fasta",
+      "sha256": "6ed7e6e736e477d4a8421aba6980e019eea17fc4607d89c6382af8c17f6bccc9",
+      "window_start": 154
+    },
+    {
+      "file": "NZ_JACASR010000108.1.fasta",
+      "sha256": "737396475b9bd40cbdfab04ed43ea0ccb47607220a9250b83c778cecf85edff2",
+      "window_start": 74
+    },
+    {
+      "file": "NZ_JACASR010000109.1.fasta",
+      "sha256": "93f601ca3afcde79b78f99a06d007fa7154b73a663dc73f1a8a8d0a2dfb73f7d",
+      "window_start": 110
+    },
+    {
+      "file": "NZ_JACASR010000110.1.fasta",
+      "sha256": "6d7c8551aa6a61b5923af46203e0be13fbbd835a2d715a9d9b3ca2b87027e3ab",
+      "window_start": 57
+    },
+    {
+      "file": "NZ_JACASR010000111.1.fasta",
+      "sha256": "0598a6c0be8bb132e8806b0bda4cabaaffd8911d038952273810c0f691d4a5b0",
+      "window_start": 50
+    },
+    {
+      "file": "NZ_JACASS010000087.1.fasta",
+      "sha256": "fc3be0d1f99c651dfb0a680395c851e9f6edb231093e3eedb14e7ca9e9a02b26",
+      "window_start": 158
+    },
+    {
+      "file": "NZ_JACASS010000088.1.fasta",
+      "sha256": "35c61a09fdae0941bdfd8248c04914c06ff7ae26e721f97281a7aeaf4c7df16c",
+      "window_start": 933
+    },
+    {
+      "file": "NZ_JACASS010000089.1.fasta",
+      "sha256": "8aaf82254189008447cc799d20173b6e1788387095e431817243a0abdc51763d",
+      "window_start": 524
+    },
+    {
+      "file": "NZ_JACASS010000090.1.fasta",
+      "sha256": "7fbe4ee91e3448f3e4b55033b58315d29b943628dd52402ec22afadecd2ce7b7",
+      "window_start": 364
+    },
+    {
+      "file": "NZ_JACASS010000091.1.fasta",
+      "sha256": "386c6a98d30d8979635de6851e77024e4d0752d810b4a5e62fcf0e34d0695f6f",
+      "window_start": 82
+    },
+    {
+      "file": "NZ_JACASS010000092.1.fasta",
+      "sha256": "758c069b96a008487839d7fa4086210b846cc7872f0b3dd5cc261c66063c987d",
+      "window_start": 273
+    },
+    {
+      "file": "NZ_JACASS010000093.1.fasta",
+      "sha256": "d7e1c2a60626e2d5d40f5c20eb0a3ef9454e8de9079ace8f5332ab804a6197d3",
+      "window_start": 526
+    },
+    {
+      "file": "NZ_JACASS010000094.1.fasta",
+      "sha256": "d9cca8db6d65a359a898cd79962fb52dffc5e33d25e520a94db9027ccf526b47",
+      "window_start": 553
+    },
+    {
+      "file": "NZ_JACASS010000095.1.fasta",
+      "sha256": "132f30c5b4f8ebee494bc4f85b60e379666ea7b7524f4c8315c3fe1efa1e0d6a",
+      "window_start": 60
+    },
+    {
+      "file": "NZ_JACASS010000096.1.fasta",
+      "sha256": "aad039a135fbd38fe2093f72ad0fbf944d17a9484afa59b16a5d979f2b8b6eed",
+      "window_start": 587
+    },
+    {
+      "file": "NZ_JACASS010000097.1.fasta",
+      "sha256": "d41fef4afdb07617998716c12dd645582182fd3d1b8135af9cfe945fe085957c",
+      "window_start": 682
+    },
+    {
+      "file": "NZ_JACASS010000098.1.fasta",
+      "sha256": "b3d910a13eb7a38071c24eede65a0dec693358c903782d36e4b47d9c5a161598",
+      "window_start": 188
+    },
+    {
+      "file": "NZ_JACASS010000099.1.fasta",
+      "sha256": "dbe6544585147d912bc1f4615d452e683e1855cf2029e5126172abf7b0c0f184",
+      "window_start": 251
+    },
+    {
+      "file": "NZ_JACASS010000100.1.fasta",
+      "sha256": "9f99a6a0ced0c945e3bfbf567573f58198ff7c482693be8b88452d91a8d1a8d9",
+      "window_start": 359
+    },
+    {
+      "file": "NZ_JACASS010000101.1.fasta",
+      "sha256": "c5623df452784b68edeadc9700f60c32f07b691aff84addd8e15bc3de638e340",
+      "window_start": 10
+    },
+    {
+      "file": "NZ_JACASS010000102.1.fasta",
+      "sha256": "d85728743e215b5f712c0155a9f0619bc8f41c59dae4c6c392ffb46881717c8d",
+      "window_start": 134
+    },
+    {
+      "file": "NZ_JACASS010000103.1.fasta",
+      "sha256": "3a48f4c9d9bad3dc0552ad4434a6938a695b06071e8324561562a149778305b1",
+      "window_start": 214
+    },
+    {
+      "file": "NZ_JACEET010000054.1.fasta",
+      "sha256": "a875f7c4a2d99cb66110d94a657cd66754e242943e91987552dd244f5ac4f82b",
+      "window_start": 796
+    },
+    {
+      "file": "NZ_JACEET010000056.1.fasta",
+      "sha256": "cd687976132c82d8b36994c3b250bf2acb2dc5f2a1819f0d2cafba865e6f40f6",
+      "window_start": 269
+    },
+    {
+      "file": "NZ_JACEET010000058.1.fasta",
+      "sha256": "1f8905e164319376c24aca3ec159319db0d08bb25274f96005f640dda368492c",
+      "window_start": 305
+    },
+    {
+      "file": "NZ_JACEET010000059.1.fasta",
+      "sha256": "acf42a2cd1f7f7d8c0060e1426f42acbc45d59cd896a43eaa1c03f76ce11e495",
+      "window_start": 412
+    },
+    {
+      "file": "NZ_JACEET010000060.1.fasta",
+      "sha256": "170942a9f09f71dc30616c39cbfd1f35d688ea13f1d13d9c36cc1a8cf2a4dd82",
+      "window_start": 77
+    },
+    {
+      "file": "NZ_JACEET010000062.1.fasta",
+      "sha256": "2afce447a9a7cc02675ed61e27407dd95b0048b6195e9ab92371525f97581158",
+      "window_start": 132
+    },
+    {
+      "file": "NZ_JACEET010000063.1.fasta",
+      "sha256": "f90a12468df20e7b375b57e4c2496b65318fba2ab3e3f66197e37381da850868",
+      "window_start": 127
+    },
+    {
+      "file": "NZ_JACEET010000064.1.fasta",
+      "sha256": "5749c5ba3482e99fe433a212230675ac26a2954da0b32151b76ea626a3580ba7",
+      "window_start": 36
+    },
+    {
+      "file": "NZ_JAGGIP010000062.1.fasta",
+      "sha256": "c474421ec0ea8c6b29d2e1043211caa6e39c879e4749c99e421676cef9a64c6c",
+      "window_start": 248
+    },
+    {
+      "file": "NZ_JAGGIP010000063.1.fasta",
+      "sha256": "3282c975873f13900048ffcbfecd1f8c4ac59e8b059085cb5c186909961a74ee",
+      "window_start": 583
+    },
+    {
+      "file": "NZ_JAGGIP010000064.1.fasta",
+      "sha256": "608f46754d6ca6a92aa3cd1c95a3fb562b28827b509c704fad7bb6d8c7564e2d",
+      "window_start": 782
+    },
+    {
+      "file": "NZ_JAGGIP010000065.1.fasta",
+      "sha256": "c606ab19fb2d3dbc060523cf5ef974819b82519f466b092324a6a4d2a801f418",
+      "window_start": 170
+    },
+    {
+      "file": "NZ_JAGGIP010000066.1.fasta",
+      "sha256": "e6bf67de1b14ab4bd8b73275c5cac673de2bfb97e67cd94bf656b351a4f29ad1",
+      "window_start": 575
+    },
+    {
+      "file": "NZ_JAGGIP010000067.1.fasta",
+      "sha256": "780ee5f77a2b383328438bb9eb2c3825c8ab54b8796505e2ca7018c216090144",
+      "window_start": 181
+    },
+    {
+      "file": "NZ_JAGGIP010000068.1.fasta",
+      "sha256": "614417d51a3f5781ffd9619bd183bd4d007e017b4a5be17a4fed286b57d3c03f",
+      "window_start": 356
+    },
+    {
+      "file": "NZ_JAGGIP010000069.1.fasta",
+      "sha256": "9a489c16dcff804602b99adc3efd006c0d16fc0ea02903894017f65b5ce553b6",
+      "window_start": 538
+    },
+    {
+      "file": "NZ_JAGGIP010000070.1.fasta",
+      "sha256": "10966a148f02b9553298ff43a04f32b1e29c845e674ef827bab6c1b029291173",
+      "window_start": 79
+    },
+    {
+      "file": "NZ_JAGGIP010000071.1.fasta",
+      "sha256": "28c0324afb4ba2ccdf781602e07b88af32a51de7ad5ba60a2e54a89a566287b0",
+      "window_start": 4
+    },
+    {
+      "file": "NZ_JAGGIP010000072.1.fasta",
+      "sha256": "44ade8f5050084f550dab4285df1250472ddb22b8e8f002a5893408f8d8bb52c",
+      "window_start": 126
+    },
+    {
+      "file": "NZ_JAGGIP010000075.1.fasta",
+      "sha256": "04e27cc640d711d1f8a2ee03380b9441b1f37393ba607e075d78e7c605d1fe83",
+      "window_start": 108
+    },
+    {
+      "file": "NZ_JAGGIP010000077.1.fasta",
+      "sha256": "b4d2ad28a57d2de6a67dda4f34725113d0145198943f6a93119eab67bc9a9cff",
+      "window_start": 42
+    },
+    {
+      "file": "NZ_JAGGIP010000078.1.fasta",
+      "sha256": "98dc20044d0946f4a8a45e9c62539380cc971874a93f6e8cb6954e327a0144a3",
+      "window_start": 96
+    },
+    {
+      "file": "NZ_JAIXNY010000079.1.fasta",
+      "sha256": "46fd9497b4cd19c21f567eaed163679ff03dedffdb60f8934d9fdeeea9d3e28e",
+      "window_start": 74
+    },
+    {
+      "file": "NZ_JAIXNY010000080.1.fasta",
+      "sha256": "aadd71f0db968f084b134eeab34e30591f58ab8b0630807f297cf6f4ccb530be",
+      "window_start": 392
+    },
+    {
+      "file": "NZ_JAIXNY010000081.1.fasta",
+      "sha256": "85ca5c645a40c4d97207333ba09dcc76fdc235cf6945e2b0a5a5767a18c2c006",
+      "window_start": 450
+    },
+    {
+      "file": "NZ_JAIXNY010000083.1.fasta",
+      "sha256": "69e4b6ca61e63db5d4c278b51ef5ff98fdbc008693c2d0ad78f197ff722f9e20",
+      "window_start": 171
+    },
+    {
+      "file": "NZ_JAIXNY010000084.1.fasta",
+      "sha256": "43c54c9ae60c2b4dc4603505217e659e631eac5347117a2e649dcdd3e568eae8",
+      "window_start": 45
+    },
+    {
+      "file": "NZ_JAIXNY010000085.1.fasta",
+      "sha256": "fa5e4601c08da8079dbe7789b95836ad248036d1d3f32fbfa843b2b8518853b6",
+      "window_start": 123
+    },
+    {
+      "file": "NZ_JAIXNY010000086.1.fasta",
+      "sha256": "b269eb2c4470211ce4b19c252268bc3fc145e0d7e64390b003f4314df5b66381",
+      "window_start": 163
+    },
+    {
+      "file": "NZ_JAIXNY010000087.1.fasta",
+      "sha256": "5c53e5b7548310cbfd2c7bc96d377a61d5f6b1d60022e2aa56e636a35f8adaf1",
+      "window_start": 145
+    },
+    {
+      "file": "NZ_JAIXNY010000089.1.fasta",
+      "sha256": "21bbe198234765a25768ad6de28fb14d1c887b4ea2a2f52f47a025cbc67eaf22",
+      "window_start": 203
+    },
+    {
+      "file": "NZ_JAIXNY010000094.1.fasta",
+      "sha256": "aeb8a3510ffd63ee4162e3884abe759080b298390c41ee009d5247614b476907",
+      "window_start": 45
+    },
+    {
+      "file": "NZ_JAIXNY010000095.1.fasta",
+      "sha256": "9f4d29bf09446e151dc381267eb87c44a3a9c02d0adb61ea32f64f3749ae778f",
+      "window_start": 85
+    },
+    {
+      "file": "NZ_JCBAAR010000054.1.fasta",
+      "sha256": "5a91e41d6b98e2c7545bd2906f5de49f6272ba6fbee2cb905fd73a550143627a",
+      "window_start": 97
+    },
+    {
+      "file": "NZ_JCBAAR010000055.1.fasta",
+      "sha256": "8f2946e596e229ad4341d301e2d7c824e55b700512c838122fd45cbdd0dad895",
+      "window_start": 549
+    },
+    {
+      "file": "NZ_JCBAAR010000057.1.fasta",
+      "sha256": "8f1ab494bb720526bdc999dfdd4584e5cb435ecbe376f594751cb90d69829b0f",
+      "window_start": 517
+    },
+    {
+      "file": "NZ_JCBAAR010000058.1.fasta",
+      "sha256": "d4f4de1bf0c9ccbecbc1cc635727d5afadf3bfb126f09b21538073bf772baf31",
+      "window_start": 344
+    },
+    {
+      "file": "NZ_JCBAAR010000059.1.fasta",
+      "sha256": "325ffa1d581a24957b6989174dc2fd63d1e0d1bbfa721ba5eae28b53083e5720",
+      "window_start": 75
+    },
+    {
+      "file": "NZ_JCBAAR010000060.1.fasta",
+      "sha256": "7cd8b9f06f3cc53efb5d15941f96dcfbe80ffe07c9d73db36c64bf9d3d7d2e56",
+      "window_start": 257
+    },
+    {
+      "file": "NZ_JCBAAR010000061.1.fasta",
+      "sha256": "c883b497be61b80c232ad4b097bf1937b98e97ee2fb5a6ff9152df70d74aeb2a",
+      "window_start": 349
+    },
+    {
+      "file": "NZ_JCBAAR010000062.1.fasta",
+      "sha256": "1222ba0a68bebe65346bc3aedf7bfcb67f3d3af641512f85cf86774a7ea0a284",
+      "window_start": 47
+    },
+    {
+      "file": "NZ_JCBAAR010000064.1.fasta",
+      "sha256": "e6df284cd350daee675b64f7eb24640a26e29083bbc55198894608bb2eccbeb6",
+      "window_start": 241
+    },
+    {
+      "file": "NZ_JCBAAR010000065.1.fasta",
+      "sha256": "7ca4b8880f22451b023d0a4c06a45dd0659cbc4333badd0b7dea89b3570ae82d",
+      "window_start": 9
+    },
+    {
+      "file": "NZ_JCBAAR010000066.1.fasta",
+      "sha256": "1d058377a9bed96b0556934265dbd07cb2fbd6cf3727a82716113375352a92cb",
+      "window_start": 152
+    },
+    {
+      "file": "NZ_WSNT01000002.1.fasta",
+      "sha256": "da2c696ed6b2087b662be89066e5f41aac7e9401bb90c2475565749630228b91",
+      "window_start": 633
+    },
+    {
+      "file": "NZ_WSNT01000011.1.fasta",
+      "sha256": "ff56b81aeb2b6f868a40c50202db585716dbf89d13e2e33b90a54d0d5e77a391",
+      "window_start": 387
+    },
+    {
+      "file": "NZ_WSNT01000012.1.fasta",
+      "sha256": "3354d01bc2e3a109f0c302dc86162d6becf7ca5eb3aaf3ac794ca151648864a8",
+      "window_start": 446
+    },
+    {
+      "file": "NZ_WSNT01000013.1.fasta",
+      "sha256": "7e00deb069863715d28676a428b2fa06678283dc302889dcf7feb2ab3d0fb011",
+      "window_start": 391
+    },
+    {
+      "file": "NZ_WSNT01000017.1.fasta",
+      "sha256": "f5d01c106332e9bc890ba540b4b3afa4afe97e226ce3b7a9921cbbb39312936b",
+      "window_start": 234
+    },
+    {
+      "file": "NZ_WSNT01000020.1.fasta",
+      "sha256": "b8778ed0777270b80f78c61500445792585c20c097b4a855b5dd9b5e9aedec73",
+      "window_start": 238
+    },
+    {
+      "file": "NZ_WSNT01000021.1.fasta",
+      "sha256": "2c4287ce6ac2f5edd70deff8aa6d889a2a45e69e003586e3ff5c6d4e41de247c",
+      "window_start": 435
+    },
+    {
+      "file": "NZ_WSNT01000025.1.fasta",
+      "sha256": "1771b414aa6a97e01c6067bd023ee6d1a1b1a5b8ff0888c18543a131820d9e99",
+      "window_start": 263
+    },
+    {
+      "file": "PQ790158.1.fasta",
+      "sha256": "f1246baf464554a1ea25140259f5ec85a3f80a405361ad527c21d6d543256266",
+      "window_start": 394
+    }
+  ],
+  "limits": [
+    "NOT a synthesis-difficulty predictor: no experimental synthesis labels",
+    "E. coli K-12 strain C3 WGS accession windows versus one codec only, not whole-genome or organism transfer",
+    "OOF bootstrap conditions on fitted fold models, not full refit uncertainty",
+    "Homopolymer ablation still includes correlated k-mers; high accuracy does not prove a new biological mechanism"
+  ]
+}

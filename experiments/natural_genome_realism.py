@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Verdict #9/#17: natural-genome realism. Compare our encoded DNA payloads
-against 131 real E. coli K-12 sequences (data/payloads/) on the constraint
+against E. coli K-12 strain C3 WGS accession sequences (data/payloads/) on the constraint
 statistics biology 'chooses': GC content, max homopolymer, Shannon entropy,
 k-mer (k=3) spectrum distance, dinucleotide odds. Question: do our synthetic
 storage sequences sit inside or outside the natural distribution, and which
