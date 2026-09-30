@@ -1,0 +1,307 @@
+{
+  "field_modulus_low_to_high": [
+    2,
+    1,
+    0,
+    0,
+    1
+  ],
+  "irreducibility_verified": true,
+  "coordinates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "field_code_n_k_distance": [
+    12,
+    8,
+    5
+  ],
+  "distance_upper_bound_witness": [
+    7,
+    8,
+    6,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "parity_nt": 16,
+  "payload_nt": 32,
+  "block_nt": 48,
+  "three_copy_asymptotic_payload_bits_per_nt": 0.2962962962962963,
+  "relative_length_vs_38_nt": 1.263157894736842,
+  "relative_length_vs_44_nt": 1.0909090909090908,
+  "total_events": 82368,
+  "counts": {
+    "1:invalid_spacing": 618,
+    "1:syndrome_reject": 534,
+    "2:invalid_spacing": 63308,
+    "2:syndrome_reject": 17908
+  },
+  "rows": [
+    {
+      "block": 0,
+      "order": 1,
+      "counts": {
+        "invalid_spacing": 71,
+        "syndrome_reject": 73
+      },
+      "regions": {
+        "payload:invalid_spacing": 47,
+        "payload:syndrome_reject": 49,
+        "parity:syndrome_reject": 24,
+        "parity:invalid_spacing": 24
+      }
+    },
+    {
+      "block": 0,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 7522,
+        "syndrome_reject": 2630
+      },
+      "regions": {
+        "payload:invalid_spacing": 3291,
+        "payload:syndrome_reject": 1173,
+        "mixed:invalid_spacing": 3431,
+        "mixed:syndrome_reject": 1177,
+        "parity:invalid_spacing": 800,
+        "parity:syndrome_reject": 280
+      }
+    },
+    {
+      "block": 1,
+      "order": 1,
+      "counts": {
+        "syndrome_reject": 73,
+        "invalid_spacing": 71
+      },
+      "regions": {
+        "payload:syndrome_reject": 48,
+        "payload:invalid_spacing": 48,
+        "parity:syndrome_reject": 25,
+        "parity:invalid_spacing": 23
+      }
+    },
+    {
+      "block": 1,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 7519,
+        "syndrome_reject": 2633
+      },
+      "regions": {
+        "payload:invalid_spacing": 3329,
+        "payload:syndrome_reject": 1135,
+        "mixed:syndrome_reject": 1201,
+        "mixed:invalid_spacing": 3407,
+        "parity:invalid_spacing": 783,
+        "parity:syndrome_reject": 297
+      }
+    },
+    {
+      "block": 2,
+      "order": 1,
+      "counts": {
+        "syndrome_reject": 69,
+        "invalid_spacing": 75
+      },
+      "regions": {
+        "payload:syndrome_reject": 46,
+        "payload:invalid_spacing": 50,
+        "parity:syndrome_reject": 23,
+        "parity:invalid_spacing": 25
+      }
+    },
+    {
+      "block": 2,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 7783,
+        "syndrome_reject": 2369
+      },
+      "regions": {
+        "payload:invalid_spacing": 3417,
+        "payload:syndrome_reject": 1047,
+        "mixed:syndrome_reject": 1059,
+        "mixed:invalid_spacing": 3549,
+        "parity:invalid_spacing": 817,
+        "parity:syndrome_reject": 263
+      }
+    },
+    {
+      "block": 3,
+      "order": 1,
+      "counts": {
+        "syndrome_reject": 67,
+        "invalid_spacing": 77
+      },
+      "regions": {
+        "payload:syndrome_reject": 45,
+        "payload:invalid_spacing": 51,
+        "parity:invalid_spacing": 26,
+        "parity:syndrome_reject": 22
+      }
+    },
+    {
+      "block": 3,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 7902,
+        "syndrome_reject": 2250
+      },
+      "regions": {
+        "payload:invalid_spacing": 3450,
+        "payload:syndrome_reject": 1014,
+        "mixed:invalid_spacing": 3617,
+        "mixed:syndrome_reject": 991,
+        "parity:invalid_spacing": 835,
+        "parity:syndrome_reject": 245
+      }
+    },
+    {
+      "block": 4,
+      "order": 1,
+      "counts": {
+        "invalid_spacing": 82,
+        "syndrome_reject": 62
+      },
+      "regions": {
+        "payload:invalid_spacing": 56,
+        "payload:syndrome_reject": 40,
+        "parity:syndrome_reject": 22,
+        "parity:invalid_spacing": 26
+      }
+    },
+    {
+      "block": 4,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 8207,
+        "syndrome_reject": 1945
+      },
+      "regions": {
+        "payload:invalid_spacing": 3644,
+        "payload:syndrome_reject": 820,
+        "mixed:invalid_spacing": 3725,
+        "mixed:syndrome_reject": 883,
+        "parity:invalid_spacing": 838,
+        "parity:syndrome_reject": 242
+      }
+    },
+    {
+      "block": 5,
+      "order": 1,
+      "counts": {
+        "syndrome_reject": 63,
+        "invalid_spacing": 81
+      },
+      "regions": {
+        "payload:syndrome_reject": 41,
+        "payload:invalid_spacing": 55,
+        "parity:invalid_spacing": 26,
+        "parity:syndrome_reject": 22
+      }
+    },
+    {
+      "block": 5,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 8148,
+        "syndrome_reject": 2004
+      },
+      "regions": {
+        "payload:invalid_spacing": 3608,
+        "payload:syndrome_reject": 856,
+        "mixed:invalid_spacing": 3708,
+        "mixed:syndrome_reject": 900,
+        "parity:invalid_spacing": 832,
+        "parity:syndrome_reject": 248
+      }
+    },
+    {
+      "block": 6,
+      "order": 1,
+      "counts": {
+        "syndrome_reject": 65,
+        "invalid_spacing": 79
+      },
+      "regions": {
+        "payload:syndrome_reject": 43,
+        "payload:invalid_spacing": 53,
+        "parity:invalid_spacing": 26,
+        "parity:syndrome_reject": 22
+      }
+    },
+    {
+      "block": 6,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 8028,
+        "syndrome_reject": 2124
+      },
+      "regions": {
+        "payload:invalid_spacing": 3532,
+        "payload:syndrome_reject": 932,
+        "mixed:invalid_spacing": 3660,
+        "mixed:syndrome_reject": 948,
+        "parity:invalid_spacing": 836,
+        "parity:syndrome_reject": 244
+      }
+    },
+    {
+      "block": 7,
+      "order": 1,
+      "counts": {
+        "syndrome_reject": 62,
+        "invalid_spacing": 82
+      },
+      "regions": {
+        "payload:syndrome_reject": 41,
+        "payload:invalid_spacing": 55,
+        "parity:syndrome_reject": 21,
+        "parity:invalid_spacing": 27
+      }
+    },
+    {
+      "block": 7,
+      "order": 2,
+      "counts": {
+        "invalid_spacing": 8199,
+        "syndrome_reject": 1953
+      },
+      "regions": {
+        "payload:invalid_spacing": 3603,
+        "payload:syndrome_reject": 861,
+        "mixed:syndrome_reject": 863,
+        "mixed:invalid_spacing": 3745,
+        "parity:invalid_spacing": 851,
+        "parity:syndrome_reject": 229
+      }
+    }
+  ],
+  "max_valid_trit_changes": 4,
+  "max_valid_symbol_changes": 4,
+  "ledger_sha256": "727f179dd29421fc81586d1e07f7c4e018f453e5fafb57635c60c44530d91ddf",
+  "limits": [
+    "Eight fixed original blocks; all positions including parity region",
+    "Distance proof covers at most two strict substitutions per isolated seeded block, not indels",
+    "Detection only, no correction/consensus/outer parity/full-file benchmark",
+    "Neither matched-rate superiority nor physical validation; production codec unchanged"
+  ]
+}
