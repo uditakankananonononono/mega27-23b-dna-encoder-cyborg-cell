@@ -1,0 +1,2641 @@
+{
+  "plan_sha256": "f3fd1793f8fa025f178715868c57daf90282c24b23b46ce4065349ddf4d37e66",
+  "pool_plan_sha256": "fcc48196e6232e046761930997d72cd22d0cfe3f0000d8692c9640807ddbbf2b",
+  "rows": [
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 0,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 1,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 2,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 3,
+      "bytes": 128,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 4,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 5,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 6,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "low",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "full",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 0,
+      "replacement": "T",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "A",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "C",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 1,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "A",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "C",
+      "core_outcome": "core_accept_wrongpayload",
+      "file_outcome": "wholefile_loud"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 2,
+      "replacement": "G",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "C",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "G",
+      "core_outcome": "core_reject",
+      "file_outcome": "wholefile_exact"
+    },
+    {
+      "message": 7,
+      "bytes": 2048,
+      "detector": "distance5",
+      "position": 3,
+      "replacement": "T",
+      "core_outcome": "prefix_or_core_spacing_reject",
+      "file_outcome": "wholefile_exact"
+    }
+  ],
+  "summary": [
+    {
+      "detector": "low",
+      "n_events": 96,
+      "core_counts": {
+        "prefix_or_core_spacing_reject": 56,
+        "core_accept_wrongpayload": 24,
+        "core_reject": 16
+      },
+      "file_counts": {
+        "wholefile_exact": 72,
+        "wholefile_loud": 24
+      }
+    },
+    {
+      "detector": "full",
+      "n_events": 96,
+      "core_counts": {
+        "prefix_or_core_spacing_reject": 56,
+        "core_accept_wrongpayload": 24,
+        "core_reject": 16
+      },
+      "file_counts": {
+        "wholefile_exact": 72,
+        "wholefile_loud": 24
+      }
+    },
+    {
+      "detector": "distance5",
+      "n_events": 96,
+      "core_counts": {
+        "prefix_or_core_spacing_reject": 56,
+        "core_accept_wrongpayload": 24,
+        "core_reject": 16
+      },
+      "file_counts": {
+        "wholefile_exact": 72,
+        "wholefile_loud": 24
+      }
+    }
+  ],
+  "wrong": [],
+  "limits": "288deliberatelycorrelatedsingle-positionnonceevents,notrandomchannelperformanceorindependentmessages. Wholefileglobalchecksseparatelyevaluated. Old48ntcore theoremhasnonauthorityovernonceframe. Productionunchanged."
+}
