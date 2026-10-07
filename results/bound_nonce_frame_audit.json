@@ -1,0 +1,70 @@
+{
+  "plan_sha256": "e26758bcf0707bfec4c62bfe954730b58d11350a27536afba99b2afffe433f18",
+  "frame_nt": 64,
+  "payload_trits": 32,
+  "checked_nonce_trits": 4,
+  "parity_nt": 16,
+  "field_code": [
+    13,
+    9,
+    5
+  ],
+  "four_column_sets": 715,
+  "weight5_witness": [
+    7,
+    8,
+    6,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rows": [
+    {
+      "payload_id": 0,
+      "nonce": 0,
+      "frame_sha256": "f6531af6cef2f8cf25b5c838c293704c09a3096b86b94e79590949581e7dab9b",
+      "counts": {
+        "1:rejected": 192,
+        "2:rejected": 18144
+      }
+    },
+    {
+      "payload_id": 0,
+      "nonce": 80,
+      "frame_sha256": "87fdadc2b757be4b41d19a7e70dcdabfcc8d49ded9940b5f7f000c8c9de21070",
+      "counts": {
+        "1:rejected": 192,
+        "2:rejected": 18144
+      }
+    },
+    {
+      "payload_id": 1,
+      "nonce": 0,
+      "frame_sha256": "a6a7f0670d102051af230067ca4dd32a71ed45c21f7c0186a81c73e2bbaeceb8",
+      "counts": {
+        "1:rejected": 192,
+        "2:rejected": 18144
+      }
+    },
+    {
+      "payload_id": 1,
+      "nonce": 80,
+      "frame_sha256": "e60076f069f92e0abc5d45ee1d59a2526fb5d36c3c95fd6dbdc562861429f6c9",
+      "counts": {
+        "1:rejected": 192,
+        "2:rejected": 18144
+      }
+    }
+  ],
+  "prefix_three_counts": {
+    "rejected": 972
+  },
+  "limits": "auditlocalnotproduction/filecodec;notwholefilerecoveryorindels;constraintcompatibilityand64ntlocalgeometrynotassessed;nofreeprotectionorimprovementatmatchedbudget"
+}
