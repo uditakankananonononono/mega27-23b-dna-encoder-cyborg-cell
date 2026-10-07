@@ -137,3 +137,13 @@ silent wrong is not a guarantee. Perfect correlation is an extreme synthetic
 channel, not measured error dependence. Complete plan and ledger:
 experiments/bound_nonce_shared_noise_plan.json,
 results/bound_nonce_shared_noise_audit.json. Production unchanged.
+
+## Partial per-position shared-generator mixture
+Frozen at cf02be1. 360 saved outcomes at shared-generator q=0/.25/.5/.75/1:
+exact49/8/1/0/0 of72 perq, loud23/64/71/72/72; no observed silent wrong.
+Both endpoints reproduce prior outcomes and hashes, first copy invariant and
+nested gate positions. Each copy has marginal substitution rate p in distribution;
+q is not a measured correlation coefficient. Finite synthetic sensitivity,
+not a monotonicity theorem, calibrated physical model or independent validation.
+Full plan and ledger: experiments/bound_nonce_mixture_plan.json,
+results/bound_nonce_mixture_audit.json. Production unchanged.
