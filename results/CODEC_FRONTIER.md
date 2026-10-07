@@ -128,3 +128,12 @@ Known 64nt alignment and out-of-band stripe count remain assumptions. Unequal
 budgets and only four sources prohibit a matched frontier or general-rate claim.
 Full plan, geometry/search ledgers, seeds, mutation counts, trial outcomes and
 hashes: experiments/bound_nonce_file_plan.json, results/bound_nonce_file_audit.json.
+
+## Perfectly shared substitutions across the three copies
+Frozen at d8a441f. Reuses the preceding first-copy seeds/hashes and exactly the
+same eight geometries/budgets. All72 nonzero-rate shared-copy trials fail loudly
+(unrecoverable stripe), versus49exact/23loud for independent copies. No observed
+silent wrong is not a guarantee. Perfect correlation is an extreme synthetic
+channel, not measured error dependence. Complete plan and ledger:
+experiments/bound_nonce_shared_noise_plan.json,
+results/bound_nonce_shared_noise_audit.json. Production unchanged.
