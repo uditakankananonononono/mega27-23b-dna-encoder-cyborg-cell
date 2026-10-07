@@ -1,0 +1,10 @@
+{
+  "plan_sha256": "2476e622a7d9a38d50d7ee13cbfdb836d3e49d290928501374e65ab1d1965e74",
+  "nonce_pair_count": 486,
+  "event_count": 972,
+  "counts": {
+    "accepted_wrong": 972
+  },
+  "ledger_sha256": "450851a36266a267ea17de19e505e3e203b3ba00e9b3078d59e7cd957f9c1da9",
+  "limits": "adversarialcoordinatedprefix3substitutionsnotstochasticrateorwholefilesilentwrongfrequency;bounds<=2theoremsharpnessonly;productionunchanged;noindels/physicalvalidation"
+}
