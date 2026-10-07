@@ -25,7 +25,11 @@ def encode(msg,stripes):
  if not all(.45<=E.gc_content(s)<=.55 for s in seq.values()):return None,ledger
  return seq,ledger
 def decode(strands,d,stripes):
- if not strands or len(set(map(len,strands)))!=1 or len(strands[0])%60:raise ValueError('geometry')
+ if d not in ['low','full','distance5']:raise ValueError('detector')
+ if isinstance(stripes,bool) or not isinstance(stripes,int) or stripes<1:raise ValueError('stripes')
+ if not isinstance(strands,(list,tuple)) or not strands or any(not isinstance(s,str) for s in strands):raise ValueError('geometry')
+ if len(set(map(len,strands)))!=1 or not strands[0] or len(strands[0])%60 or len(strands[0])//60<=stripes:raise ValueError('geometry')
+ if any(set(s)-set(E.BASES) for s in strands):raise ValueError('alphabet')
  voted=''.join(max(E.BASES,key=lambda b:sum(s[i]==b for s in strands)) for i in range(len(strands[0])));blocks=[]
  for bi in range(len(voted)//60):
   payload=None
