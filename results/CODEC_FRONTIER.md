@@ -114,3 +114,17 @@ rate degrades with block count as expected for fixed-length blocks: 1% substitut
 gives 0.81/0.88/0.75/0.50 recovery at 256/512/1024/2048 B; 2% gives 0.25/0.125/0/0.
 Message failure tracks 1-(1-p_block)^nblocks; the next frontier lever is longer RS
 blocks or interleaving, not a different inner code family.
+
+## Bound-nonce whole-file integration (frozen at cbfd319)
+
+Audit-local decoder only; production unchanged. Four fixed source identities,
+eight included geometries, three copies, 96 repeated trials: 73 exact and 23 loud,
+zero observed silent wrong (not a guarantee). All clean trials pass. Long files at
+2% strict substitution fail in both stripe allocations; at 1%, 1/6 and 2/6 pass
+with one/four stripes. Single-data-frame erasure: 8/8 exact. Double same-stripe
+erasure, one-copy truncation, invalid alphabet: 8/8 loud each. Explicit valid-copy
+conflicts, readable parity inconsistency and padding reject in regression tests.
+Known 64nt alignment and out-of-band stripe count remain assumptions. Unequal
+budgets and only four sources prohibit a matched frontier or general-rate claim.
+Full plan, geometry/search ledgers, seeds, mutation counts, trial outcomes and
+hashes: experiments/bound_nonce_file_plan.json, results/bound_nonce_file_audit.json.

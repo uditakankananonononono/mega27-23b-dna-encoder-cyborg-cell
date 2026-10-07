@@ -1,0 +1,17 @@
+{
+  "status": "frozen before whole-file integration outcomes",
+  "base_head": "cbfd319aad0a9d87ed5b1065cccc7d6f9a7225fd",
+  "seed": 74119,
+  "sizes": [128, 2048],
+  "identities_per_size": 2,
+  "stripes": [1, 4],
+  "copies": 3,
+  "noise_rates": [0, 0.005, 0.01, 0.02],
+  "noise_replicates": 3,
+  "noise_seed_base": 760000,
+  "encoding": "Reuse frozen geometry search and its exact identities/ledgers: 64nt bound-nonce frames, block-zero mask, 81 ordered candidates; all failures retained. No production change.",
+  "decoder": "Equal aligned strand lengths and valid bases; vote with ACGT tie order; accept only a unique valid payload among vote and copy candidates; conflict rejects. Recover at most one missing data frame per known stripe with its parity frame. Check any readable parity against all recovered data. Validate descrambled length, byte range, checksum, and zero padding.",
+  "controlled": "For each included file, overwrite the first frame of all copies with A: expect exact stripe recovery. Overwrite first two data frames in the same stripe of all copies: expect loud failure. Truncate one copy and introduce invalid base: expect loud failures.",
+  "outcomes": "exact_success/loud_failure/silent_wrong; preserve all noisy trials, reasons, mutations, source and strand hashes, geometry costs; no retuning or claim from zero observed errors",
+  "limits": "Audit-only aligned whole-file integration with out-of-band stripe count and known64nt boundaries; fixed block-zero mask; no indels/dropout/segmentation/primer/index costs/physical evidence; unequal budgets; four message identities and repeated measures; local distance proof is not global guarantee."
+}
