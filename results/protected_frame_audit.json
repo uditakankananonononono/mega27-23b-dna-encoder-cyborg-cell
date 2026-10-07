@@ -1,0 +1,70 @@
+{
+  "plan_sha256": "c937e922ba64e9d0cec9ddaa9c3b0063b8ccefa9bab072bd2077314d12601921",
+  "rows": [
+    {
+      "payload_id": 0,
+      "nonce": 0,
+      "frame_sha256": "478d51740d6a435b31114d2e78c411a6ede26942a5b52046314739355bde2fbb",
+      "counts": {
+        "1:rejected": 180,
+        "2:rejected": 15930
+      },
+      "partitions": {
+        "1:prefix:rejected": 36,
+        "1:core:rejected": 144,
+        "2:prefix:rejected": 594,
+        "2:mixed:rejected": 5184,
+        "2:core:rejected": 10152
+      }
+    },
+    {
+      "payload_id": 0,
+      "nonce": 80,
+      "frame_sha256": "a4e1f81e2ee66c6d6e078b0af7f5a397fc4c399824fbc1601b1f195d47b58745",
+      "counts": {
+        "1:rejected": 180,
+        "2:rejected": 15930
+      },
+      "partitions": {
+        "1:prefix:rejected": 36,
+        "1:core:rejected": 144,
+        "2:prefix:rejected": 594,
+        "2:mixed:rejected": 5184,
+        "2:core:rejected": 10152
+      }
+    },
+    {
+      "payload_id": 1,
+      "nonce": 0,
+      "frame_sha256": "a56b2c72592c0cf48de98180773875c180840d4482125f6d00e8bd00d424e8f6",
+      "counts": {
+        "1:rejected": 180,
+        "2:rejected": 15930
+      },
+      "partitions": {
+        "1:prefix:rejected": 36,
+        "1:core:rejected": 144,
+        "2:prefix:rejected": 594,
+        "2:mixed:rejected": 5184,
+        "2:core:rejected": 10152
+      }
+    },
+    {
+      "payload_id": 1,
+      "nonce": 80,
+      "frame_sha256": "79aca9f7721e4c9c0322d603ba5dc322358454747134aa39a152e76e5e830900",
+      "counts": {
+        "1:rejected": 180,
+        "2:rejected": 15930
+      },
+      "partitions": {
+        "1:prefix:rejected": 36,
+        "1:core:rejected": 144,
+        "2:prefix:rejected": 594,
+        "2:mixed:rejected": 5184,
+        "2:core:rejected": 10152
+      }
+    }
+  ],
+  "limits": "isolatedframeknownboundaries/seed,notfullfilevoting/stripeguarantee;notlow/fullchecksumproof;noindelsor3+changes;productionunchanged;priorlongfilerecoverynegativepreserved"
+}
