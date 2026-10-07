@@ -7,3 +7,6 @@ Current manuscript and superseded draft status: see `paper/DRAFT_STATUS.md`. The
 
 ### Mapping-free bounded-prefix rank ceiling
 ConditionalK=67088chunks:4595receiver-predicatepassinguniqueseeds give coefficientrank<=4595,nullity>=62493;all4677RSexactuniqueseeds give rank<=4677,nullity>=62411. No seedmapping,actualrank,coveredcoordinatecount,peeling or payloaddecode is claimed. This countbound needsno Python3-for-Python2 PRNG substitution. See `results/dna_fountain_rank_bound_audit.json`.
+
+### Pinned CPython2.7 sample compatibility
+An actualcompiled2.7.18 oracle and explicitfloat-sample mirror agree on all4677unique-prefixseed vectors. ModernPython3sample differs on all4677. This is pinnednativebranch/sharedCDF compatibility,not originalunpinnedruntime,NumPybranch,originalauthororacle orpayloadidentity. Nopeeling/decodingperformed. See `results/python27_sample_parity_audit.json` and archivedvectors.

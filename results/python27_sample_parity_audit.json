@@ -1,0 +1,10 @@
+{
+  "plan_sha256": "c3a7e4b95b3d0435be763ea882079a4349776555e8d651f0375a6aeea6611bdf",
+  "input_sha256": "65a859ce7677ce1c6b489dee9aa9103938d35f748472ba52493f2c78d6b017a8",
+  "vectors_sha256": "a18dfe5aeb42e8a13ea7d8be8fbf86a2952c4eb9c94cf03867279fa2c9e844a8",
+  "vector_count": 4677,
+  "mismatch_seeds": [],
+  "modern_python3_sample_different_vector_count": 4677,
+  "python27_version": "2.7.18 (default, Oct  8 2026, 02:10:04) \n[GCC 11.4.0]",
+  "scope": "Compiled2.7.18nativebranch only,not originalruntime/npflag/payloadidentity;vectorsgeneratednow notoriginalauthororacle"
+}
