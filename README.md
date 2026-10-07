@@ -10,3 +10,6 @@ ConditionalK=67088chunks:4595receiver-predicatepassinguniqueseeds give coefficie
 
 ### Pinned CPython2.7 sample compatibility
 An actualcompiled2.7.18 oracle and explicitfloat-sample mirror agree on all4677unique-prefixseed vectors. ModernPython3sample differs on all4677. This is pinnednativebranch/sharedCDF compatibility,not originalunpinnedruntime,NumPybranch,originalauthororacle orpayloadidentity. Nopeeling/decodingperformed. See `results/python27_sample_parity_audit.json` and archivedvectors.
+
+### Conditional graph coverage, not decoding
+Pinned2.7.18/sharedCDF vectors give51819/52323 coveredcoordinates for4595screened/4677unscreeneduniqueseeds;bothhave9initialsingletons and10structurallypeeledcoordinates. Coverage/connectivitydoesnot implyrank or authenticatedchunkrecovery. Payloadbytesnotread. See `results/python27_graph_coverage_audit.json`.
