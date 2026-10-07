@@ -1,0 +1,2 @@
+run_accession	study_accession	sample_accession	experiment_accession	instrument_platform	instrument_model	library_name	library_layout	read_count	base_count	fastq_ftp	fastq_bytes	fastq_md5
+ERR1816980	PRJEB19305	SAMEA78689668	ERX1879549	ILLUMINA	Illumina MiSeq	Master pool	PAIRED	16692317	5041079734	ftp.sra.ebi.ac.uk/vol1/fastq/ERR181/000/ERR1816980/ERR1816980_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR181/000/ERR1816980/ERR1816980_2.fastq.gz	1476085925;1581555238	f53b849eb19c120320a35aa2ee2dd809;acd4269a5e581a9d1c3117dfa6ad6fc7

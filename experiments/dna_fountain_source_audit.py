@@ -1,0 +1,15 @@
+"""Read-only source qualification. Never downloads reads or extracts input archives."""
+import csv,hashlib,json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+def compute():
+ rows=[];sources=[]
+ for acc in ['PRJEB19305','PRJEB19307']:
+  p=ROOT/'research'/f'{acc}.tsv'
+  sources.append({'accession':acc,'tsv_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'url':f'https://www.ebi.ac.uk/ena/portal/api/filereport?accession={acc}&result=read_run&fields=study_accession,sample_accession,run_accession,experiment_accession,instrument_platform,instrument_model,library_name,library_layout,read_count,base_count,fastq_ftp,fastq_bytes,fastq_md5&format=tsv'})
+  rows.extend(csv.DictReader(p.open(),delimiter='\t'))
+ for r in rows:
+  r['compressed_bytes']=sum(map(int,r['fastq_bytes'].split(';')))
+ return {'plan_sha256':hashlib.sha256((ROOT/'research/dna_fountain_read_source_plan.json').read_bytes()).hexdigest(),'source_head':'8ee2777aa5e9e101e5d756f7e2449f6672b66f1f','source_url':'https://github.com/TeamErlich/dna-fountain','metadata_sources':sources,'run_count':len(rows),'sum_ena_read_count':sum(int(r['read_count']) for r in rows),'compressed_fastq_bytes':sum(r['compressed_bytes'] for r in rows),'runs':sorted(rows,key=lambda r:r['run_accession']),'receiver':{'source':'receiver.py and glass.pyx at pinned original source','environment':'Python2/Cython; md5,sets,cPickle,long,xrange APIs; dependency versions not pinned','preprocess':'PEAR stitching,152nt length filter,abundance-descending sort,remove N,sequence-only input','readme_parameters':{'chunks':67088,'chunk_bytes':32,'header_bytes':4,'rs_bytes':2,'delta':0.001,'c_dist':0.025,'max_hamming':0,'homopolymer':3,'gc':0.05},'max_hamming_semantics':'comparison is byte-array difference after RS re-encode, not nucleotide Hamming distance','expected_md5':'8651e90d3a013178b816b63fdbb94b9b','declared_padding_bytes':2116608,'decoded_chunk_bytes':67088*32,'padding_difference':67088*32-2116608},'archive':{'original_url':'http://files.teamerlich.org/dna_fountain/dna-fountain-input-files.tar.gz','live_probe':'DNS failure for HTTP and HTTPS','mirror_source':'https://github.com/jdbrody/dna-fountain','mirror_head':'f97c1b8a81f5c5b819209d5b5e26c9c8f4439495','bytes':2145290,'sha256':'14f42ef9a2c1d70d3a14199b18a97c9ded93866cc2912c5be35fb8ff592d7be5','md5':'4d21a7b72451302c0afc8c8f0c1eb1d6','status':'input-file container,not verified encoded payload; archive members inspected without extraction; contains nested zipbomb-labelled example,not executed'},'qualification':'conditional for physical read preprocessing; blocked for checksum-certified reconstruction until exact payload and chunk/padding convention are recovered','reads_downloaded':0,'decoding_performed':False,'limits':'Public sequencing metadata is not a physical codec success rate and does not validate the local bound-nonce receiver.'}
+if __name__=='__main__':
+ j=compute();(ROOT/'results/dna_fountain_source_audit.json').write_text(json.dumps(j,indent=2)+'\n');print({k:v for k,v in j.items() if k not in ['runs','metadata_sources']})
