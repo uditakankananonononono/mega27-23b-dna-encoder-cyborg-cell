@@ -13,3 +13,4 @@ An actualcompiled2.7.18 oracle and explicitfloat-sample mirror agree on all4677u
 
 ### Conditional graph coverage, not decoding
 Pinned2.7.18/sharedCDF vectors give51819/52323 coveredcoordinates for4595screened/4677unscreeneduniqueseeds;bothhave9initialsingletons and10structurallypeeledcoordinates. Coverage/connectivitydoesnot implyrank or authenticatedchunkrecovery. Payloadbytesnotread. See `results/python27_graph_coverage_audit.json`.
+ConditionalGF2coefficientrank measured4595/4677 forscreened/alluniqueseedrows,0dependentrows,nullity62493/62411. Fullrowrank isnot fullcolumnrank orpayloadrecovery. See `results/python27_graph_rank_audit.json`.

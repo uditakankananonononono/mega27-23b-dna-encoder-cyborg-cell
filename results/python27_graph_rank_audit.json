@@ -1,0 +1,25 @@
+{
+  "plan_sha256": "bde5480067e062570fce041938d23ccf30cb67d0efe036577136b1ae1a0ce90b",
+  "input_sha256": {
+    "results/python27_sample_vectors.json": "a18dfe5aeb42e8a13ea7d8be8fbf86a2952c4eb9c94cf03867279fa2c9e844a8",
+    "results/dna_fountain_receiver_screen_audit.json": "02f6b5fd6acbd4deecd31dbc717c7e6332864314ee7f7f8171101119d613e65f"
+  },
+  "K": 67088,
+  "scenarios": {
+    "first_seen144passing": {
+      "equations": 4595,
+      "exact_conditional_coefficient_rank": 4595,
+      "dependent_equations": 0,
+      "coefficient_nullity": 62493
+    },
+    "all_RS_exact_unique": {
+      "equations": 4677,
+      "exact_conditional_coefficient_rank": 4677,
+      "dependent_equations": 0,
+      "coefficient_nullity": 62411
+    }
+  },
+  "payload_bytes_read": false,
+  "payload_decoding_performed": false,
+  "limits": "conditionalmappingonly;fullranknotpayloadidentity;coefficientranknot recoveredchunksorpeeling;rankdeficiencydoesnot implynoindividualcoordinatesidentifiable;no successrate"
+}
