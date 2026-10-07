@@ -4,3 +4,6 @@
 Run: `pip install -e . && pytest`
 
 Current manuscript and superseded draft status: see `paper/DRAFT_STATUS.md`. The historical `50p` filename is not an audited body-page completion claim.
+
+### Mapping-free bounded-prefix rank ceiling
+ConditionalK=67088chunks:4595receiver-predicatepassinguniqueseeds give coefficientrank<=4595,nullity>=62493;all4677RSexactuniqueseeds give rank<=4677,nullity>=62411. No seedmapping,actualrank,coveredcoordinatecount,peeling or payloaddecode is claimed. This countbound needsno Python3-for-Python2 PRNG substitution. See `results/dna_fountain_rank_bound_audit.json`.

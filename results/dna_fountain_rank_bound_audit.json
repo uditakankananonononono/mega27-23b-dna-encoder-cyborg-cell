@@ -1,0 +1,44 @@
+{
+  "plan_sha256": "a060053e3471680cc1d58af9bf5354c90dcbbd7257f93ababbaace1941f544bc",
+  "input_sha256": {
+    "results/dna_fountain_receiver_screen_audit.json": "02f6b5fd6acbd4deecd31dbc717c7e6332864314ee7f7f8171101119d613e65f",
+    "results/dna_fountain_source_audit.json": "d98140ccbb17bba291a72d82ce894b12055ccdbc11cbc88b624750e346ab16d8"
+  },
+  "conditional_source_chunks": 67088,
+  "chunk_bytes": 32,
+  "scenarios": [
+    {
+      "scenario": "first_seen_144nt_predicate",
+      "unique_equations_upper_count": 4595,
+      "coefficient_rank_upper_bound": 4595,
+      "coefficient_nullity_lower_bound": 62493,
+      "rank_fraction_upper_bound": 0.06849212974004293,
+      "additional_independent_equations_necessary_at_least": 62493,
+      "payload_bits_unresolved_lower_bound": 15998208
+    },
+    {
+      "scenario": "any_144nt_passing_unique_seed",
+      "unique_equations_upper_count": 4595,
+      "coefficient_rank_upper_bound": 4595,
+      "coefficient_nullity_lower_bound": 62493,
+      "rank_fraction_upper_bound": 0.06849212974004293,
+      "additional_independent_equations_necessary_at_least": 62493,
+      "payload_bits_unresolved_lower_bound": 15998208
+    },
+    {
+      "scenario": "unscreened_RS_exact_unique_seed",
+      "unique_equations_upper_count": 4677,
+      "coefficient_rank_upper_bound": 4677,
+      "coefficient_nullity_lower_bound": 62411,
+      "rank_fraction_upper_bound": 0.06971440496064871,
+      "additional_independent_equations_necessary_at_least": 62411,
+      "payload_bits_unresolved_lower_bound": 15977216
+    }
+  ],
+  "coverage_measured": false,
+  "coordinate_coverage_upper_bound": 67088,
+  "actual_rank_measured": false,
+  "peeling_performed": false,
+  "decoding_performed": false,
+  "limits": "conditionalmetadataK;no originalpayloadidentityorPython2random.sampleparity;prefixnotrandomsample;rankupperboundnot measuredrank or successrate;coveredcoordinatecountunidentifiedwithoutseedmapping"
+}
